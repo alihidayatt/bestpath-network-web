@@ -1,2 +1,10 @@
 # bestpath-network-web
- bestpath-network website application
+
+Bestpath-Network website application
+
+How to install:
+
+- Clone this repo: git clone https://github.com/usokun/bestpath-network-web.git
+- Install dependencies: npm install
+- Build and install: npm run dev
+- Access this running app: http://localhost:3000
