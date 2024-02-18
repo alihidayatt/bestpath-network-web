@@ -2,8 +2,29 @@ import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
+  const router = useRouter;
+
+  const navLink = [
+    {
+      name: "services",
+      link: "#servicesId",
+    },
+    {
+      name: "partners",
+      link: "#partnersId",
+    },
+    {
+      name: "company",
+      link: "#companyId",
+    },
+    {
+      name: "contactus",
+      link: "#contactusId",
+    },
+  ];
   return (
     <>
       <div className="w-full h-20 bg-white sticky top-0 shadow-md">
@@ -29,22 +50,22 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
             </button>
             <ul className="hidden md:flex gap-x-10 text-bluegreen font-semibold text-lg">
               <li>
-                <Link href="#">
+                <Link href="#servicesId">
                   <p>SERVICES</p>
                 </Link>
               </li>
               <li>
-                <Link href="#">
-                  <p>SOLUTION</p>
+                <Link href="#partnersId">
+                  <p>PARTNERS</p>
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="#companyId">
                   <p>COMPANY</p>
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="#contactusId">
                   <p>CONTACT US</p>
                 </Link>
               </li>

@@ -1,6 +1,6 @@
 import About_us from "./components/contents/About_us";
 import Our_company from "./components/contents/Our_company";
-import Our_partners from "./components/contents/Our_parners";
+import Our_partners from "./components/contents/Our_partners";
 import Our_services from "./components/contents/Our_services";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
             <About_us />
           </div>
         </div>
-        <div className="container mx-auto px-4 py-2">
+        <div className="container mx-auto px-4 py-2" id="servicesId">
           <div className="w-full h-auto bg-gray-100 shadow-sm p-3 my-1">
             <div className="flex justify-items-center justify-center justify-self-center mb-5">
               <div className="text-2xl text-bluegreen font-semibold self-center">
@@ -22,7 +22,7 @@ export default function Home() {
             <Our_services />
           </div>
         </div>
-        <div className="container mx-auto px-4 py-2">
+        <div className="container mx-auto px-4 py-2 " id="partnersId">
           <div className="w-full h-auto bg-gray-100 shadow-sm p-3 my-1">
             <div className="flex justify-items-center justify-center justify-self-center mb-5">
               <div className="text-2xl text-bluegreen font-semibold self-center">
@@ -32,7 +32,7 @@ export default function Home() {
             <Our_partners />
           </div>
         </div>
-        <div className="container mx-auto px-4 py-2">
+        <div className="container mx-auto px-4 py-2 " id="companyId">
           <div className="w-full h-auto bg-gray-100 shadow-sm p-3 my-1">
             <Our_company />
           </div>

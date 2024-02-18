@@ -25,150 +25,143 @@ export default function Our_services() {
       <div className="container mx-auto px-6 py-6">
         <div className="w-full h-full bg-white shadow-lg p-3 ">
           <div className="flex justify-items-center justify-center justify-self-center">
-            <h1 className="text-xl font-medium italic text-bluegreen">
+            <h1 className="text-2xl font-medium italic text-bluegreen">
               TRAINING & EDUCATION
             </h1>
           </div>
-          <div className="flex flex-row">
-            <div className="w-1/4 bg-white h-auto">
-              <div className="flex justify-items-center justify-center justify-self-center m-10">
-                <Mikrotik_ico />
+
+          <div className="flex lg:flex-row md:flex-row sm:flex-col mt-3">
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Mikrotik_ico />
+                </div>
               </div>
-              <div className="flex m-10 justify-items-center justify-center justify-self-center">
-                <div className="w-[200px] h-[200px] rounded-[50%] bg-white p-2 shadow-custom1 ">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-md">
                   <Mikrotik_mtcna_ico />
                 </div>
               </div>
-              <div className="flex m-10 justify-items-center justify-center justify-self-center">
-                <div className="w-[200px] h-[200px] rounded-[50%] bg-white p-2 shadow-custom1 justify-items-center justify-center justify-self-center">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-md">
                   <Mikrotik_mtcre_ico />
                 </div>
               </div>
             </div>
-            <div className="w-1/4 bg-white h-auto">
-              <div className="flex justify-items-center justify-center justify-self-center m-10">
-                <Cisco_ico />
-              </div>
-              <div className="flex m-10 justify-items-center justify-center justify-self-center">
-                <div className="w-[200px] h-[200px] rounded-[50%] bg-white p-2 shadow-custom1">
-                  <Cisco_ccna_ico />
+
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Cisco_ico />
                 </div>
               </div>
-              <div className="flex m-10 justify-items-center justify-center justify-self-center">
-                <div className="w-[200px] h-[200px] rounded-[50%] bg-white p-2 shadow-custom1">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-md">
                   <Cisco_ccnp_ico />
                 </div>
               </div>
-            </div>
-            <div className="w-1/4 white h-auto">
-              <div className="flex justify-items-center justify-center justify-self-center m-10">
-                <Juniper_ico />
-              </div>
-              <div className="flex m-10 justify-items-center justify-center justify-self-center">
-                <div className="w-[200px] h-[200px] rounded-[50%] bg-white p-2 shadow-custom1">
-                  <Juniper_jncia_ico />
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-md">
+                  <Cisco_ccna_ico />
                 </div>
               </div>
-              <div className="flex m-10 justify-items-center justify-center justify-self-center">
-                <div className="w-[200px] h-[200px] rounded-[50%] bg-white p-2 shadow-custom1">
+            </div>
+
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Juniper_ico />
+                </div>
+              </div>
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-md">
                   <Juniper_jncis_ico />
                 </div>
               </div>
-            </div>
-            <div className="w-1/4 bg-white h-auto">
-              <div className="flex justify-items-center justify-center justify-self-center m-10">
-                <H3c_ico />
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-md">
+                  <Juniper_jncia_ico />
+                </div>
               </div>
-              <div className="flex m-10 justify-items-center justify-center justify-self-center">
-                <div className="flex w-[200px] h-[200px] rounded-[50%] bg-white p-2 shadow-custom1">
+            </div>
+
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <H3c_ico />
+                </div>
+              </div>
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-md">
                   <H3c_ne_ico />
                 </div>
               </div>
-              <div className="flex m-10 justify-items-center justify-center justify-self-center">
-                <div className="flex w-[200px] h-[200px] rounded-[50%] bg-white p-2 shadow-custom1">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-md">
                   <H3c_se_ico />
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-row">
-            <div className="flex w-1/3 bg-white h-auto justify-items-center justify-center justify-self-center">
-              <div className="w-[300px] h-[300px] bg-white rounded-[50%] my-3 p-2 shadow-custom1">
-                <Training_1_img />
-              </div>
-            </div>
-            <div className="flex w-1/3 bg-white h-auto justify-items-center justify-center justify-self-center">
-              <div className="w-[300px] h-[300px] bg-white rounded-[50%] my-3 p-2 shadow-custom1">
-                <Training_2_img />
-              </div>
-            </div>
-            <div className="flex w-1/3 bg-white h-auto justify-items-center justify-center justify-self-center">
-              <div className="w-[300px] h-[300px] bg-white rounded-[50%] my-3 p-2 shadow-custom1">
-                <Training_3_img />
-              </div>
-            </div>
-          </div>
           <div className="flex justify-items-center justify-center justify-self-center mt-10 mb-5">
             <See_all_button />
           </div>
         </div>
+
         {/* CONSULTATION CONTENT */}
+
         <div className="w-full h-full bg-white shadow-lg p-3 mt-3">
           <div className="flex justify-items-center justify-center justify-self-center">
-            <h1 className="text-xl font-medium italic text-bluegreen">
+            <h1 className="text-2xl font-medium italic text-bluegreen">
               CONSULTATION
             </h1>
           </div>
-          <div className="flex flex-row my-5 mx-20">
-            <div className="flex w-1/3 flex-col bg-white h-auto justify-items-center justify-center justify-self-center">
-              <div className="flex  justify-items-center justify-center justify-self-center">
-                <div className="w-[300px] h-[300px] bg-white rounded-[50%] my-3 p-2 shadow-custom1">
-                  <Osdcs_ico />
+          <div className="flex lg:flex-row md:flex-row sm:flex-row lg:bg-white md:bg-white sm:bg-white h-[300px]">
+            <div className="flex flex-col w-1/3 justify-items-center justify-center justify-self-center h-full">
+              <div className="flex flex-col w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="flex justify-items-center justify-center justify-self-center">
+                  <div className="flex flex-col justify-items-center justify-center justify-self-center bg-white rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-sm lg:w-[200px] md:w-[150px] sm:w-[150px] p-2">
+                    <Osdcs_ico />
+                  </div>
                 </div>
-              </div>
-              <div>
-                <div className="flex flex-col  text-bluegreen text-lg font-semibold justify-items-center justify-center justify-self-center mt-3">
-                  <span className="flex justify-items-center justify-center justify-self-center">
-                    <p>One Stop Solution</p>
-                  </span>
-                  <span className="flex justify-items-center justify-center justify-self-center">
-                    <p>Data Center</p>
-                  </span>
+                <div className="flex justify-items-center justify-center justify-self-center mt-2 text-lg text-bluegreen font-semibold lg:text-lg md:text-lg sm:text-base">
+                  <p>One Stop Data</p>
                 </div>
-              </div>
-            </div>
-            <div className="flex w-1/3 flex-col bg-white h-auto justify-items-center justify-center justify-self-center">
-              <div className="flex  justify-items-center justify-center justify-self-center">
-                <div className="w-[300px] h-[300px] bg-white rounded-[50%] my-3 p-2 shadow-custom1">
-                  <Inhouse_training_ico />
-                </div>
-              </div>
-              <div>
-                <div className="flex flex-col  text-bluegreen text-lg font-semibold justify-items-center justify-center justify-self-center mt-3">
-                  <span className="flex justify-items-center justify-center justify-self-center">
-                    <p>Inhouse Training</p>
-                  </span>
-                  <span className="flex justify-items-center justify-center justify-self-center">
-                    <p></p>
-                  </span>
+                <div className="flex justify-items-center justify-center justify-self-center text-lg text-bluegreen font-semibold lg:text-lg md:text-lg sm:text-base">
+                  <p>Center Solution</p>
                 </div>
               </div>
             </div>
-            <div className="flex w-1/3 flex-col bg-white h-auto justify-items-center justify-center justify-self-center">
-              <div className="flex  justify-items-center justify-center justify-self-center">
-                <div className="w-[300px] h-[300px] bg-white rounded-[50%] my-3 p-2 shadow-custom1">
-                  <Osns_ico />
+
+            <div className="flex flex-col w-1/3 justify-items-center justify-center justify-self-center h-full">
+              <div className="flex flex-col w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="flex justify-items-center justify-center justify-self-center">
+                  <div className="flex flex-col justify-items-center justify-center justify-self-center bg-white rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-sm lg:w-[200px] md:w-[150px] sm:w-[150px] p-2">
+                    <Inhouse_training_ico />
+                  </div>
+                </div>
+                <div className="flex justify-items-center justify-center justify-self-center mt-2 text-lg text-bluegreen font-semibold lg:text-lg md:text-lg sm:text-base">
+                  <p>Inhouse</p>
+                </div>
+                <div className="flex justify-items-center justify-center justify-self-center text-lg text-bluegreen font-semibold lg:text-lg md:text-lg sm:text-base">
+                  <p>Training</p>
                 </div>
               </div>
-              <div>
-                <div className="flex flex-col  text-bluegreen text-lg font-semibold justify-items-center justify-center justify-self-center mt-3">
-                  <span className="flex justify-items-center justify-center justify-self-center">
-                    <p>One Stop Network</p>
-                  </span>
-                  <span className="flex justify-items-center justify-center justify-self-center">
-                    <p>Solution</p>
-                  </span>
+            </div>
+
+            <div className="flex flex-col w-1/3 justify-items-center justify-center justify-self-center  h-full">
+              <div className="flex flex-col w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="flex justify-items-center justify-center justify-self-center">
+                  <div className="flex flex-col justify-items-center justify-center justify-self-center bg-white rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-sm lg:w-[200px] md:w-[150px] sm:w-[150px] p-2">
+                    <Osns_ico />
+                  </div>
+                </div>
+                <div className="flex justify-items-center justify-center justify-self-center mt-2 lg:text-lg md:text-lg sm:text-base text-bluegreen font-semibold">
+                  <p>One Stop Data</p>
+                </div>
+                <div className="flex justify-items-center justify-center justify-self-center lg:text-lg md:text-lg sm:text-base text-bluegreen font-semibold">
+                  <p>Solution</p>
                 </div>
               </div>
             </div>
@@ -179,11 +172,11 @@ export default function Our_services() {
 
         <div className="w-full h-full bg-white shadow-lg p-3 mt-3">
           <div className="flex justify-items-center justify-center justify-self-center">
-            <h1 className="text-xl font-medium italic text-bluegreen">
+            <h1 className="text-2xl font-medium italic text-bluegreen">
               PROJECTS
             </h1>
           </div>
-          <div className="grid mb-4 border border-gray-200 rounded-lg shadow-sm dark:border-bluegreen md:mb-4 md:grid-cols-3 bg-white dark:bg-bluegreen mx-20 mt-3">
+          <div className="grid mb-4 border border-gray-200 rounded-lg shadow-sm dark:border-bluegreen md:mb-4 md:grid-cols-3 bg-white dark:bg-bluegreen mx-2 mt-3">
             <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-bluegreen dark:border-white">
               <blockquote className="max-w-2xl mx-auto mb-4 text-white lg:mb-8 dark:text-white">
                 <div className="flex justify-items-center justify-center justify-self-center my-2">
@@ -259,7 +252,7 @@ export default function Our_services() {
             </figure>
           </div>
 
-          <div className="grid mb-2 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-2 md:grid-cols-2 bg-white dark:bg-gray-800 mx-[10vw]">
+          <div className="grid mb-2 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-2 md:grid-cols-2 bg-white dark:bg-gray-800 mx-2">
             <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-bluegreen dark:border-white">
               <blockquote className="max-w-2xl mx-auto mb-4 text-white lg:mb-8 dark:text-white">
                 <div className="flex justify-items-center justify-center justify-self-center my-2">

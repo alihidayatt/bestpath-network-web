@@ -22,36 +22,22 @@ export default function Wall_banner_1_img() {
         justifyContent: "left",
         paddingLeft: "20%",
         paddingRight: "20%",
-        paddingTop: "100px",
-        paddingBottom: "100px",
+        paddingTop: "5vh",
+        paddingBottom: "5vh",
+        maxHeight: "400px",
       }}
     >
-      <div
-        style={{
-          width: "40%",
-          height: "auto",
-        }}
-      >
-        <h1
-          style={{
-            fontSize: 32,
-            color: "white",
-            fontWeight: "600",
-          }}
-        >
+      <div className="w-auto h-auto">
+        <p className="lg:text-xl md:text-xl sm:text-lg text-white font-semibold lg:text-left md:text-left sm:text-left">
           BEST-PATH NETWORK
-        </h1>
-        <h4 style={{ fontSize: 24, color: "white" }}>
+        </p>
+        <h4 className="lg:text-xl md:text-xl sm:text-lg text-white lg:text-left md:text-left sm:text-left">
           Established in 2016 and we are focus on Data Center, Network Security,
           Training and Consultant.
         </h4>
       </div>
-      <div
-        style={{
-          width: "60%",
-          height: "auto",
-        }}
-      ></div>
+
+      <div className="w-[60%] h-auto"></div>
     </div>
   );
 }

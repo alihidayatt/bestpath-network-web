@@ -6,7 +6,7 @@ import Email_ico from "../icon-component/icon/email_ico";
 export default function Footer() {
   return (
     <>
-      <div className="w-full h-auto bg-bluegreen top-0 p-1">
+      <div className="w-full h-auto bg-bluegreen top-0 p-1" id="contactusId">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-item-start justify-start h-full">
             <div className="flex py-10 px-5 text-white gap-x-2 w-full ">

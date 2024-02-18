@@ -8,6 +8,7 @@ import See_all_button from "../button/See_all_button";
 import News_1_img from "../icon-component/news_1_img";
 import News_2_img from "../icon-component/news_2_img";
 import News_3_img from "../icon-component/news_3_img";
+import Danu_au_img from "../icon-component/danu_au_img";
 
 export default function Our_company() {
   return (
@@ -21,110 +22,135 @@ export default function Our_company() {
         <div className="w-full h-full bg-white shadow-lg p-3 ">
           <div className="flex justify-items-center justify-center justify-self-center mb-5">
             <div className="flex justify-items-center justify-center justify-self-center">
-              <h1 className="text-xl font-medium italic text-bluegreen">
+              <h1 className="text-2xl font-medium italic text-bluegreen">
                 OUR TEAM
               </h1>
             </div>
           </div>
-          <div className="flex lg:flex-row md:flex-row sm:flex-col-reverse bg-white w-full h-auto gap-x-8 justify-items-center justify-center justify-self-center">
-            <div className="max-w-sm rounded-xl overflow-hidden shadow-custom1 ">
-              <Danu_img />
-              <div className="px-6 py-5">
-                <div className="font-bold text-2xl mb-2">
-                  Danu Wiyoto, S.Kom
+
+          <div className="flex lg:flex-row md:flex-row sm:flex-col lg:gap-x-4 md:gap-x-2 lg:gap-y-4 md:gap-y-4">
+            <div className="lg:w-1/3 md:w-1/3 sm:w-full h-[600px] sm:mb-10">
+              <div className="flex flex-col sm:w-full rounded-xl overflow-hidden shadow-custom1 justify-items-center justify-center justify-self-center">
+                <div className="flex justify-items-center justify-center justify-self-center">
+                  <Danu_img />
                 </div>
-                <p className=" text-md font-medium text-bluegreen">
-                  CCNA, CCNP EI, CCDP, CCNP SP, CCIE EI #48413, H3CNE, H3CSE,
-                  ACSA, ACSP, MTCNA
-                </p>
-              </div>
-              <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                  Network Consultant
-                </span>
-                <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                  Trainer
-                </span>
-                <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                  Network Engineer
-                </span>
-                <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                  Network Planning & Design
-                </span>
-              </div>
-            </div>
-
-            <div className="max-w-sm rounded-xl overflow-hidden shadow-custom1 ">
-              <Moses_img />
-              <div className="px-6 py-5">
-                <div className="font-bold text-2xl mb-2">Moses Huwae</div>
-                <p className=" text-md font-medium text-bluegreen">
-                  Managing Director – Enterprise Products Intregration Pte
-                  Computer Tutor, Computer Instructor, System Support Analyst
-                </p>
-              </div>
-              <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                  IT Supervisor
-                </span>
-                <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                  Sales & Marketing Manager
-                </span>
+                <div className="px-6 py-5">
+                  <div className="font-bold text-2xl mb-2">
+                    Danu Wiyoto, S.Kom
+                  </div>
+                  <p className=" text-md font-medium text-bluegreen">
+                    CCNA, CCNP EI, CCDP, CCNP SP, CCIE EI #48413, H3CNE, H3CSE,
+                    ACSA, ACSP, MTCNA,
+                  </p>
+                </div>
+                <div className="px-6 pt-4 pb-2">
+                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
+                    Network Consultant
+                  </span>
+                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
+                    Trainer
+                  </span>
+                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
+                    Network Engineer
+                  </span>
+                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
+                    Network Planning & Design
+                  </span>
+                </div>
               </div>
             </div>
 
-            <div className="max-w-sm rounded-xl overflow-hidden shadow-custom1 ">
-              <Erick_img />
-              <div className="px-6 py-5">
-                <div className="font-bold text-2xl mb-2">Erick Yudho K.</div>
-                <p className=" text-md font-medium text-bluegreen">
-                  Head Operasional Data Center CDCS, CDFOM
-                </p>
+            <div className="lg:w-1/3 md:w-1/3 sm:w-full h-[600px] sm:mb-7">
+              <div className="flex flex-col sm:w-full rounded-xl overflow-hidden shadow-custom1 justify-items-center justify-center justify-self-center">
+                <div className="flex justify-items-center justify-center justify-self-center">
+                  <Moses_img />
+                </div>
+                <div className="px-6 py-5">
+                  <div className="font-bold text-2xl mb-2">Moses Huwae</div>
+                  <p className=" text-md font-medium text-bluegreen">
+                    Managing Director – Enterprise Products Intregration Pte
+                    Computer Tutor, Computer Instructor, System Support Analyst
+                  </p>
+                </div>
+                <div className="px-6 pt-4 pb-2">
+                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
+                    IT Supervisor
+                  </span>
+                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
+                    Sales & Marketing Manager
+                  </span>
+                </div>
               </div>
-              <div className="px-6 pt-4 pb-2"></div>
+            </div>
+
+            <div className="lg:w-1/3 md:w-1/3 sm:w-full h-auto sm:mb-5">
+              <div className="flex flex-col sm:w-full rounded-xl overflow-hidden shadow-custom1 justify-items-center justify-center justify-self-center">
+                <div className="flex justify-items-center justify-center justify-self-center">
+                  <Erick_img />
+                </div>
+                <div className="px-6 py-5">
+                  <div className="font-bold text-2xl mb-2">Erick Yudho K</div>
+                  <p className=" text-md font-medium text-bluegreen">
+                    Head Operasional Data Center CDCS, CDFOM
+                  </p>
+                </div>
+                <div className="px-6 pt-4 pb-2"></div>
+              </div>
             </div>
           </div>
-          <div className="flex lg:flex-row md:flex-row sm:flex-col-reverse bg-white w-full h-auto my-3 gap-x-8 mt-8 justify-items-center justify-center justify-self-center">
-            <div className="max-w-sm rounded-xl overflow-hidden shadow-custom1 ">
-              <Damar_img />
-              <div className="px-6 py-5">
-                <div className="font-bold text-2xl mb-2">
-                  Damar Galih Kalicki
+
+          <div className="flex lg:flex-row md:flex-row sm:flex-col lg:gap-x-4 md:gap-x-2 lg:gap-y-4 md:gap-y-4 lg:mt-10 md:mt-[70px]">
+            <div className="lg:w-1/3 md:w-1/3 sm:w-full h-auto sm:mb-5">
+              <div className="flex flex-col sm:w-full rounded-xl overflow-hidden shadow-custom1 justify-items-center justify-center justify-self-center">
+                <div className="flex justify-items-center justify-center justify-self-center">
+                  <Damar_img />
                 </div>
-                <p className=" text-md font-medium text-bluegreen">
-                  CCNA, CCENT, CCNP - EI, MTCNA, MTCRE, NSE 1, NSE 2
-                </p>
-              </div>
-              <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                  Trainer
-                </span>
-                <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                  Network Engineer
-                </span>
+                <div className="px-6 py-5">
+                  <div className="font-bold text-2xl mb-2">
+                    Damar Galih Kalicki
+                  </div>
+                  <p className=" text-md font-medium text-bluegreen">
+                    CCNA, CCENT, CCNP - EI, MTCNA, MTCRE, NSE 1, NSE 2
+                  </p>
+                </div>
+                <div className="px-6 pt-4 pb-2">
+                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
+                    Trainer
+                  </span>
+                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
+                    Network Engineer
+                  </span>
+                </div>
               </div>
             </div>
 
-            <div className="max-w-sm rounded-xl overflow-hidden shadow-custom1 ">
-              <Tri_img />
-              <div className="px-6 py-5">
-                <div className="font-bold text-2xl mb-2">Tri Cahyo Pranomo</div>
-                <p className=" text-md font-medium text-bluegreen">
-                  QC & Cable Design Engineer, Presales
-                </p>
+            <div className="lg:w-1/3 md:w-1/3 sm:w-full h-auto sm:mb-5">
+              <div className="flex flex-col sm:w-full rounded-xl overflow-hidden shadow-custom1 justify-items-center justify-center justify-self-center">
+                <div className="flex justify-items-center justify-center justify-self-center">
+                  <Tri_img />
+                </div>
+                <div className="px-6 py-5">
+                  <div className="font-bold text-2xl mb-2">
+                    Tri Cahyo Pranomo
+                  </div>
+                  <p className=" text-md font-medium text-bluegreen">
+                    QC & Cable Design Engineer, Presales
+                  </p>
+                </div>
+                <div className="px-6 pt-4 pb-2"></div>
               </div>
-              <div className="px-6 pt-4 pb-2"></div>
             </div>
           </div>
+
           <div className="flex justify-items-center justify-center justify-self-center mt-10 mb-5">
             <See_all_button />
           </div>
         </div>
         {/* BLOGS */}
-        <div className="w-full h-full bg-white shadow-lg p-3 mt-5">
+        {/* <div className="w-full h-full bg-white shadow-lg p-3 mt-5">
           <div className="flex justify-items-center justify-center justify-self-center mb-5">
             <div className="flex justify-items-center justify-center justify-self-center">
-              <h1 className="text-xl font-medium italic text-bluegreen">
+              <h1 className="text-2xl font-medium italic text-bluegreen">
                 BLOGS
               </h1>
             </div>
@@ -267,7 +293,7 @@ export default function Our_company() {
           <div className="flex justify-items-center justify-center justify-self-center mt-10 mb-5">
             <See_all_button />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
