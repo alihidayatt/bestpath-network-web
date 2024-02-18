@@ -259,7 +259,7 @@ export default function Our_services() {
             </figure>
           </div>
 
-          <div className="grid mb-2 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-2 md:grid-cols-2 bg-white dark:bg-gray-800 mx-20">
+          <div className="grid mb-2 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-2 md:grid-cols-2 bg-white dark:bg-gray-800 mx-[10vw]">
             <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-bluegreen dark:border-white">
               <blockquote className="max-w-2xl mx-auto mb-4 text-white lg:mb-8 dark:text-white">
                 <div className="flex justify-items-center justify-center justify-self-center my-2">
