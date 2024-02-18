@@ -9,6 +9,7 @@ import Fortinet_ico from "../icon-component/fortinet_ico";
 import Juniper_ico from "../icon-component/juniper_ico";
 import H3c_ico from "../icon-component/h3c_ico";
 import Huawei_ico from "../icon-component/huawei_ico";
+import See_all_button from "../button/See_all_button";
 
 export default function Our_partners() {
   return (
@@ -20,7 +21,7 @@ export default function Our_partners() {
               BUSINESS PARTNERS
             </h1>
           </div>
-            <div className="flex flex-row">
+          <div className="flex flex-row">
               <div className="w-1/3 bg-slate-300 h-auto">
                 <div className="flex justify-items-center justify-center justify-self-center m-10">
                   <Topas_ico />
@@ -107,13 +108,49 @@ export default function Our_partners() {
                   <H3c_ico />
                 </div>
               </div>
+              <div className="w-1/5 bg-slate-300 h-auto">
+                <div className="flex justify-items-center justify-center justify-self-center m-10">
+                  <H3c_ico />
+                </div>
+              </div>
+              <div className="w-1/5 bg-slate-300 h-auto">
+                <div className="flex justify-items-center justify-center justify-self-center m-10">
+                  <H3c_ico />
+                </div>
+              </div>
+              <div className="w-1/5 bg-slate-300 h-auto">
+                <div className="flex justify-items-center justify-center justify-self-center m-10">
+                  <H3c_ico />
+                </div>
+              </div>
+              <div className="w-1/5 bg-slate-300 h-auto">
+                <div className="flex justify-items-center justify-center justify-self-center m-10">
+                  <H3c_ico />
+                </div>
+              </div>
+            </div> 
+            <div className="flex justify-items-start justify-start justify-self-start">
+              <h1 className="text-xl text-bluegreen">
+                STATE OWN ENTERPRISE
+              </h1>
+            </div>
+            <div className="flex flex-row">
+              <div className="w-1/5 bg-slate-300 h-auto">
+                <div className="flex justify-items-center justify-center justify-self-center m-10">
+                  <H3c_ico />
+                </div>
+              </div>
               <div className="w-1/5 bg-slate-300 h-auto"></div>
               <div className="w-1/5 bg-slate-300 h-auto"></div>
               <div className="w-1/5 bg-slate-300 h-auto"></div>
               <div className="w-1/5 bg-slate-300 h-auto"></div>
-            </div>              
+            </div>
+            <div className="flex justify-items-center justify-center justify-self-center mt-10 mb-5">
+              <See_all_button />
+            </div>
         </div>
       </div>
+      
     </>
   );
 }
