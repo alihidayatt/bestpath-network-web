@@ -1,6 +1,8 @@
 import Image from "next/image";
-import jnciaIco from "./icon/juniper_jncia_ico.png";
+import juniperJncisIco from "./icon/juniper_jncis_ico.png";
 
-export default function Juniper_jncia_ico() {
-  return <Image src={jnciaIco} width={200} height={200} alt="jncia image" />;
+export default function Juniper_jncis_ico() {
+  return (
+    <Image src={juniperJncisIco} width={200} height={200} alt="jncis image" />
+  );
 }

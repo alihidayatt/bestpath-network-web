@@ -1,2 +1,2 @@
 blue green-ish : #00667D
-nice-orange : #FCA7B
+nice-orange : #FFCA7B

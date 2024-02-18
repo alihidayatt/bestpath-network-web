@@ -19,6 +19,9 @@ const config: Config = {
       colors:{
         'bluegreen': '#00667D',
         'nice-orange': '#FFCA7B'
+      },
+      boxShadow: {
+        'custom1': '0 7px 25px -10px rgba(0, 0, 0, 0.5)',
       }
     },
   },
