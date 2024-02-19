@@ -60,7 +60,7 @@ export default function Our_company() {
               </div>
             </div>
 
-            <div className="lg:w-1/3 md:w-1/3 sm:w-full h-[600px] sm:mb-7 xs:mt-4">
+            <div className="lg:w-1/3 md:w-1/3 sm:w-full h-[600px] sm:mb-7">
               <div className="flex flex-col sm:w-full rounded-xl overflow-hidden shadow-custom1 justify-items-center justify-center justify-self-center">
                 <div className="flex justify-items-center justify-center justify-self-center">
                   <Moses_img />
