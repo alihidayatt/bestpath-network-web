@@ -25,7 +25,7 @@ export default function About_us() {
                   <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
                 </svg>
 
-                <p className="lg:text-right md:text-right sm:text-center xs:text-center font-semibold lg:text-2xl md:text-lg sm:text-lg">
+                <p className="lg:text-right md:text-right sm:text-center xs:text-center font-semibold lg:text-xl md:text-lg sm:text-lg">
                   Our company is full of experienced, Energetic and young
                   technical person and we have taken part of many government
                   institutions and private companies that provide services from{" "}
@@ -39,7 +39,7 @@ export default function About_us() {
                   </span>
                   .
                 </p>
-                <p className="lg:text-right md:text-right sm:text-center xs:text-center mt-4 lg:text-3xl md:text-2xl sm:text-xl xs:text-xl font-light text-bluegreen ">
+                <p className="lg:text-right md:text-right sm:text-center xs:text-center mt-4 lg:text-2xl md:text-2xl sm:text-xl xs:text-xl font-light text-bluegreen ">
                   "WORKING WITH PASSION"
                 </p>
               </blockquote>
@@ -56,7 +56,7 @@ export default function About_us() {
                   <div className="flex text-bluegreen font-light text-lg justify-items-center justify-center justify-self-center">
                     <p>CCIE EI#48413</p>
                   </div>
-                  <div className="flex justify-items-center justify-center justify-self-center bg-bluegreen rounded-full px-1 py-1 text-md italic font-normal text-white lg:mx-4 md:mx-0 sm:mx-[100px] xs:mx-3 my-[15px]">
+                  <div className="flex text-center justify-items-center justify-center justify-self-center bg-bluegreen rounded-full px-2 py-2 lg:text-base md:text-base sm:text-base xs:text-base italic font-normal text-white lg:mx-4 md:mx-0 sm:mx-[100px] xs:mx-3 my-[15px]">
                     CEO at BEST-PATH NETWORK
                   </div>
                 </div>
