@@ -9,6 +9,14 @@ import Fortinet_ico from "../icon-component/fortinet_ico";
 import Juniper_ico from "../icon-component/juniper_ico";
 import H3c_ico from "../icon-component/h3c_ico";
 import Huawei_ico from "../icon-component/huawei_ico";
+import Bssn_ico from "../icon-component/bssn_ico";
+import Tik_polri_ico from "../icon-component/tik_polri_ico";
+import Polri_ico from "../icon-component/polri_ico";
+import Kominfo_ico from "../icon-component/kominfo_ico";
+import Kemenpura_ico from "../icon-component/kemenpora_ico";
+import Pertamina_ico from "../icon-component/pertamina_ico";
+import Telkom_ico from "../icon-component/telkom_ico";
+import Pln_ico from "../icon-component/pln_ico";
 import See_all_button from "../button/See_all_button";
 
 export default function Our_partners() {
@@ -22,17 +30,17 @@ export default function Our_partners() {
             </h1>
           </div>
           <div className="flex flex-row">
-            <div className="w-1/3 bg-slate-300 h-auto">
+            <div className="w-1/3 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
                 <Topas_ico />
               </div>
             </div>
-            <div className="w-1/3 bg-slate-400 h-auto">
+            <div className="w-1/3 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
                 <Fresscom_ico />
               </div>
             </div>
-            <div className="w-1/3 bg-slate-300 h-auto">
+            <div className="w-1/3 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
                 <Epi_ico />
               </div>
@@ -48,45 +56,45 @@ export default function Our_partners() {
             </h1>
           </div>
           <div className="flex flex-row">
-            <div className="w-1/4 bg-slate-300 h-auto">
+            <div className="w-1/4 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
                 <Cisco_ico />
               </div>
             </div>
-            <div className="w-1/4 bg-slate-300 h-auto">
+            <div className="w-1/4 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
                 <Mikrotik_ico />
               </div>
             </div>
-            <div className="w-1/4 bg-slate-300 h-auto">
+            <div className="w-1/4 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
                 <Ruijie_ico />
               </div>
             </div>
-            <div className="w-1/4 bg-slate-300 h-auto">
+            <div className="w-1/4 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
                 <Fortinet_ico />
               </div>
             </div>
           </div>
           <div className="flex flex-row">
-            <div className="w-1/5 bg-slate-300 h-auto"></div>
-            <div className="w-1/5 bg-slate-300 h-auto">
+            <div className="w-1/5 bg-white h-auto"></div>
+            <div className="w-1/5 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
                 <Juniper_ico />
               </div>
             </div>
-            <div className="w-1/5 bg-slate-300 h-auto">
+            <div className="w-1/5 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
                 <Huawei_ico />
               </div>
             </div>
-            <div className="w-1/5 bg-slate-300 h-auto">
+            <div className="w-1/5 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
                 <H3c_ico />
               </div>
             </div>
-            <div className="w-1/5 bg-slate-300 h-auto"></div>
+            <div className="w-1/5 bg-white h-auto"></div>
           </div>
         </div>
       </div>
@@ -101,29 +109,29 @@ export default function Our_partners() {
             <h1 className="text-xl text-bluegreen">GOVERNMENT</h1>
           </div>
           <div className="flex flex-row">
-            <div className="w-1/5 bg-slate-300 h-auto">
+            <div className="w-1/5 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
-                <H3c_ico />
+                <Bssn_ico />
               </div>
             </div>
-            <div className="w-1/5 bg-slate-300 h-auto">
+            <div className="w-1/5 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
-                <H3c_ico />
+                <Tik_polri_ico />
               </div>
             </div>
-            <div className="w-1/5 bg-slate-300 h-auto">
+            <div className="w-1/5 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
-                <H3c_ico />
+                <Polri_ico />
               </div>
             </div>
-            <div className="w-1/5 bg-slate-300 h-auto">
+            <div className="w-1/5 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
-                <H3c_ico />
+                <Kominfo_ico />
               </div>
             </div>
-            <div className="w-1/5 bg-slate-300 h-auto">
+            <div className="w-1/5 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
-                <H3c_ico />
+                <Kemenpura_ico />
               </div>
             </div>
           </div>
@@ -131,15 +139,21 @@ export default function Our_partners() {
             <h1 className="text-xl text-bluegreen">STATE OWN ENTERPRISE</h1>
           </div>
           <div className="flex flex-row">
-            <div className="w-1/5 bg-slate-300 h-auto">
+            <div className="w-1/3 bg-white h-auto">
               <div className="flex justify-items-center justify-center justify-self-center m-10">
-                <H3c_ico />
+                <Pertamina_ico />
               </div>
             </div>
-            <div className="w-1/5 bg-slate-300 h-auto"></div>
-            <div className="w-1/5 bg-slate-300 h-auto"></div>
-            <div className="w-1/5 bg-slate-300 h-auto"></div>
-            <div className="w-1/5 bg-slate-300 h-auto"></div>
+            <div className="w-1/3 bg-white h-auto">
+              <div className="flex justify-items-center justify-center justify-self-center m-10">
+                <Telkom_ico />
+              </div>
+            </div>
+            <div className="w-1/3 bg-white h-auto">
+              <div className="flex justify-items-center justify-center justify-self-center m-10">
+                <Pln_ico />
+              </div>
+            </div>
           </div>
           <div className="flex justify-items-center justify-center justify-self-center mt-10 mb-5">
             <See_all_button />
