@@ -5,35 +5,35 @@ import Button from "./Button";
 import { useRouter } from "next/navigation";
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
-  const router = useRouter;
+  // const router = useRouter;
 
-  const navLink = [
-    {
-      name: "services",
-      link: "#servicesId",
-    },
-    {
-      name: "partners",
-      link: "#partnersId",
-    },
-    {
-      name: "company",
-      link: "#companyId",
-    },
-    {
-      name: "contactus",
-      link: "#contactusId",
-    },
-  ];
+  // const navLink = [
+  //   {
+  //     name: "services",
+  //     link: "#servicesId",
+  //   },
+  //   {
+  //     name: "partners",
+  //     link: "#partnersId",
+  //   },
+  //   {
+  //     name: "company",
+  //     link: "#companyId",
+  //   },
+  //   {
+  //     name: "contactus",
+  //     link: "#contactusId",
+  //   },
+  // ];
   return (
     <>
-      <div className="w-full h-20 bg-white sticky top-0 shadow-md">
+      <div className="lg:w-full md:w-full sm:w-full xs:w-full h-20 lg:bg-white md:bg-white sm:bg-white xs:bg-white lg:sticky md:sticky sm:block xs:block top-0 shadow-md">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
             <Logo />
             <button
               type="button"
-              className="inline-flex items-center md:hidden"
+              className="inline-flex items-center md:hidden bg-bluegreen"
               onClick={toggle}
             >
               <svg

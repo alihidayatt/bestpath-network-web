@@ -25,12 +25,12 @@ export default function Our_services() {
       <div className="container mx-auto px-6 py-6">
         <div className="w-full h-full bg-white shadow-lg p-3 ">
           <div className="flex justify-items-center justify-center justify-self-center">
-            <h1 className="text-2xl font-medium italic text-bluegreen">
+            <h1 className="lg:text-2xl md:text-2xl sm:text-xl xs:text-xl font-medium italic text-bluegreen">
               TRAINING & EDUCATION
             </h1>
           </div>
 
-          <div className="flex lg:flex-row md:flex-row sm:flex-col mt-3">
+          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col mt-3">
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
                 <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
@@ -113,55 +113,54 @@ export default function Our_services() {
 
         <div className="w-full h-full bg-white shadow-lg p-3 mt-3">
           <div className="flex justify-items-center justify-center justify-self-center">
-            <h1 className="text-2xl font-medium italic text-bluegreen">
+            <h1 className="lg:text-2xl md:text-2xl sm:text-xl xs:text-xl font-medium italic text-bluegreen">
               CONSULTATION
             </h1>
           </div>
-          <div className="flex lg:flex-row md:flex-row sm:flex-row lg:bg-white md:bg-white sm:bg-white h-[300px]">
-            <div className="flex flex-col w-1/3 justify-items-center justify-center justify-self-center h-full">
-              <div className="flex flex-col w-full h-auto p-2 justify-items-center justify-center justify-self-center">
-                <div className="flex justify-items-center justify-center justify-self-center">
-                  <div className="flex flex-col justify-items-center justify-center justify-self-center bg-white rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-sm lg:w-[200px] md:w-[150px] sm:w-[150px] p-2">
-                    <Osdcs_ico />
+          <div className="flex justify-items-center justify-center justify-self-center lg:flex-row md:flex-row sm:flex-row xs:flex-col lg:bg-white  md:bg-white sm:bg-white">
+            <div className="flex justify-items-center justify-center justify-self-centerlg:flex-row md:flex-row sm:flex-col xs:flex-col">
+              <div className="flex p-4 lg:w-1/3 md:w-1/3 sm:w-full xs:w-full h-auto justify-items-center justify-center justify-self-center">
+                <div className="flex flex-col justify-items-center justify-center justify-self-center">
+                  <div className="flex justify-items-center justify-center justify-self-center w-auto h-auto mb-3">
+                    <div className="flex flex-col justify-items-center justify-center justify-self-center bg-white rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-sm lg:w-[200px] md:w-[150px] sm:w-[150px] xs:w-[120px] p-2">
+                      <Osdcs_ico />
+                    </div>
                   </div>
-                </div>
-                <div className="flex justify-items-center justify-center justify-self-center mt-2 text-lg text-bluegreen font-semibold lg:text-lg md:text-lg sm:text-base">
-                  <p>One Stop Data</p>
-                </div>
-                <div className="flex justify-items-center justify-center justify-self-center text-lg text-bluegreen font-semibold lg:text-lg md:text-lg sm:text-base">
-                  <p>Center Solution</p>
+                  <div className="flex justify-items-center justify-center justify-self-center">
+                    <div className="flex justify-items-center justify-center justify-self-center mt-2 text-lg text-center text-bluegreen font-semibold lg:text-lg md:text-lg sm:text-base xs:text-base sm:px-5 xs:px-5">
+                      <p>One Stop Data Center Solution</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="flex flex-col w-1/3 justify-items-center justify-center justify-self-center h-full">
-              <div className="flex flex-col w-full h-auto p-2 justify-items-center justify-center justify-self-center">
-                <div className="flex justify-items-center justify-center justify-self-center">
-                  <div className="flex flex-col justify-items-center justify-center justify-self-center bg-white rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-sm lg:w-[200px] md:w-[150px] sm:w-[150px] p-2">
-                    <Inhouse_training_ico />
+              <div className="flex lg:w-1/3 md:w-1/3 sm:w-full xs:w-full h-auto justify-items-center justify-center justify-self-center">
+                <div className="flex flex-col justify-items-center justify-center justify-self-center">
+                  <div className="flex justify-items-center justify-center justify-self-center w-auto h-auto mb-3">
+                    <div className="flex flex-col justify-items-center justify-center justify-self-center bg-white rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-sm lg:w-[200px] md:w-[150px] sm:w-[150px] xs:w-[120px] p-2">
+                      <Inhouse_training_ico />
+                    </div>
                   </div>
-                </div>
-                <div className="flex justify-items-center justify-center justify-self-center mt-2 text-lg text-bluegreen font-semibold lg:text-lg md:text-lg sm:text-base">
-                  <p>Inhouse</p>
-                </div>
-                <div className="flex justify-items-center justify-center justify-self-center text-lg text-bluegreen font-semibold lg:text-lg md:text-lg sm:text-base">
-                  <p>Training</p>
+                  <div className="flex justify-items-center justify-center justify-self-center">
+                    <div className="flex justify-items-center justify-center justify-self-center mt-2 text-lg text-center text-bluegreen font-semibold lg:text-lg md:text-lg sm:text-base xs:text-base">
+                      <p>Inhouse Training</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="flex flex-col w-1/3 justify-items-center justify-center justify-self-center  h-full">
-              <div className="flex flex-col w-full h-auto p-2 justify-items-center justify-center justify-self-center">
-                <div className="flex justify-items-center justify-center justify-self-center">
-                  <div className="flex flex-col justify-items-center justify-center justify-self-center bg-white rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-sm lg:w-[200px] md:w-[150px] sm:w-[150px] p-2">
-                    <Osns_ico />
+              <div className="flex lg:w-1/3 md:w-1/3 sm:w-full xs:w-full h-auto justify-items-center justify-center justify-self-center">
+                <div className="flex flex-col justify-items-center justify-center justify-self-center">
+                  <div className="flex justify-items-center justify-center justify-self-center w-auto h-auto mb-3">
+                    <div className="flex flex-col justify-items-center justify-center justify-self-center bg-white rounded-[50%] lg:shadow-custom1 md:shadow-custom1 sm:shadow-sm lg:w-[200px] md:w-[150px] sm:w-[150px] xs:w-[120px] p-2">
+                      <Osns_ico />
+                    </div>
                   </div>
-                </div>
-                <div className="flex justify-items-center justify-center justify-self-center mt-2 lg:text-lg md:text-lg sm:text-base text-bluegreen font-semibold">
-                  <p>One Stop Data</p>
-                </div>
-                <div className="flex justify-items-center justify-center justify-self-center lg:text-lg md:text-lg sm:text-base text-bluegreen font-semibold">
-                  <p>Solution</p>
+                  <div className="flex justify-items-center justify-center justify-self-center">
+                    <div className="flex justify-items-center justify-center justify-self-center mt-2 text-lg text-center text-bluegreen font-semibold lg:text-lg md:text-lg sm:text-base xs:text-base sm:px-10 xs:px-10">
+                      <p>One Stop Network Solution</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -172,7 +171,7 @@ export default function Our_services() {
 
         <div className="w-full h-full bg-white shadow-lg p-3 mt-3">
           <div className="flex justify-items-center justify-center justify-self-center">
-            <h1 className="text-2xl font-medium italic text-bluegreen">
+            <h1 className="lg:text-2xl md:text-2xl sm:text-xl xs:text-xl font-medium italic text-bluegreen">
               PROJECTS
             </h1>
           </div>
