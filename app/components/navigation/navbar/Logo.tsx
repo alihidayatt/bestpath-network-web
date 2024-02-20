@@ -18,39 +18,17 @@ const Logo = () => {
     updateWidth();
   }, []);
 
-  // change between the logo and the button when the user scrolls
-  const [showButton, setShowButton] = useState(false);
-
-  const changeNavButton = () => {
-    if (window.scrollY >= 400 && window.innerWidth < 768) {
-      setShowButton(true);
-    } else {
-      setShowButton(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNavButton);
-  }, []);
-
   return (
     <>
-      <Link href="/" style={{ display: showButton ? "none" : "block" }}>
+      <Link href="/">
         <Image
           src="/logo-forweb.svg"
           alt="Logo"
-          width={width < 1024 ? "150" : "170"}
-          height={width < 1024 ? "45" : "74"}
+          width={width < 1024 ? "130" : "160"}
+          height={width < 1024 ? "35" : "64"}
           className="relative"
         />
       </Link>
-      <div
-        style={{
-          display: showButton ? "block" : "none",
-        }}
-      >
-        {/* <Button /> */}
-      </div>
     </>
   );
 };
