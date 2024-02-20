@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import Navbar from "./navbar/page";
-import Sidebar from "./sidebar/page";
+import Navbar from "../../navigation/navbar/page";
+import Sidebar from "../../navigation/sidebar/page";
 
-const Navigation = () => {
+const Navigation_old = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -16,4 +16,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default Navigation_old;
