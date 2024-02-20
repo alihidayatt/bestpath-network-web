@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
-import Navigation from "./components/navigation/page";
 import Topnav from "./components/topnav/topnav";
 import Footer from "./components/footer/page";
 import Carousel from "./components/carousel/page";
+import Navbar from "./components/navigation/navbar/page";
 
 export const metadata: Metadata = {
   title: "Best-Path Network",
@@ -26,8 +26,7 @@ export default function RootLayout({
       <head></head>
       <body>
         <>
-          <Topnav />
-          <Navigation />
+          <Navbar />
           <Carousel />
           {children}
           <Footer />
