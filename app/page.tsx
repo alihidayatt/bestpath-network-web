@@ -16,7 +16,7 @@ export default function Home() {
           <div className="w-full h-auto bg-gray-100 shadow-sm p-3 my-1">
             <div className="flex justify-items-center justify-center justify-self-center mb-5">
               <div className="text-2xl text-bluegreen font-semibold self-center">
-                OUR SERVICES
+                OUR PROJECTS
               </div>
             </div>
             <Our_services />
