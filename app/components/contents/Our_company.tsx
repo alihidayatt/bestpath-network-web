@@ -9,6 +9,7 @@ import News_1_img from "../icon-component/news_1_img";
 import News_2_img from "../icon-component/news_2_img";
 import News_3_img from "../icon-component/news_3_img";
 import Danu_au_img from "../icon-component/danu_au_img";
+import See_all_button_disabled from "../button/See_all_button_disabled";
 
 export default function Our_company() {
   return (
@@ -143,7 +144,7 @@ export default function Our_company() {
           </div>
 
           <div className="flex justify-items-center justify-center justify-self-center mt-10 mb-5">
-            <See_all_button />
+            <See_all_button_disabled />
           </div>
         </div>
         {/* BLOGS */}
@@ -191,9 +192,9 @@ export default function Our_company() {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
@@ -235,9 +236,9 @@ export default function Our_company() {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
@@ -279,9 +280,9 @@ export default function Our_company() {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>

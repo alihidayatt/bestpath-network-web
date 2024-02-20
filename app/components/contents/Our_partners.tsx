@@ -18,6 +18,7 @@ import Pertamina_ico from "../icon-component/pertamina_ico";
 import Telkom_ico from "../icon-component/telkom_ico";
 import Pln_ico from "../icon-component/pln_ico";
 import See_all_button from "../button/See_all_button";
+import See_all_button_disabled from "../button/See_all_button_disabled";
 
 export default function Our_partners() {
   return (
@@ -29,7 +30,7 @@ export default function Our_partners() {
               BUSINESS PARTNERS
             </h1>
           </div>
-          
+
           <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col mt-3">
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/3 md:w-1/3 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
@@ -62,7 +63,7 @@ export default function Our_partners() {
               COOPERATING VENDORS
             </h1>
           </div>
-          
+
           <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col mt-3">
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
@@ -97,35 +98,33 @@ export default function Our_partners() {
           <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col mt-3">
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto"></div>
+              </div>
+            </div>
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
                 <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Juniper_ico />
                 </div>
               </div>
             </div>
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
                 <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
-                <Juniper_ico />
+                  <Huawei_ico />
                 </div>
               </div>
             </div>
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
                 <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
-                <Huawei_ico />
+                  <H3c_ico />
                 </div>
               </div>
             </div>
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
-                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
-                <H3c_ico />
-                </div>
-              </div>
-            </div>
-            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
-              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
-                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
-                </div>
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto"></div>
               </div>
             </div>
           </div>
@@ -184,7 +183,7 @@ export default function Our_partners() {
           <div className="flex justify-items-start justify-start justify-self-start">
             <h1 className="text-xl text-bluegreen">STATE OWN ENTERPRISE</h1>
           </div>
-          
+
           <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col mt-3">
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/3 md:w-1/3 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
@@ -210,7 +209,7 @@ export default function Our_partners() {
           </div>
 
           <div className="flex justify-items-center justify-center justify-self-center mt-10 mb-5">
-            <See_all_button />
+            <See_all_button_disabled />
           </div>
         </div>
       </div>
