@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect } from "react";
 import Logo from "./Logo";
@@ -11,19 +12,19 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      link: "#partners",
+      link: "#",
       name: "PARTNERS",
       vis: "visible",
     },
     {
       id: 2,
-      link: "#company",
+      link: "#",
       name: "COMPANY",
       vis: "visible",
     },
     {
       id: 3,
-      link: "#contactus",
+      link: "#",
       name: "CONTACT US",
       vis: "visible",
     },
@@ -34,6 +35,8 @@ const Navbar = () => {
     //   vis: "invisible",
     // },
   ];
+  const paths = usePathname();
+  const pathNames = paths.split("/").filter((path) => path);
 
   const handleResize = () => {
     if (window.innerWidth >= 768) {
@@ -55,7 +58,6 @@ const Navbar = () => {
     <div className="flex justify-between items-center w-full h-20 px-4 text-bluegreen bg-white fixed nav shadow-custom1 top-0">
       <div className="flex container mx-auto px-4 py-2 justify-between items-center w-full">
         <div>
-          {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
           <Link
             href="/"
             className="link-underline link-underline-black"
