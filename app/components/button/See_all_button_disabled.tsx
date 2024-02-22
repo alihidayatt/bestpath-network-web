@@ -1,5 +1,5 @@
 import React from "react";
-import Tooltip from "../tooltip/tooltip";
+import Tooltip from "../tooltip/Tooltip";
 
 export default function See_all_button_disabled() {
   return (
