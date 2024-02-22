@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Map() {
   return (
@@ -22,13 +23,13 @@ export default function Map() {
             src="https://www.google.com/maps/embed/v1/place?q=Best-Path+Networks,+Jalan+Lombok+II,+RT.003/RW.007,+Cibodasari,+Tangerang+City,+Banten,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
         </div>
-        <a
+        <Link
           className="googlemaps-made"
           href="https://www.bootstrapskins.com/themes"
           id="enable-map-data"
         >
           premium bootstrap themes
-        </a>
+        </Link>
         <style
           dangerouslySetInnerHTML={{
             __html:

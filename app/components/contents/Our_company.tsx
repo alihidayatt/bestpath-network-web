@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Danu_img from "../icon-component/danu_img";
 import Moses_img from "../icon-component/moses_img";
 import Erick_img from "../icon-component/erick_img";
@@ -159,27 +160,27 @@ export default function Our_company() {
           <div className="flex lg:flex-row md:flex-row sm:flex-col gap-x-3 gap-y-3 mt-5 justify-items-center justify-center justify-self-center">
             <div className="max-w-[300px] bg-white border rounded-lg dark:bg-white border-bluegreen border-opacity-25 hover:border-opacity-75 hover:shadow-inner shadow-custom1">
               <div className="max-w-auto h-auto bg-slate-200 justify-items-center justify-center justify-self-center">
-                <a href="#">
+                <Link href={"#"}>
                   <News_1_img />
-                </a>
+                </Link>
               </div>
 
               <div className="p-5">
-                <a href="#">
+                <Link href={"#"}>
                   <p className="text-gray-700 dark:text-gray-400 mb-3">
                     Moses Huwae - Jan 2 2024
                   </p>
                   <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-gray-700">
                     The Arival of Open AI Networking
                   </h5>
-                </a>
+                </Link>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   Recently I attended The 50th golden anniversary of Ethernet at
                   the Computer History Museum. It was a reminder of how
                   familiar...
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href={"#"}
                   className="inline-flex items-center mt-5 px-3 py-2 text-sm font-medium text-center text-bluegreen hover:text-white bg-white rounded-lg hover:bg-bluegreen focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white dark:hover:bg-bluegreen dark:focus:ring-blue-800 border-2 border-bluegreen hover:border:blue-800"
                 >
                   Read more
@@ -198,32 +199,32 @@ export default function Our_company() {
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className="max-w-[300px] bg-white border rounded-lg dark:bg-white border-bluegreen border-opacity-25 hover:border-opacity-75 hover:shadow-inner shadow-custom1">
               <div className="max-w-auto h-auto bg-slate-200 justify-items-center justify-center justify-self-center">
-                <a href="#">
+                <Link href={"#"}>
                   <News_2_img />
-                </a>
+                </Link>
               </div>
 
               <div className="p-5">
-                <a href="#">
+                <Link href={"#"}>
                   <p className="text-gray-700 dark:text-gray-400 mb-3">
                     Moses Huwae - Des 31 2023
                   </p>
                   <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-gray-700">
                     Noteworthy technology acquisitions 2021
                   </h5>
-                </a>
+                </Link>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   Back in the earlt 2000s, store and forward networking was
                   userd by both market data providers, exchange...
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href={"#"}
                   className="inline-flex items-center mt-5 px-3 py-2 text-sm font-medium text-center text-bluegreen hover:text-white bg-white rounded-lg hover:bg-bluegreen focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white dark:hover:bg-bluegreen dark:focus:ring-blue-800 border-2 border-bluegreen hover:border:blue-800"
                 >
                   Read more
@@ -242,32 +243,32 @@ export default function Our_company() {
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className="max-w-[300px] bg-white border rounded-lg dark:bg-white border-bluegreen border-opacity-25 hover:border-opacity-75 hover:shadow-inner shadow-custom1">
               <div className="max-w-auto h-auto bg-slate-200 justify-items-center justify-center justify-self-center">
-                <a href="#">
+                <Link href={"#"}>
                   <News_3_img />
-                </a>
+                </Link>
               </div>
 
               <div className="p-5">
-                <a href="#">
+                <Link href={"#"}>
                   <p className="text-gray-700 dark:text-gray-400 mb-3">
                     Moses Huwae - Des 13 2023
                   </p>
                   <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-gray-700">
                     Accelerate AWS Access with ARISTA
                   </h5>
-                </a>
+                </Link>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   AWS Cloud WAN Tunnel-less Connect and Arusta CloudEOS
                   integrate to accelerate cloud onramp
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href={"#"}
                   className="inline-flex items-center mt-5 px-3 py-2 text-sm font-medium text-center text-bluegreen hover:text-white bg-white rounded-lg hover:bg-bluegreen focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white dark:hover:bg-bluegreen dark:focus:ring-blue-800 border-2 border-bluegreen hover:border:blue-800"
                 >
                   Read more
@@ -286,7 +287,7 @@ export default function Our_company() {
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
