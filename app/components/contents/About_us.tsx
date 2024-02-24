@@ -1,6 +1,6 @@
 import React from "react";
 import Danu_img from "../icon-component/danu_img";
-import Danu_au_img from "../icon-component/danu_au_img";
+import Danu_au_img from "../icon-component/danu_circle_img";
 
 export default function About_us() {
   return (
@@ -11,7 +11,7 @@ export default function About_us() {
             ABOUT US
           </div>
         </div>
-        <div className="flex flex-col w-full h-full bg-white shadow-lg p-3 ">
+        <div className="flex flex-col w-full h-full bg-white shadow-lg p-3 rounded-lg">
           <div className="flex justify-items-center justify-center justify-self-center lg:flex-row md:flex-row sm:flex-col-reverse xs:flex-col-reverse h-auto">
             <div className="lg:w-3/4 md:w-3/5 sm:w-full xs:w-full lg:-p-10 md:p-10 sm:p-10 xs:p-2 ">
               <blockquote className=" italic text-slate-600 dark:text-slate-600 lg:px-10 md:px-10 sm:px-5 xs:px-3 ">
@@ -45,7 +45,7 @@ export default function About_us() {
               </blockquote>
             </div>
             <div className="flex flex-col lg:w-1/4 md:w-2/5 sm:w-full xs:full p-2 justify-items-center justify-center justify-self-center ml-2">
-              <div className="flex flex-col justify-items-center justify-center justify-self-center mb-5">
+              <div className="flex flex-col justify-items-center justify-center justify-self-center mb-2">
                 <div className="text-lg text-white font-medium self-center rounded-[50%] bg-white p-3 shadow-custom1 lg:max-w-full lg:max-h-full md:max-w-full md:max-h-full sm:max-w-[300px] sm:max-h-[300px] xs:max-w-[200px] xs:max-h-[200px]">
                   <Danu_au_img />
                 </div>

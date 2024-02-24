@@ -1,7 +1,7 @@
 "use client";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Logo_forweb from "../../icon-component/logo_bpn";
 // import Button from "./Button";
 
 const Logo = () => {
@@ -19,17 +19,12 @@ const Logo = () => {
   }, []);
 
   return (
-    <>
-      <Link href="/">
-        <Image
-          src="/logo-forweb.svg"
-          alt="Logo"
-          width={width < 1024 ? "130" : "160"}
-          height={width < 1024 ? "35" : "64"}
-          className="relative"
-        />
-      </Link>
-    </>
+    <Link href="/">
+      <Logo_forweb
+        widthLogo={width < 1024 ? "130" : "160"}
+        heightLogo={width < 1024 ? "35" : "64"}
+      />
+    </Link>
   );
 };
 

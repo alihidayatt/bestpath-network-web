@@ -32,7 +32,7 @@ export default function Footer() {
               </span>
             </div>
           </div>
-          <div className="flex justify-items-center justify-center justify-self-center lg:w-full md:w-full sm:w-full xs:w-full h-auto mb-4">
+          <div className="flex justify-items-center justify-center justify-self-center lg:w-full md:w-full sm:w-full xs:w-full h-auto mb-4 p-3">
             <Map />
           </div>
         </div>
