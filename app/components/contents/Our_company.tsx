@@ -9,139 +9,191 @@ import See_all_button from "../button/See_all_button";
 import News_1_img from "../icon-component/news_1_img";
 import News_2_img from "../icon-component/news_2_img";
 import News_3_img from "../icon-component/news_3_img";
-import Danu_au_img from "../icon-component/danu_au_img";
 import See_all_button_disabled from "../button/See_all_button_disabled";
+import DanuCircleImg from "../icon-component/danu_circle_img";
+import MosesCircleImg from "../icon-component/moses_circle_img";
+import ErickCircleImg from "../icon-component/erick_circle_img";
+import DamarCircleImg from "../icon-component/damar_circle_img";
+import TriCircleImg from "../icon-component/tri_circle_img";
 
 export default function Our_company() {
   return (
     <>
       <div className="container mx-auto px-6 py-6">
-        <div className="flex justify-items-center justify-center justify-self-center mb-5">
+        <div className="flex justify-items-center justify-center justify-self-center mb-5 ">
           <div className="text-2xl text-bluegreen font-semibold self-center">
             OUR COMPANY
           </div>
         </div>
-        <div className="w-full h-full bg-white shadow-lg p-3 ">
+        <div className="w-full h-full bg-white shadow-lg p-3 rounded-lg">
           <div className="flex justify-items-center justify-center justify-self-center mb-5">
             <div className="flex justify-items-center justify-center justify-self-center">
-              <h1 className="text-2xl font-medium italic text-bluegreen">
+              <h1 className="text-2xl sm:text-xl xs:text-xl font-medium italic text-bluegreen">
                 OUR TEAM
               </h1>
             </div>
           </div>
 
-          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col lg:gap-x-4 md:gap-x-2 lg:gap-y-4 md:gap-y-4">
-            <div className="lg:w-1/3 md:w-1/3 sm:w-full h-[600px] sm:mb-10 xs:mb-10">
-              <div className="flex flex-col sm:w-full rounded-xl overflow-hidden shadow-custom1 justify-items-center justify-center justify-self-center">
-                <div className="flex justify-items-center justify-center justify-self-center">
-                  <Danu_img />
+          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-center h-full gap-x-5 gap-y-5 w-full px-2 py-2">
+            {/* Card Start */}
+            <div className="flex w-full max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-white dark:border-gray-400 shadow-lg">
+              <div className="flex flex-col items-center pb-10">
+                <div className="xl:w-48 lg:w-48 md:w-48 sm:w-48 xs:w-36 h-auto mb-3 rounded-full shadow-lg mt-5">
+                  <DanuCircleImg />
                 </div>
-                <div className="px-6 py-5">
-                  <div className="font-bold text-2xl mb-2">
-                    Danu Wiyoto, S.Kom
+                <h5 className="mb-1 text-xl xs:text-lg font-semibold text-gray-900 dark:text-bluegreen">
+                  Danu Wiyoto, S.Kom
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400 p-2 m-5 text-center">
+                  CCNA, CCNP EI, CCDP, CCNP SP, CCIE EI #48413, H3CNE, H3CSE,
+                  ACSA, ACSP, MTCNA
+                </span>
+                <div className="flex mt-4 md:mt-6">
+                  <div className="px-6 pt-4 pb-2">
+                    <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-regular text-white mr-2 mb-2">
+                      Network Consultant
+                    </span>
+                    <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-regular text-white mr-2 mb-2">
+                      Trainer
+                    </span>
+                    <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-regular text-white mr-2 mb-2">
+                      Network Engineer
+                    </span>
+                    <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-regular text-white mr-2 mb-2">
+                      Network Planning & Design
+                    </span>
                   </div>
-                  <p className=" text-md font-medium text-bluegreen">
-                    CCNA, CCNP EI, CCDP, CCNP SP, CCIE EI #48413, H3CNE, H3CSE,
-                    ACSA, ACSP, MTCNA,
-                  </p>
                 </div>
-                <div className="px-6 pt-4 pb-2">
-                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                    Network Consultant
-                  </span>
-                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                    Trainer
-                  </span>
-                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                    Network Engineer
-                  </span>
-                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                    Network Planning & Design
-                  </span>
-                </div>
+                {/* <div className="flex mt-4 md:mt-6">
+                  <Link
+                    href="#"
+                    className="py-2 px-20 ms-2 text-sm font-medium text-white focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-bluegreen dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  >
+                    Profile
+                  </Link>
+                </div> */}
               </div>
             </div>
-
-            <div className="lg:w-1/3 md:w-1/3 sm:w-full h-[600px] sm:mb-7">
-              <div className="flex flex-col sm:w-full rounded-xl overflow-hidden shadow-custom1 justify-items-center justify-center justify-self-center">
-                <div className="flex justify-items-center justify-center justify-self-center">
-                  <Moses_img />
+            {/* Card End */}
+            {/* Card Start */}
+            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-white dark:border-gray-400 shadow-lg">
+              <div className="flex flex-col items-center pb-10">
+                <div className="xl:w-48 lg:w-48 md:w-48 sm:w-48 xs:w-36 h-auto mb-3 rounded-full shadow-lg mt-5">
+                  <MosesCircleImg />
                 </div>
-                <div className="px-6 py-5">
-                  <div className="font-bold text-2xl mb-2">Moses Huwae</div>
-                  <p className=" text-md font-medium text-bluegreen">
-                    Managing Director – Enterprise Products Intregration Pte
-                    Computer Tutor, Computer Instructor, System Support Analyst
-                  </p>
-                </div>
-                <div className="px-6 pt-4 pb-2">
-                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                    IT Supervisor
-                  </span>
-                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                    Sales & Marketing Manager
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:w-1/3 md:w-1/3 sm:w-full h-auto sm:mb-5 xs:mb-3">
-              <div className="flex flex-col sm:w-full rounded-xl overflow-hidden shadow-custom1 justify-items-center justify-center justify-self-center">
-                <div className="flex justify-items-center justify-center justify-self-center">
-                  <Erick_img />
-                </div>
-                <div className="px-6 py-5">
-                  <div className="font-bold text-2xl mb-2">Erick Yudho K</div>
-                  <p className=" text-md font-medium text-bluegreen">
-                    Head Operasional Data Center CDCS, CDFOM
-                  </p>
-                </div>
-                <div className="px-6 pt-4 pb-2"></div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col lg:gap-x-4 md:gap-x-2 lg:gap-y-4 md:gap-y-4 lg:mt-10 md:mt-[70px]">
-            <div className="lg:w-1/3 md:w-1/3 sm:w-full h-auto sm:mb-5 xs:mb-3">
-              <div className="flex flex-col sm:w-full rounded-xl overflow-hidden shadow-custom1 justify-items-center justify-center justify-self-center">
-                <div className="flex justify-items-center justify-center justify-self-center">
-                  <Damar_img />
-                </div>
-                <div className="px-6 py-5">
-                  <div className="font-bold text-2xl mb-2">
-                    Damar Galih Kalicki
+                <h5 className="mb-1 text-xl xs:text-lg font-semibold text-gray-900 dark:text-bluegreen">
+                  Moses Huwae
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400 p-2 m-5 text-center">
+                  Managing Director - Enterprise Products Intregration Pte
+                  Computer Tutor, Computer Instructor, System Support Analyst
+                </span>
+                <div className="flex mt-4 md:mt-6">
+                  <div className="px-6 pt-4 pb-2">
+                    <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-regular text-white mr-2 mb-2">
+                      IT Supervisor
+                    </span>
+                    <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-regular text-white mr-2 mb-2">
+                      Sales & Marketing Manager
+                    </span>
                   </div>
-                  <p className=" text-md font-medium text-bluegreen">
-                    CCNA, CCENT, CCNP - EI, MTCNA, MTCRE, NSE 1, NSE 2
-                  </p>
                 </div>
-                <div className="px-6 pt-4 pb-2">
-                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                    Trainer
-                  </span>
-                  <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
-                    Network Engineer
-                  </span>
-                </div>
+                {/* <div className="flex mt-4 md:mt-6">
+                  <Link
+                    href="#"
+                    className="py-2 px-20 ms-2 text-sm font-medium text-white focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-bluegreen dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  >
+                    Profile
+                  </Link>
+                </div> */}
               </div>
             </div>
-
-            <div className="lg:w-1/3 md:w-1/3 sm:w-full h-auto sm:mb-5">
-              <div className="flex flex-col sm:w-full rounded-xl overflow-hidden shadow-custom1 justify-items-center justify-center justify-self-center">
-                <div className="flex justify-items-center justify-center justify-self-center">
-                  <Tri_img />
+            {/* Card End */}
+            {/* Card Start */}
+            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-white dark:border-gray-400 shadow-lg">
+              <div className="flex flex-col items-center pb-10">
+                <div className="xl:w-48 lg:w-48 md:w-48 sm:w-48 xs:w-36 h-auto mb-3 rounded-full shadow-lg mt-5">
+                  <ErickCircleImg />
                 </div>
-                <div className="px-6 py-5">
-                  <div className="font-bold text-2xl mb-2">
-                    Tri Cahyo Pranomo
+                <h5 className="mb-1 text-xl xs:text-lg font-semibold text-gray-900 dark:text-bluegreen">
+                  Erick Yudho K
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400 p-2 m-5 text-center">
+                  Head Operasional Data Center CDCS, CDFOM
+                </span>
+                <div className="flex mt-4 md:mt-6">
+                  <div className="px-6 pt-4 pb-2"></div>
+                </div>
+                {/* <div className="flex mt-4 md:mt-6">
+                  <Link
+                    href="#"
+                    className="py-2 px-20 ms-2 text-sm font-medium text-white focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-bluegreen dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  >
+                    Profile
+                  </Link>
+                </div> */}
+              </div>
+            </div>
+            {/* Card End */}
+            {/* Card Start */}
+            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-white dark:border-gray-400 shadow-lg">
+              <div className="flex flex-col items-center pb-10">
+                <div className="xl:w-48 lg:w-48 md:w-48 sm:w-48 xs:w-36 h-auto mb-3 rounded-full shadow-lg mt-5">
+                  <DamarCircleImg />
+                </div>
+                <h5 className="mb-1 text-xl xs:text-lg font-semibold text-gray-900 dark:text-bluegreen">
+                  Damar Galih Kalicki
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400 p-2 m-5 text-center">
+                  CCNA, CCENT, CCNP - EI, MTCNA, MTCRE, NSE 1, NSE 2
+                </span>
+                <div className="flex mt-4 md:mt-6">
+                  <div className="px-6 pt-4 pb-2">
+                    <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-regular text-white mr-2 mb-2">
+                      Trainer
+                    </span>
+                    <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-regular text-white mr-2 mb-2">
+                      Network Engineer
+                    </span>
                   </div>
-                  <p className=" text-md font-medium text-bluegreen">
-                    QC & Cable Design Engineer, Presales
-                  </p>
                 </div>
-                <div className="px-6 pt-4 pb-2"></div>
+                {/* <div className="flex mt-4 md:mt-6">
+                  <Link
+                    href="#"
+                    className="py-2 px-20 ms-2 text-sm font-medium text-white focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-bluegreen dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  >
+                    Profile
+                  </Link>
+                </div> */}
               </div>
             </div>
+            {/* Card End */}
+            {/* Card Start */}
+            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-white dark:border-gray-400 shadow-lg">
+              <div className="flex flex-col items-center pb-10">
+                <div className="xl:w-48 lg:w-48 md:w-48 sm:w-48 xs:w-36 h-auto mb-3 rounded-full shadow-lg mt-5">
+                  <TriCircleImg />
+                </div>
+                <h5 className="mb-1 text-xl xs:text-lg font-semibold text-gray-900 dark:text-bluegreen">
+                  Tri Cahyo Pranomo
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400 p-2 m-5 text-center">
+                  QC & Cable Design Engineer, Presales
+                </span>
+                <div className="flex mt-4 md:mt-6">
+                  <div className="px-6 pt-4 pb-2"></div>
+                </div>
+                {/* <div className="flex mt-4 md:mt-6">
+                  <Link
+                    href="#"
+                    className="py-2 px-20 ms-2 text-sm font-medium text-white focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-bluegreen dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  >
+                    Profile
+                  </Link>
+                </div> */}
+              </div>
+            </div>
+            {/* Card End */}
           </div>
 
           <div className="flex justify-items-center justify-center justify-self-center mt-10 mb-5">

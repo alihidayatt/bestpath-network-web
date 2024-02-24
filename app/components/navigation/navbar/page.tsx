@@ -58,14 +58,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center w-full h-20 px-4 text-bluegreen bg-white fixed nav shadow-custom1 top-0">
       <div className="flex container mx-auto px-4 py-2 justify-between items-center w-full">
         <div>
-          <Link
-            href="/"
-            className="link-underline link-underline-black"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Logo />
-          </Link>
+          <Logo />
         </div>
 
         <ul className="hidden md:flex">

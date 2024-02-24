@@ -1,3 +1,4 @@
+import React from "react";
 export default function Tooltip({
   message,
   children,
@@ -6,11 +7,11 @@ export default function Tooltip({
   children: any;
 }) {
   return (
-    <div className="group relative flex mt-3">
+    <div className="group relative flex">
       {children}
-      <div className="absolute z-10 text-center inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+      <span className="absolute top-10 ml-[-8px] scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-center text-white group-hover:scale-100">
         {message}
-      </div>
+      </span>
     </div>
   );
 }

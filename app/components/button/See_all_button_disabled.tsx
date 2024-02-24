@@ -4,7 +4,7 @@ import Tooltip from "../tooltip/Tooltip";
 export default function See_all_button_disabled() {
   return (
     <>
-      <Tooltip message={"This feature will be coming soon!"}>
+      <Tooltip message="Feature will be available soon!">
         <button
           data-tooltip-target="tooltip-default"
           type="button"
