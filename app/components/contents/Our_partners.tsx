@@ -17,8 +17,8 @@ import Kemenpora_ico from "../icon-component/kemenpora_ico";
 import Pertamina_ico from "../icon-component/pertamina_ico";
 import Telkom_ico from "../icon-component/telkom_ico";
 import Pln_ico from "../icon-component/pln_ico";
+import Link from "next/link";
 import See_all_button from "../button/See_all_button";
-import See_all_button_disabled from "../button/See_all_button_disabled";
 
 export default function Our_partners() {
   return (
@@ -56,8 +56,9 @@ export default function Our_partners() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-6 py-6 ">
-        <div className="w-full h-full bg-white shadow-lg p-3 rounded-lg">
+      
+      <div className="container mx-auto px-6 py-6">
+        <div className="w-full h-full bg-white shadow-lg p-3 ">
           <div className="flex justify-items-center justify-center justify-self-center">
             <h1 className="text-xl font-medium italic text-bluegreen">
               COOPERATING VENDORS
@@ -93,19 +94,25 @@ export default function Our_partners() {
                 </div>
               </div>
             </div>
-            <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
-              <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[170px] sm:h-auto xs:w-[150px] xs:h-auto">
-                <Juniper_ico />
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[175px] md:h-auto sm:w-[180px] sm:h-auto xs:w-[150px] xs:h-auto">
+                  <Juniper_ico />
+                </div>
               </div>
             </div>
-            <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
-              <div className="lg:w-[100px] lg:h-auto md:w-[100px] md:h-auto sm:w-[120px] sm:h-auto xs:w-[100px] xs:h-auto">
-                <Huawei_ico />
+           <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[175px] md:h-auto sm:w-[180px] sm:h-auto xs:w-[150px] xs:h-auto">
+                  <Huawei_ico />
+                </div>
               </div>
             </div>
-            <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
-              <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[180px] sm:h-auto xs:w-[150px] xs:h-auto">
-                <H3c_ico />
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[175px] md:h-auto sm:w-[180px] sm:h-auto xs:w-[150px] xs:h-auto">
+                  <H3c_ico />
+                </div>
               </div>
             </div>
           </div>
@@ -169,34 +176,37 @@ export default function Our_partners() {
               <h1 className="text-xl text-bluegreen">STATE OWN ENTERPRISE</h1>
             </div>
 
-            <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col mt-3 gap-x-10 gap-y-7">
-              <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/3 md:w-1/3 sm:w-full h-auto">
-                <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
-                  <div className="lg:w-[150px] lg:h-auto md:w-[130px] md:h-auto sm:w-[150px] sm:h-auto xs:w-[120px] xs:h-auto">
-                    <Pertamina_ico />
-                  </div>
-                </div>
-              </div>
-              <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/3 md:w-1/3 sm:w-full h-auto">
-                <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
-                  <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[150px] sm:h-auto xs:w-[120px] xs:h-auto">
-                    <Telkom_ico />
-                  </div>
-                </div>
-              </div>
-              <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/3 md:w-1/3 sm:w-full h-auto ga">
-                <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
-                  <div className="lg:w-[150px] lg:h-auto md:w-[130px] md:h-auto sm:w-[150px] sm:h-auto xs:w-[120px] xs:h-auto">
-                    <Pln_ico />
-                  </div>
+          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col mt-3">
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/3 md:w-1/3 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Pertamina_ico />
                 </div>
               </div>
             </div>
-            <div className="flex justify-items-center justify-center justify-self-center mt-10 mb-5">
-              <See_all_button_disabled />
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/3 md:w-1/3 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Telkom_ico />
+                </div>
+              </div>
+            </div>
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/3 md:w-1/3 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Pln_ico />
+                </div>
+              </div>
             </div>
           </div>
+
+          <div className="flex justify-items-center justify-center justify-self-center mt-10 mb-5">
+              <Link href={"/clients"}>
+                <See_all_button />
+              </Link>
+          </div>
         </div>
+      </div>
       </div>
     </>
   );
