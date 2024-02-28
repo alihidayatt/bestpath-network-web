@@ -1,16 +1,17 @@
 import React from "react";
-import Danu_img from "../icon-component/danu_img";
-import Training_bssn_img from "../icon-component/training_bssn";
-import Training_cyberops_ntt_img from "../icon-component/training_cyberops_ntt";
-import Training_hypernet_img from "../icon-component/training_hypernet";
-import Training_pertamina_img from "../icon-component/training_pertamina";
-import Training_singapore_mpls_img from "../icon-component/training_singapore_mpls";
 import See_all_button from "../button/See_all_button";
-import Implement1_img from "../icon-component/implement_1";
-import Implement2_img from "../icon-component/implement_2";
-import Implement3_img from "../icon-component/implement_3";
-import Implement4_img from "../icon-component/implement_4";
 import Link from "next/link";
+import {
+  Training_bssn_img,
+  Training_cyberops_ntt_img,
+  Training_hypernet_img,
+  Training_pertamina_img,
+  Training_singapore_mpls_img,
+  Implement1_img,
+  Implement2_img,
+  Implement3_img,
+  Implement4_img,
+} from "../Bpn_imgs";
 
 export default function Our_services() {
   return (

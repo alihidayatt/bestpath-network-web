@@ -1,7 +1,7 @@
 import React from "react";
 import Map from "../map/page";
-import Phone_ico from "../icon-component/icon/phone_ico";
-import Email_ico from "../icon-component/icon/email_ico";
+import Phone_ico from "../icon-component/phone_ico";
+import Email_ico from "../icon-component/email_ico";
 
 export default function Footer() {
   return (

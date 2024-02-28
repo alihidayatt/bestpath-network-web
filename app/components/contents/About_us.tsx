@@ -1,6 +1,5 @@
 import React from "react";
-import Danu_img from "../icon-component/danu_img";
-import Danu_au_img from "../icon-component/danu_circle_img";
+import { DanuCircleImg } from "../Bpn_imgs";
 
 export default function About_us() {
   return (
@@ -47,7 +46,7 @@ export default function About_us() {
             <div className="flex flex-col lg:w-1/4 md:w-2/5 sm:w-full xs:full p-2 justify-items-center justify-center justify-self-center ml-2">
               <div className="flex flex-col justify-items-center justify-center justify-self-center mb-2">
                 <div className="text-lg text-white font-medium self-center rounded-[50%] bg-white p-3 shadow-custom1 lg:max-w-full lg:max-h-full md:max-w-full md:max-h-full sm:max-w-[300px] sm:max-h-[300px] xs:max-w-[200px] xs:max-h-[200px]">
-                  <Danu_au_img />
+                  <DanuCircleImg />
                 </div>
                 <div className="flex flex-col justify-items-center justify-center justify-self-center my-3">
                   <div className="flex text-bluegreen font-semibold text-lg justify-items-center justify-center justify-self-center lg:text-center md:text-center sm:text-center xs:text-center">
