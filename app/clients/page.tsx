@@ -14,6 +14,22 @@ import Dc_ikn_img from "../components/icon-component/dc_ikn";
 import Dc_basic_img from "../components/icon-component/dc_basic";
 import Dc_pupr_img from "../components/icon-component/dc_pupr";
 import Dc_noc_img from "../components/icon-component/dc_noc";
+import Bkkbn_ico from "../components/icon-component/bkkbn_ico";
+import Kemenkeu_ico from "../components/icon-component/kemenkeu_ico";
+import Imigrasi_ico from "../components/icon-component/imigrasi_ico";
+import Bnpb_ico from "../components/icon-component/bnpb_ico";
+import Bpkp_ico from "../components/icon-component/bpkp_ico";
+import Swa_ico from "../components/icon-component/swa_ico";
+import Apsf_ico from "../components/icon-component/apsf_ico";
+import Pjt_ico from "../components/icon-component/pjt_ico";
+import Kopassus_ico from "../components/icon-component/kopassus_ico";
+import Bangli_ico from "../components/icon-component/bangli_ico";
+import Djp_ico from "../components/icon-component/djp_ico";
+import Telkompcc_ico from "../components/icon-component/telkompcc_ico";
+import Pins_ico from "../components/icon-component/pins_ico";
+import Telkomsel_ico from "../components/icon-component/telkomsel_ico";
+import Asdp_ico from "../components/icon-component/asdp_ico";
+import Wika_ico from "../components/icon-component/wika_ico";
 
 export default function Partners() {
     return (
@@ -110,43 +126,162 @@ export default function Partners() {
               </div>
             </div>
           </div>
+
           <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col mt-3">
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
                 <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
-                  <Bssn_ico />
+                  <Bkkbn_ico />
                 </div>
               </div>
             </div>
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
                 <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
-                  <Tik_polri_ico />
+                  <Kemenkeu_ico />
                 </div>
               </div>
             </div>
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
                 <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
-                  <Polri_ico />
+                  <Imigrasi_ico />
                 </div>
               </div>
             </div>
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
                 <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
-                  <Kominfo_ico />
+                  <Bnpb_ico />
                 </div>
               </div>
             </div>
             <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
               <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
                 <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
-                  <Kemenpora_ico />
+                  <Bpkp_ico />
                 </div>
               </div>
             </div>
           </div>
+
+          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col mt-3">
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Swa_ico />
+                </div>
+              </div>
+            </div>
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Apsf_ico />
+                </div>
+              </div>
+            </div>
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Pjt_ico />
+                </div>
+              </div>
+            </div>
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Kopassus_ico />
+                </div>
+              </div>
+            </div>
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/5 md:w-1/5 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Bangli_ico />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col mt-3">
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/1 md:w-1/1 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Djp_ico />
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div className="container mx-auto px-6 py-6">
+        <div className="w-full h-full bg-white shadow-lg p-3 ">
+          <div className="flex text-xl font-semibold text-bluegreen justify-start p-2">
+            <h1>STATE OWNED ENTERPRISE</h1>
+          </div>
+        
+          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col mt-3">
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Telkompcc_ico />
+                </div>
+              </div>
+            </div>
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Telkom_ico />
+                </div>
+              </div>
+            </div>
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Pins_ico />
+                </div>
+              </div>
+            </div>
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Pln_ico />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col mt-3">
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Telkomsel_ico />
+                </div>
+              </div>
+            </div>
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Asdp_ico />
+                </div>
+              </div>
+            </div>
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Wika_ico />
+                </div>
+              </div>
+            </div>
+            <div className="flex lg:flex-col md:flex-col sm:flex-row lg:w-1/4 md:w-1/4 sm:w-full h-auto">
+              <div className="flex w-full h-auto p-2 justify-items-center justify-center justify-self-center">
+                <div className="lg:w-[180px] lg:h-auto md:w-[150px] md:h-auto sm:w-[100px] sm:h-auto">
+                  <Pertamina_ico />
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
       </div>
     </div>
         </>
