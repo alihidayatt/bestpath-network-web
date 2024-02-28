@@ -31,8 +31,8 @@ export default function Training() {
             <h1>TRAINING</h1>
           </div>
 
-          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3">
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto w-full lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white  flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_bssn_img />
               </div>
@@ -41,7 +41,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_cyberops_ntt_img />
               </div>
@@ -50,7 +50,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_hypernet_img />
               </div>
@@ -59,7 +59,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_pertamina_img />
               </div>
@@ -68,7 +68,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_singapore_mpls_img />
               </div>
@@ -79,7 +79,7 @@ export default function Training() {
           </div>
 
           <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3">
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_mega_img />
               </div>
@@ -88,7 +88,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_trainocate_img />
               </div>
@@ -97,7 +97,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_ptcc_img />
               </div>
@@ -106,7 +106,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_bi_img />
               </div>
@@ -115,7 +115,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_jasmikom_img />
               </div>
@@ -126,7 +126,7 @@ export default function Training() {
           </div>
 
           <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3">
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_politala_img />
               </div>
@@ -135,7 +135,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_nse_img />
               </div>
@@ -144,7 +144,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_csi_img />
               </div>
@@ -153,7 +153,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_kalos_img />
               </div>
@@ -162,7 +162,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Workshop_img />
               </div>
@@ -173,7 +173,7 @@ export default function Training() {
           </div>
 
           <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3">
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_deekai_img />
               </div>
@@ -182,7 +182,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_ca_img />
               </div>
@@ -191,7 +191,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_cgp_img />
               </div>
@@ -200,7 +200,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_pins_img />
               </div>
@@ -209,7 +209,7 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
+            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
               <div className="flex w-full h-auto justify-center rounded-lg py-2">
                 <Training_nse4_img />
               </div>

@@ -3,8 +3,9 @@ import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer/page";
 import Carousel from "./components/carousel/page";
+import Breadcrumb from "./components/navigation/breadcrumb/breadcrumb";
+// import Header from "./components/navigation/navbar/Header";
 import Navbar from "./components/navigation/navbar/page";
-import Breadcrumb from "./components/breadcrumb/breadcrumb";
 
 export const metadata: Metadata = {
   title: "Best-Path Network",
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body>
         <>
           <Navbar />
+          {/* <Header /> */}
           <Carousel />
           <Breadcrumb
             homeElement={"Home"}
