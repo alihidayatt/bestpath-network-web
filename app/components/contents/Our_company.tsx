@@ -1,20 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import Danu_img from "../icon-component/danu_img";
-import Moses_img from "../icon-component/moses_img";
-import Erick_img from "../icon-component/erick_img";
-import Damar_img from "../icon-component/damar_img";
-import Tri_img from "../icon-component/tri_img";
-import See_all_button from "../button/See_all_button";
-import News_1_img from "../icon-component/news_1_img";
-import News_2_img from "../icon-component/news_2_img";
-import News_3_img from "../icon-component/news_3_img";
 import See_all_button_disabled from "../button/See_all_button_disabled";
-import DanuCircleImg from "../icon-component/danu_circle_img";
-import MosesCircleImg from "../icon-component/moses_circle_img";
-import ErickCircleImg from "../icon-component/erick_circle_img";
-import DamarCircleImg from "../icon-component/damar_circle_img";
-import TriCircleImg from "../icon-component/tri_circle_img";
+import {
+  DanuCircleImg,
+  MosesCircleImg,
+  ErickCircleImg,
+  DamarCircleImg,
+  TriCircleImg,
+} from "../Bpn_imgs";
 
 export default function Our_company() {
   return (

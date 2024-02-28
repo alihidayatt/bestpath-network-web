@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
-import Topnav from "./components/topnav/topnav";
 import Footer from "./components/footer/page";
 import Carousel from "./components/carousel/page";
+import Breadcrumb from "./components/navigation/breadcrumb/breadcrumb";
+// import Header from "./components/navigation/navbar/Header";
 import Navbar from "./components/navigation/navbar/page";
-import Breadcrumb from "./components/breadcrumb/breadcrumb";
-import { SlArrowRight } from "react-icons/sl";
 
 export const metadata: Metadata = {
   title: "Best-Path Network",
@@ -29,6 +28,7 @@ export default function RootLayout({
       <body>
         <>
           <Navbar />
+          {/* <Header /> */}
           <Carousel />
           <Breadcrumb
             homeElement={"Home"}

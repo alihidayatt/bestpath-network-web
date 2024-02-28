@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logo_forweb from "./icon/web_logo.svg";
 
-export default function Logo_forweb({
+export default function Logo_bpn({
   widthLogo,
   heightLogo,
 }: {
@@ -13,7 +13,7 @@ export default function Logo_forweb({
       src={logo_forweb}
       width={widthLogo}
       height={heightLogo}
-      alt="logo_forweb image"
+      alt="logo_bpn image"
     />
   );
 }

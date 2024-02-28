@@ -1,42 +1,79 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
-import { usePathname } from "next/navigation";
+import React, { useState, Fragment } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect } from "react";
 import Logo from "./Logo";
+import { Menu, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
-const Navbar = () => {
+function classNames(...classes: string[]): string {
+  return classes.filter(Boolean).join(" ");
+}
+
+const menuItems = [
+  {
+    id: 1,
+    title: "PARTNERS",
+    children: [
+      {
+        id: 1,
+        title: "TRAINING & EDUCATION",
+        route: "/training",
+      },
+      {
+        id: 2,
+        title: "CONSULTATION",
+        route: "#",
+      },
+      {
+        id: 3,
+        title: "PROJECTS",
+        route: "#",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "COMPANY",
+    children: [
+      {
+        id: 1,
+        title: "BUSINESS PARTNERS",
+        route: "#",
+      },
+      {
+        id: 2,
+        title: "COOPERATING VENDORS",
+        route: "#",
+      },
+      {
+        id: 3,
+        title: "OUR CLIENTS",
+        route: "/clients",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "CONTACT US",
+    children: [
+      {
+        id: 1,
+        title: "OUR TEAM",
+        route: "#",
+      },
+      {
+        id: 2,
+        title: "BLOGS",
+        route: "#",
+      },
+    ],
+  },
+];
+
+export default function Navbar() {
   const [nav, setNav] = useState(false);
-
-  const links = [
-    {
-      id: 1,
-      link: "#",
-      name: "PARTNERS",
-      vis: "visible",
-    },
-    {
-      id: 2,
-      link: "#",
-      name: "COMPANY",
-      vis: "visible",
-    },
-    {
-      id: 3,
-      link: "#",
-      name: "CONTACT US",
-      vis: "visible",
-    },
-    // {
-    //   id: 4,
-    //   link: "#",
-    //   name: "LOGIN",
-    //   vis: "invisible",
-    // },
-  ];
-  const paths = usePathname();
-  const pathNames = paths.split("/").filter((path) => path);
 
   const handleResize = () => {
     if (window.innerWidth >= 768) {
@@ -60,23 +97,53 @@ const Navbar = () => {
         <div>
           <Logo />
         </div>
-
         <ul className="hidden md:flex">
-          {links.map(({ id, link, name, vis }) => (
-            <li
-              key={id}
-              className="nav-links px-4 cursor-pointer capitalize text-bluegreen font-semibold hover:scale-105 text-lg pt-2 hover:font-bold duration-200 link-underline"
+          {menuItems.map((menuItems) => (
+            <Menu
+              key={menuItems.id}
+              as="div"
+              className="relative inline-block text-left"
             >
-              <Link href={link}>{name}</Link>
-            </li>
+              <div>
+                <Menu.Button className="inline-flex w-full justify-center gap-x-3 rounded-md bg-white px-3 py-2 text-lg font-semibold text-bluegreen hover:bg-gray-50">
+                  {menuItems.title}
+                  <ChevronDownIcon
+                    className="-mr-1 h-5 w-5 text-gray-400"
+                    aria-hidden="true"
+                  />
+                </Menu.Button>
+              </div>
+              <Transition
+                as={Fragment}
+                enter="transition ease-out duration-100"
+                enterFrom="transform opacity-0 scale-95"
+                enterTo="transform opacity-100 scale-100"
+                leave="transition ease-in duration-75"
+                leaveFrom="transform opacity-100 scale-100"
+                leaveTo="transform opacity-0 scale-95"
+              >
+                <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white p-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  {menuItems.children.map((child) => (
+                    <Menu.Item key={child.id}>
+                      {({ active }) => (
+                        <Link
+                          href={child.route}
+                          className={classNames(
+                            active
+                              ? "bg-gray-100 text-bluegreen font-semibold"
+                              : "text-gray-700",
+                            "block px-4 py-2 text-sm"
+                          )}
+                        >
+                          {child.title}
+                        </Link>
+                      )}
+                    </Menu.Item>
+                  ))}
+                </Menu.Items>
+              </Transition>
+            </Menu>
           ))}
-          <li className="hidden pl-5">
-            <div className="flex justify-items-end justify-end h-full gap-x-10">
-              <button className="bg-transparent inline-flex items-center dark:transparent dark:hover:transparent dark:focus:transparent hover:text-bluegreen text-slate-300 border-blue-700 border-2 hover:bg-slate-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-4 py-1.5 text-center me-2 mb-2 dark:border-bluegreen dark:text-bluegreen dark:hover:text-white dark:hover:bg-bluegreen dark:focus:ring-slate-300 shadow-md">
-                Login
-              </button>
-            </div>
-          </li>
         </ul>
 
         <div
@@ -85,24 +152,58 @@ const Navbar = () => {
         >
           {nav ? <FaTimes size={30} /> : <FaBars size={30} fill="#00667D" />}
         </div>
-
         {nav && (
           <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b bg-white text-bluegreen font-medium hover:font-semibold">
-            {links.map(({ id, link, name }) => (
-              <li
-                key={id}
-                className="px-4 cursor-pointer capitalize py-6 text-xl"
+            {menuItems.map((menuItems) => (
+              <Menu
+                key={menuItems.id}
+                as="div"
+                className="relative inline-block text-center"
               >
-                <Link onClick={() => setNav(!nav)} href={link}>
-                  {name}
-                </Link>
-              </li>
+                <div className="my-3">
+                  <Menu.Button className="inline-flex w-full justify-center gap-x-3 rounded-md bg-white px-3 py-2 text-lg font-semibold text-bluegreen hover:bg-gray-50">
+                    {menuItems.title}
+                    <ChevronDownIcon
+                      className="-mr-1 h-5 w-5 text-gray-400"
+                      aria-hidden="true"
+                    />
+                  </Menu.Button>
+                </div>
+                <Transition
+                  as={Fragment}
+                  enter="transition ease-out duration-100"
+                  enterFrom="transform opacity-0 scale-95"
+                  enterTo="transform opacity-100 scale-100"
+                  leave="transition ease-in duration-75"
+                  leaveFrom="transform opacity-100 scale-100"
+                  leaveTo="transform opacity-0 scale-95"
+                >
+                  <Menu.Items className="absolute ml-[-45px] top-12 z-10 mt-2 w-56 origin-top-right rounded-md bg-white px-1 py-2 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    {menuItems.children.map((child) => (
+                      <Menu.Item key={child.id}>
+                        {({ active }) => (
+                          <Link
+                            href={child.route}
+                            className={classNames(
+                              active
+                                ? "bg-gray-100 text-bluegreen font-semibold"
+                                : "text-gray-700",
+                              "block px-4 py-4 text-sm"
+                            )}
+                            onClick={() => setNav(!nav)}
+                          >
+                            {child.title}
+                          </Link>
+                        )}
+                      </Menu.Item>
+                    ))}
+                  </Menu.Items>
+                </Transition>
+              </Menu>
             ))}
           </ul>
         )}
       </div>
     </div>
   );
-};
-
-export default Navbar;
+}

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import mikrotikMtcreIco from "./icon/mikrotik_mtcre_ico.png";
 
-export default function Mikrotik_mtcna_ico() {
+export default function Mikrotik_mtcre_ico() {
   return (
     <Image
       src={mikrotikMtcreIco}
