@@ -22,6 +22,115 @@ import {
   Training_nse4_img,
 } from "../components/Bpn_imgs";
 
+interface TrainingData {
+  id: number;
+  img: React.JSX.Element;
+  title: string;
+}
+
+const TData: TrainingData[] = [
+  {
+    id: 1,
+    img: <Training_bssn_img />,
+    title: "Training BSSN",
+  },
+  {
+    id: 2,
+    img: <Training_cyberops_ntt_img />,
+    title: "Training Cyberops NTT",
+  },
+  {
+    id: 3,
+    img: <Training_hypernet_img />,
+    title: "Training Hypernet",
+  },
+  {
+    id: 4,
+    img: <Training_pertamina_img />,
+    title: "Training Pertamina",
+  },
+  {
+    id: 5,
+    img: <Training_singapore_mpls_img />,
+    title: "Training Singapore MPLS",
+  },
+  {
+    id: 6,
+    img: <Training_mega_img />,
+    title: "Training Bank Mega",
+  },
+  {
+    id: 7,
+    img: <Training_trainocate_img />,
+    title: "Training Trainocate",
+  },
+  {
+    id: 8,
+    img: <Training_ptcc_img />,
+    title: "Training Online PTCC",
+  },
+  {
+    id: 9,
+    img: <Training_bi_img />,
+    title: "Training Online Bank Indonesia",
+  },
+  {
+    id: 10,
+    img: <Training_jasmikom_img />,
+    title: "Training PT.Jasmikom",
+  },
+  {
+    id: 11,
+    img: <Training_politala_img />,
+    title: "Training Politala",
+  },
+  {
+    id: 12,
+    img: <Training_nse_img />,
+    title: "Training NSE 7 SDWAN",
+  },
+  {
+    id: 13,
+    img: <Training_csi_img />,
+    title: "Training Cyber Securite Incident",
+  },
+  {
+    id: 14,
+    img: <Training_kalos_img />,
+    title: "Training Kalos",
+  },
+  {
+    id: 15,
+    img: <Workshop_img />,
+    title: "Workshop Vulnerability Assessment Indonesia Stock Exchange",
+  },
+  {
+    id: 16,
+    img: <Training_deekai_img />,
+    title: "Training Deekai",
+  },
+  {
+    id: 17,
+    img: <Training_ca_img />,
+    title: "Training Cyberops Associate",
+  },
+  {
+    id: 18,
+    img: <Training_cgp_img />,
+    title: "Training CGP Security",
+  },
+  {
+    id: 19,
+    img: <Training_pins_img />,
+    title: "Training Online PINS",
+  },
+  {
+    id: 20,
+    img: <Training_nse4_img />,
+    title: "Training NSE 4 Core Global Edu",
+  },
+];
+
 export default function Training() {
   return (
     <>
@@ -30,194 +139,23 @@ export default function Training() {
           <div className="flex text-xl font-semibold text-bluegreen justify-start p-2">
             <h1>TRAINING</h1>
           </div>
-
-          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto w-full lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3">
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white  flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_bssn_img />
+          {/* card start */}
+          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto w-full lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3 px-3">
+            {TData.map((TData) => (
+              <div
+                key={TData.id}
+                className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-row flex-wrap shadow-lg p-2 rounded-lg"
+              >
+                <div className="flex w-full h-auto justify-center rounded-lg py-2">
+                  {TData.img}
+                </div>
+                <div className="bg-white w-full h-auto flex justify-center p-2 lg:text-base md:text-base sm:text-sm xs:text-sm text-center font-semibold text-bluegreen">
+                  {TData.title}
+                </div>
               </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training BSSN
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_cyberops_ntt_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Cyberops NTT
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_hypernet_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Hypernet
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_pertamina_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Pertamina
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_singapore_mpls_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Singapore MPLS
-              </div>
-            </div>
+            ))}
           </div>
-
-          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3">
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_mega_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Bank Mega
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_trainocate_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Trainocate
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_ptcc_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Online PTCC
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_bi_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Online Bank Indonesia
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_jasmikom_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training PT.Jasmikom
-              </div>
-            </div>
-          </div>
-
-          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3">
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_politala_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Politala
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_nse_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training NSE 7 SDWAN
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_csi_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Cyber Securite Incident
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_kalos_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Kalos
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Workshop_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-sm font-medium text-slate-700">
-                Workshop Vulnerability Assessment Indonesia Stock Exchange
-              </div>
-            </div>
-          </div>
-
-          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3">
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_deekai_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Deekai
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_ca_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Cyberops Associate
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_cgp_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training CGP Security
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_pins_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training Online PINS
-              </div>
-            </div>
-
-            <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-              <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                <Training_nse4_img />
-              </div>
-              <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                Training NSE 4 Core Global Edu
-              </div>
-            </div>
-          </div>
+          {/* card end */}
         </div>
       </div>
     </>
