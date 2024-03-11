@@ -1,5 +1,6 @@
 import React from "react";
 import See_all_button from "../button/See_all_button";
+import Ebook_button_detail from "../button/See_all_button";
 import Link from "next/link";
 import {
   Training_bssn_img,
@@ -11,6 +12,7 @@ import {
   Implement2_img,
   Implement3_img,
   Implement4_img,
+  Ebook_bgec_front_img,
 } from "../Bpn_imgs";
 
 export default function Our_services() {
@@ -117,6 +119,29 @@ export default function Our_services() {
                 <div className="flex w-full h-auto justify-center rounded-lg py-2">
                   <Implement4_img />
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <div className="flex justify-items-center justify-center justify-self-center mt-5">
+              <div className="flex justify-items-center justify-center justify-self-center">
+                <h1 className="text-2xl sm:text-xl xs:text-xl text-center font-medium italic text-bluegreen">
+                  E-Book
+                </h1>
+              </div>
+            </div>
+            <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col lg:flex-wrap md:flex-wrap justify-items-center justify-center justify-self-start mb-5 h-auto lg:gap-x-5 lg:gap-y-5 md:gap-x-5 md:gap-y-5 sm:gap-y-5 xs:gap-y-5 py-3">
+            <div className="lg:basis-1/3 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
+                <div className="flex w-full h-auto justify-center rounded-lg py-2">
+                  <Ebook_bgec_front_img />
+                </div>
+                <div className="flex justify-items-center justify-center justify-self-center mb-10">
+                <div className="flex justify-items-center justify-center justify-self-center">
+                  <Link href={"/ebook/ebook1"}>
+                    <Ebook_button_detail />
+                  </Link>
+                </div>
+            </div>
               </div>
             </div>
           </div>
