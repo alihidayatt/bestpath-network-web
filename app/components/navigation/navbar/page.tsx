@@ -14,7 +14,7 @@ function classNames(...classes: string[]): string {
 const menuItems = [
   {
     id: 1,
-    title: "PARTNERS",
+    title: "PROJECTS",
     children: [
       {
         id: 1,
@@ -23,19 +23,19 @@ const menuItems = [
       },
       {
         id: 2,
-        title: "CONSULTATION",
+        title: "PROJECTS IMPLEMENTATION",
         route: "#",
       },
       {
         id: 3,
-        title: "PROJECTS",
+        title: "E-BOOK",
         route: "#",
       },
     ],
   },
   {
     id: 2,
-    title: "COMPANY",
+    title: "PARTNERS",
     children: [
       {
         id: 1,
@@ -56,16 +56,22 @@ const menuItems = [
   },
   {
     id: 3,
-    title: "CONTACT US",
+    title: "COMPANY",
     children: [
       {
         id: 1,
         title: "OUR TEAM",
         route: "#",
       },
+    ],
+  },
+  {
+    id: 4,
+    title: "CONTACT US",
+    children: [
       {
-        id: 2,
-        title: "BLOGS",
+        id: 1,
+        title: "LOCATION",
         route: "#",
       },
     ],

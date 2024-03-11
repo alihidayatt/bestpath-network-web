@@ -42,9 +42,6 @@ export default function Partners() {
                 <div className="flex text-xl font-semibold text-bluegreen justify-start p-2">
                     <h1></h1>
                 </div>
-                <div className="flex text-xl font-semibold text-bluegreen justify-start p-2">
-                    <h1></h1>
-                </div>
                 <div className="flex justify-items-center justify-center justify-self-center mb-10">
                 <div className="flex justify-items-center justify-center justify-self-center">
                     <Link href={"https://hrwlvg.bl.files.1drv.com/y4mR4RQ2bmQYgc3jCDv-WLXK3Z4PZFL9vNyJLNohg_We8jZp8gyATMtMXNIUiWq4O8d6Y8QZWwQf4AWRNIuYkOaOCrYl1apIKsEgmvv-w2eTwSIcM6Dc3csa0UYf5A-7qSEgB3MVrDCBuBmgpYAE_KL3YzvHDc_n0GR7adG85HFS6OWqqznpA3CKQKmtkH8EZP0xD0kepfR2UHhR2C62bYLaw"}>
