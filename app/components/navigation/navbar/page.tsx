@@ -21,15 +21,15 @@ const menuItems = [
         title: "TRAINING & EDUCATION",
         route: "/training",
       },
+      // {
+      //   id: 2,
+      //   title: "PROJECTS IMPLEMENTATION",
+      //   route: "#",
+      // },
       {
         id: 2,
-        title: "PROJECTS IMPLEMENTATION",
-        route: "#",
-      },
-      {
-        id: 3,
         title: "E-BOOK",
-        route: "#",
+        route: "/ebook",
       },
     ],
   },
@@ -40,12 +40,12 @@ const menuItems = [
       {
         id: 1,
         title: "BUSINESS PARTNERS",
-        route: "#",
+        route: "/business-partners",
       },
       {
         id: 2,
         title: "COOPERATING VENDORS",
-        route: "#",
+        route: "/cooperating-vendors",
       },
       {
         id: 3,
@@ -61,7 +61,7 @@ const menuItems = [
       {
         id: 1,
         title: "OUR TEAM",
-        route: "#",
+        route: "/teams",
       },
     ],
   },
@@ -72,7 +72,7 @@ const menuItems = [
       {
         id: 1,
         title: "LOCATION",
-        route: "#",
+        route: "/contact-us",
       },
     ],
   },

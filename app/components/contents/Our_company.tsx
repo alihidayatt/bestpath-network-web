@@ -8,6 +8,7 @@ import {
   DamarCircleImg,
   TriCircleImg,
 } from "../Bpn_imgs";
+import See_all_button from "../button/See_all_button";
 
 export default function Our_company() {
   return (
@@ -190,7 +191,9 @@ export default function Our_company() {
           </div>
 
           <div className="flex justify-items-center justify-center justify-self-center mt-10 mb-5">
-            <See_all_button_disabled />
+            <Link href={"/teams"}>
+              <See_all_button />
+            </Link>
           </div>
         </div>
         {/* BLOGS */}

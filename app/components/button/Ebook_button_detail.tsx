@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Ebook_button() {
+export default function Ebook_button_detail() {
   return (
     <>
       <button
