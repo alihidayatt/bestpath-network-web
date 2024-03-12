@@ -4,7 +4,6 @@ import "./globals.css";
 import Footer from "./components/footer/page";
 import Carousel from "./components/carousel/page";
 import Breadcrumb from "./components/navigation/breadcrumb/breadcrumb";
-// import Header from "./components/navigation/navbar/Header";
 import Navbar from "./components/navigation/navbar/page";
 
 export const metadata: Metadata = {
