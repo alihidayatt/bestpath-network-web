@@ -9,7 +9,7 @@ export default function EbookId({ params }: { params: { ebookId: 1 } }) {
       <div className="container mx-auto px-6 py-6 ">
         <div className="w-full h-full shadow-lg p-3">
           <div className="flex text-xl font-bold text-bluegreen justify-start p-2">
-            <h1>THE ULTIMATE NETWORK INFRASTRUCTURE TOPOLOGY</h1>
+            <h1>THE ULTRA INSTINCT NETWORK INFRASTRUCTURE TOPOLOGY</h1>
           </div>
 
           <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto w-full lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3">
