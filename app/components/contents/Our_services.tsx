@@ -15,6 +15,62 @@ import {
   Ebook_bgec_front_img,
 } from "../Bpn_imgs";
 
+interface TrainingData {
+  id: number;
+  img: React.JSX.Element;
+  title: string;
+}
+interface ProjectIm {
+  id: number;
+  img: React.JSX.Element;
+}
+
+const TData: TrainingData[] = [
+  {
+    id: 1,
+    img: <Training_bssn_img />,
+    title: "Training BSSN",
+  },
+  {
+    id: 2,
+    img: <Training_cyberops_ntt_img />,
+    title: "Training Cyberops NTT",
+  },
+  {
+    id: 3,
+    img: <Training_hypernet_img />,
+    title: "Training Hypernet",
+  },
+  {
+    id: 4,
+    img: <Training_pertamina_img />,
+    title: "Training Pertamina",
+  },
+  {
+    id: 5,
+    img: <Training_singapore_mpls_img />,
+    title: "Training Singapore MPLS",
+  },
+];
+const PIData: ProjectIm[] = [
+  {
+    id: 1,
+    img: <Implement1_img />,
+  },
+  {
+    id: 2,
+    img: <Implement2_img />,
+  },
+  {
+    id: 3,
+    img: <Implement3_img />,
+  },
+  {
+    id: 4,
+    img: <Implement4_img />,
+  },
+];
+
 export default function Our_services() {
   return (
     <>
@@ -31,50 +87,19 @@ export default function Our_services() {
               </div>
             </div>
             <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col lg:flex-wrap md:flex-wrap justify-items-center justify-center justify-self-start mb-5 h-auto lg:gap-x-5 lg:gap-y-5 md:gap-x-5 md:gap-y-5 sm:gap-y-5 xs:gap-y-5 py-3">
-              <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-                <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                  <Training_bssn_img />
+              {TData.map((TData) => (
+                <div
+                  key={TData.id}
+                  className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg"
+                >
+                  <div className="flex w-full h-auto justify-center rounded-lg py-2">
+                    {TData.img}
+                  </div>
+                  <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
+                    {TData.title}
+                  </div>
                 </div>
-                <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                  Training BSSN
-                </div>
-              </div>
-
-              <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-                <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                  <Training_cyberops_ntt_img />
-                </div>
-                <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                  Training Cyberops NTT
-                </div>
-              </div>
-
-              <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-                <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                  <Training_hypernet_img />
-                </div>
-                <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                  Training Hypernet
-                </div>
-              </div>
-
-              <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-                <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                  <Training_pertamina_img />
-                </div>
-                <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                  Training Pertamina
-                </div>
-              </div>
-
-              <div className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-                <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                  <Training_singapore_mpls_img />
-                </div>
-                <div className="bg-white text-center w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                  Training Singapore MPLS
-                </div>
-              </div>
+              ))}
             </div>
 
             <div className="flex justify-items-center justify-center justify-self-center mb-10">
@@ -97,29 +122,16 @@ export default function Our_services() {
             </div>
 
             <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col lg:flex-wrap md:flex-wrap justify-items-center justify-center justify-self-start mb-5 h-auto lg:gap-x-5 lg:gap-y-5 md:gap-x-5 md:gap-y-5 sm:gap-y-5 xs:gap-y-5 py-3">
-              <div className="lg:basis-1/5 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
-                <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                  <Implement1_img />
+              {PIData.map((PIData) => (
+                <div
+                  key={PIData.id}
+                  className="lg:basis-1/5 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg"
+                >
+                  <div className="flex w-full h-auto justify-center rounded-lg py-2">
+                    {PIData.img}
+                  </div>
                 </div>
-              </div>
-
-              <div className="lg:basis-1/5 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
-                <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                  <Implement2_img />
-                </div>
-              </div>
-
-              <div className="lg:basis-1/5 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
-                <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                  <Implement3_img />
-                </div>
-              </div>
-
-              <div className="lg:basis-1/5 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg">
-                <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                  <Implement4_img />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           <div className="">
