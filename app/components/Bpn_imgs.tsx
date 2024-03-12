@@ -94,6 +94,7 @@ import tri from "./icon-component/img/tri_img.png";
 import wika from "./icon-component/icon/wika_ico.png";
 import workshop_img from "./icon-component/img/workshop.jpg";
 import ebook_bgec_img from "./icon-component/img/ebook_bgec.jpg";
+import h_stacking_cisco_img from "./icon-component/img/handbook stacking cisco switch 3750_img.png";
 
 export default function Bpn_imgs() {
   return <div>bpn_icon default export</div>;
@@ -674,20 +675,40 @@ function Phone_ico() {
 
 function Ebook_bgec_img() {
   return (
+    <Image src={ebook_bgec_img} width={800} height={800} alt="Ebook_bgec_img" />
+  );
+}
+
+function Ebook_bgec_front_img() {
+  return (
     <Image
       src={ebook_bgec_img}
-      width={800}
-      height={800}
-      alt="Ebook_bgec_img"
+      width={300}
+      height={300}
+      alt=" Ebook_front_bgec"
     />
   );
-  }  
-
-  function Ebook_bgec_front_img() {
-    return (
-      <Image src={ebook_bgec_img} width={300} height={300} alt=" Ebook_front_bgec" />
-    );
-  }
+}
+function Ebook_h_stacking_cisco_front_img() {
+  return (
+    <Image
+      src={h_stacking_cisco_img}
+      width={300}
+      height={300}
+      alt="h_stacking_cisco_img"
+    />
+  );
+}
+function Ebook_h_stacking_cisco_img() {
+  return (
+    <Image
+      src={h_stacking_cisco_img}
+      width={800}
+      height={800}
+      alt="h_stacking_cisco_img"
+    />
+  );
+}
 
 export {
   Apsf_ico,
@@ -785,4 +806,6 @@ export {
   Workshop_img,
   Ebook_bgec_img,
   Ebook_bgec_front_img,
+  Ebook_h_stacking_cisco_img,
+  Ebook_h_stacking_cisco_front_img,
 };

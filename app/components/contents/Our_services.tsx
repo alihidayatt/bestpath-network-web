@@ -15,6 +15,9 @@ import {
   Ebook_bgec_front_img,
 } from "../Bpn_imgs";
 
+import { ebook_data } from "@/app/ebook/ebook_data";
+const EBData = ebook_data;
+
 interface TrainingData {
   id: number;
   img: React.JSX.Element;
@@ -143,18 +146,35 @@ export default function Our_services() {
               </div>
             </div>
             <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col lg:flex-wrap md:flex-wrap justify-items-center justify-center justify-self-start mb-5 h-auto lg:gap-x-5 lg:gap-y-5 md:gap-x-5 md:gap-y-5 sm:gap-y-5 xs:gap-y-5 py-3">
-              <div className="lg:basis-1/3 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg">
-                <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                  <Ebook_bgec_front_img />
-                </div>
-                <div className="flex justify-items-center justify-center justify-self-center mb-10">
-                  <div className="flex justify-items-center justify-center justify-self-center">
-                    <Link href={"/ebook"}>
-                      <See_all_button />
-                    </Link>
+              {/* <div className="lg:basis-full md:basis-full sm:w-full xs:w-full bg-white flex lg:flex-row md:flex-row sm:flex-col xs:flex-col p-5 rounded-lg gap-x-5 gap-y-5">
+                {EBData.slice(0, 3).map((EBData) => (
+                  <div
+                    key={EBData.id}
+                    className="flex w-full h-auto justify-center rounded-lg py-5 shadow-md "
+                  >
+                    {EBData.frontImg}
                   </div>
-                </div>
+                ))}
+              </div> */}
+              <div className="flex lg:basis-full md:basis-full sm:w-full xs:w-full bg-white lg:flex-row md:flex-row sm:flex-col xs:flex-col lg:flex-wrap md:flex-wrap justify-items-center justify-center justify-self-start mb-5 h-auto lg:gap-x-5 lg:gap-y-5 md:gap-x-5 md:gap-y-5 sm:gap-y-5 xs:gap-y-5 py-3">
+                {EBData.slice(0, 3).map((EBData) => (
+                  <div
+                    key={EBData.id}
+                    className="lg:w-1/4 md:w-1/3 sm:w-full xs:w-full flex lg:flex-row md:flex-row sm:flex-col xs:flex-col justify-center shadow-lg p-5 rounded-lg  gap-x-8 gap-y-4"
+                  >
+                    <div className="w-full h-auto justify-center rounded-md">
+                      <div className="w-full h-auto p-5 justify-center">
+                        {EBData.img}
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
+            </div>
+            <div className="flex justify-items-center justify-center justify-self-center">
+              <Link href={"/ebook"}>
+                <See_all_button />
+              </Link>
             </div>
           </div>
         </div>
