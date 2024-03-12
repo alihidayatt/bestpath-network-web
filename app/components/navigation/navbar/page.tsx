@@ -14,38 +14,38 @@ function classNames(...classes: string[]): string {
 const menuItems = [
   {
     id: 1,
-    title: "PARTNERS",
+    title: "PROJECTS",
     children: [
       {
         id: 1,
         title: "TRAINING & EDUCATION",
         route: "/training",
       },
+      // {
+      //   id: 2,
+      //   title: "PROJECTS IMPLEMENTATION",
+      //   route: "#",
+      // },
       {
         id: 2,
-        title: "CONSULTATION",
-        route: "#",
-      },
-      {
-        id: 3,
-        title: "PROJECTS",
-        route: "#",
+        title: "E-BOOK",
+        route: "/ebook",
       },
     ],
   },
   {
     id: 2,
-    title: "COMPANY",
+    title: "PARTNERS",
     children: [
       {
         id: 1,
         title: "BUSINESS PARTNERS",
-        route: "#",
+        route: "/business-partners",
       },
       {
         id: 2,
         title: "COOPERATING VENDORS",
-        route: "#",
+        route: "/cooperating-vendors",
       },
       {
         id: 3,
@@ -56,17 +56,23 @@ const menuItems = [
   },
   {
     id: 3,
-    title: "CONTACT US",
+    title: "COMPANY",
     children: [
       {
         id: 1,
         title: "OUR TEAM",
-        route: "#",
+        route: "/teams",
       },
+    ],
+  },
+  {
+    id: 4,
+    title: "CONTACT US",
+    children: [
       {
-        id: 2,
-        title: "BLOGS",
-        route: "#",
+        id: 1,
+        title: "LOCATION",
+        route: "#contact-us",
       },
     ],
   },

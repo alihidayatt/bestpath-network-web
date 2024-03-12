@@ -93,6 +93,7 @@ import triCircleImg from "./icon-component/img/tri_circle_img.png";
 import tri from "./icon-component/img/tri_img.png";
 import wika from "./icon-component/icon/wika_ico.png";
 import workshop_img from "./icon-component/img/workshop.jpg";
+import ebook_bgec_img from "./icon-component/img/ebook_bgec.jpg";
 
 export default function Bpn_imgs() {
   return <div>bpn_icon default export</div>;
@@ -653,7 +654,7 @@ function Wika_ico() {
 function Workshop_img() {
   return (
     <Image
-      src={workshop_img}
+      src={ebook_bgec_img}
       width={425}
       height={335}
       alt="training workshop img"
@@ -670,6 +671,23 @@ function Phone_ico() {
     />
   );
 }
+
+function Ebook_bgec_img() {
+  return (
+    <Image
+      src={ebook_bgec_img}
+      width={800}
+      height={800}
+      alt="Ebook_bgec_img"
+    />
+  );
+  }  
+
+  function Ebook_bgec_front_img() {
+    return (
+      <Image src={ebook_bgec_img} width={300} height={300} alt=" Ebook_front_bgec" />
+    );
+  }
 
 export {
   Apsf_ico,
@@ -765,4 +783,6 @@ export {
   Tri_img,
   Wika_ico,
   Workshop_img,
+  Ebook_bgec_img,
+  Ebook_bgec_front_img,
 };
