@@ -72,7 +72,7 @@ const menuItems = [
       {
         id: 1,
         title: "LOCATION",
-        route: "/contact-us",
+        route: "#contact-us",
       },
     ],
   },
