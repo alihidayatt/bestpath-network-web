@@ -55,7 +55,7 @@ export default function EbookId({ params }: { params: { ebookId: 1 } }) {
                 <div className="flex justify-items-center justify-center justify-self-center">
                   <Link
                     href={
-                      "https://hrwlvg.bl.files.1drv.com/y4mR4RQ2bmQYgc3jCDv-WLXK3Z4PZFL9vNyJLNohg_We8jZp8gyATMtMXNIUiWq4O8d6Y8QZWwQf4AWRNIuYkOaOCrYl1apIKsEgmvv-w2eTwSIcM6Dc3csa0UYf5A-7qSEgB3MVrDCBuBmgpYAE_KL3YzvHDc_n0GR7adG85HFS6OWqqznpA3CKQKmtkH8EZP0xD0kepfR2UHhR2C62bYLaw"
+                      "https://h7yksq.bl.files.1drv.com/y4mjT9hnuJeqRgCEuFWGQgQ8a2WIXCm9QPbIE0tWMHk6YyEjDWP_92UFij0eXGc-xfHG7nHhrhkd-mbxAATHGyEC7Qxz-b57aCbST3a1ntFwO2ll5BcVhdsY071Hh4kAK6AUxNeS-ZUOkIQLRX6WRnGengjtapCQ3zHVVsfQL_-v1JRvkr-6oQDSv_UZ49sBUmZz1n7bbK3IObsh3PfFXUHTzb48n5nT_6bOXBfNfyZ4Nw"
                     }
                   >
                     <Ebook_download_button />
