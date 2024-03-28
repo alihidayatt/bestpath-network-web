@@ -25,7 +25,7 @@ const ebook_data: EbookData[] = [
     author: "M. Danu Wiyoto, S.kom, CCIE RS #48413, Shefa Heidi Ramadiva",
     description:
       "Didalam buku ini akan diperlihatkan bagaimana Infrastruktur jaringan didirikan, didalam buku ini kita mengambil contoh dari pengelihatan sebuah Telco/ISP, dikarenakan fitur-fitur dan juga infrastruktur yang mereka dirikan bisa dibilang sudah cukup lengkap dan berskala besar. Infrastruktur-infrastruktur tersebut lalu kami gabungkan menjadi satu yang berupa suatu Ultra Instinct Network Infrastructure Topology, dan juga pecahan-pecahan dari Ultra Instinct Network Infrastructure Topology, tersebut, serta dilengkapi dengan penjelasan singkat mengenai topology yang ditampilkan.",
-    link: "https://h7yksq.bl.files.1drv.com/y4mjT9hnuJeqRgCEuFWGQgQ8a2WIXCm9QPbIE0tWMHk6YyEjDWP_92UFij0eXGc-xfHG7nHhrhkd-mbxAATHGyEC7Qxz-b57aCbST3a1ntFwO2ll5BcVhdsY071Hh4kAK6AUxNeS-ZUOkIQLRX6WRnGengjtapCQ3zHVVsfQL_-v1JRvkr-6oQDSv_UZ49sBUmZz1n7bbK3IObsh3PfFXUHTzb48n5nT_6bOXBfNfyZ4Nw",
+    link: "https://public.bl.files.1drv.com/y4mTK4o2jHbOh04IHwz3WMfCPweQLB6xfMDYChFE3ZLo02uFtMAnNc2GYz3I7fJL7DjMop4RUBi0svtf3-gRoiRI0o01Xtp0j4DohnjgxtvrQzbUNh7w13MbuDjMXNBFAdNR6dMeLxl-tVTt0-0Z7G6JLEUmocnKyys2QY86vaKsj4_X8zskhF1Nhcp4oowkbszDyfbFPV6jLgzKniHwwYsSEe3bqhd7JbHofB3wHDMdrw",
   },
   {
     id: 2,
