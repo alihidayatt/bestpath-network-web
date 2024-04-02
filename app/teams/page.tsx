@@ -64,40 +64,6 @@ export default function Teams() {
             <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-white dark:border-gray-400 shadow-lg">
               <div className="flex flex-col items-center pb-10">
                 <div className="xl:w-48 lg:w-48 md:w-48 sm:w-48 xs:w-36 h-auto mb-3 rounded-full shadow-lg mt-5">
-                  <MosesCircleImg />
-                </div>
-                <h5 className="mb-1 text-xl xs:text-lg font-semibold text-gray-900 dark:text-bluegreen">
-                  Moses Huwae
-                </h5>
-                <span className="text-sm text-gray-500 dark:text-gray-400 p-2 m-5 text-center">
-                  Managing Director - Enterprise Products Intregration Pte
-                  Computer Tutor, Computer Instructor, System Support Analyst
-                </span>
-                <div className="flex mt-4 md:mt-6">
-                  <div className="px-6 pt-4 pb-2">
-                    <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-regular text-white mr-2 mb-2">
-                      IT Supervisor
-                    </span>
-                    <span className="inline-block bg-bluegreen rounded-full px-3 py-1 text-sm font-regular text-white mr-2 mb-2">
-                      Sales & Marketing Manager
-                    </span>
-                  </div>
-                </div>
-                {/* <div className="flex mt-4 md:mt-6">
-                  <Link
-                    href="#"
-                    className="py-2 px-20 ms-2 text-sm font-medium text-white focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-bluegreen dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-                  >
-                    Profile
-                  </Link>
-                </div> */}
-              </div>
-            </div>
-            {/* Card End */}
-            {/* Card Start */}
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-white dark:border-gray-400 shadow-lg">
-              <div className="flex flex-col items-center pb-10">
-                <div className="xl:w-48 lg:w-48 md:w-48 sm:w-48 xs:w-36 h-auto mb-3 rounded-full shadow-lg mt-5">
                   <ErickCircleImg />
                 </div>
                 <h5 className="mb-1 text-xl xs:text-lg font-semibold text-gray-900 dark:text-bluegreen">

@@ -655,7 +655,7 @@ function Wika_ico() {
 function Workshop_img() {
   return (
     <Image
-      src={ebook_bgec_img}
+      src={workshop_img}
       width={425}
       height={335}
       alt="training workshop img"
