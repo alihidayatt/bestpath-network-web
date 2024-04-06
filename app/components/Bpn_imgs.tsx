@@ -95,6 +95,9 @@ import wika from "./icon-component/icon/wika_ico.png";
 import workshop_img from "./icon-component/img/workshop.jpg";
 import ebook_bgec_img from "./icon-component/img/ebook_bgec.jpg";
 import h_stacking_cisco_img from "./icon-component/img/handbook stacking cisco switch 3750_img.png";
+import zoom_img from "./icon-component/img/zoom_img.png";
+import cucm_img from "./icon-component/img/cucm_img.png";
+import mpls_img from "./icon-component/img/mpls_img.png";
 
 export default function Bpn_imgs() {
   return <div>bpn_icon default export</div>;
@@ -710,6 +713,72 @@ function Ebook_h_stacking_cisco_img() {
   );
 }
 
+function Zoom_front_img() {
+  return (
+    <Image
+      src={zoom_img}
+      width={300}
+      height={300}
+      alt="zoom_front__img"
+    />
+  );
+}
+
+function Zoom_img() {
+  return (
+    <Image
+      src={zoom_img}
+      width={800}
+      height={800}
+      alt="zoom_img"
+    />
+  );
+}
+
+function Cucm_front_img() {
+  return (
+    <Image
+      src={cucm_img}
+      width={300}
+      height={300}
+      alt="cucm_front__img"
+    />
+  );
+}
+
+function Cucm_img() {
+  return (
+    <Image
+      src={cucm_img}
+      width={800}
+      height={800}
+      alt="cucm_img"
+    />
+  );
+}
+
+function Mpls_img() {
+  return (
+    <Image
+      src={mpls_img}
+      width={800}
+      height={800}
+      alt="mpls_img"
+    />
+  );
+}
+
+function Mpls_front_img() {
+  return (
+    <Image
+      src={mpls_img}
+      width={300}
+      height={300}
+      alt="mpls_front__img"
+    />
+  );
+}
+
 export {
   Apsf_ico,
   Asdp_ico,
@@ -808,4 +877,10 @@ export {
   Ebook_bgec_front_img,
   Ebook_h_stacking_cisco_img,
   Ebook_h_stacking_cisco_front_img,
+  Zoom_front_img,
+  Zoom_img,
+  Cucm_front_img,
+  Cucm_img,
+  Mpls_img,
+  Mpls_front_img,
 };
