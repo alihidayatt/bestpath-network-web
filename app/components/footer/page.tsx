@@ -28,7 +28,7 @@ export default function Footer() {
                 <Phone_ico />
               </span>
               <span className="lg:text-lg md:text-lg sm:text-base xs:text-base">
-                <p>+62 61 722 222</p>
+                <p>+62 878 914 48413</p>
               </span>
             </div>
           </div>

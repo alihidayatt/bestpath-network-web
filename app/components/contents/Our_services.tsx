@@ -1,8 +1,10 @@
 import React from "react";
-import See_all_button from "../button/See_all_button";
-import Ebook_button_detail from "../button/See_all_button";
 import Link from "next/link";
 import {
+  Cisco_ico,
+  Mikrotik_ico,
+  Fortinet_ico,
+  Juniper_ico,
   Training_bssn_img,
   Training_cyberops_ntt_img,
   Training_hypernet_img,
@@ -12,173 +14,122 @@ import {
   Implement2_img,
   Implement3_img,
   Implement4_img,
-  Ebook_bgec_front_img,
 } from "../Bpn_imgs";
-
+import See_all_button from "../button/See_all_button";
 import { ebook_data } from "@/app/ebook/ebook_data";
+
 const EBData = ebook_data;
 
-interface TrainingData {
-  id: number;
-  img: React.JSX.Element;
-  title: string;
-}
-interface ProjectIm {
-  id: number;
-  img: React.JSX.Element;
-}
-
-const TData: TrainingData[] = [
-  {
-    id: 1,
-    img: <Training_bssn_img />,
-    title: "Training BSSN",
-  },
-  {
-    id: 2,
-    img: <Training_cyberops_ntt_img />,
-    title: "Training Cyberops NTT",
-  },
-  {
-    id: 3,
-    img: <Training_hypernet_img />,
-    title: "Training Hypernet",
-  },
-  {
-    id: 4,
-    img: <Training_pertamina_img />,
-    title: "Training Pertamina",
-  },
-  {
-    id: 5,
-    img: <Training_singapore_mpls_img />,
-    title: "Training Singapore MPLS",
-  },
-];
-const PIData: ProjectIm[] = [
-  {
-    id: 1,
-    img: <Implement1_img />,
-  },
-  {
-    id: 2,
-    img: <Implement2_img />,
-  },
-  {
-    id: 3,
-    img: <Implement3_img />,
-  },
-  {
-    id: 4,
-    img: <Implement4_img />,
-  },
+const TData = [
+  { id: 1, img: <Training_bssn_img />, title: "Training BSSN" },
+  { id: 2, img: <Training_cyberops_ntt_img />, title: "Training Cyberops NTT" },
+  { id: 3, img: <Training_hypernet_img />, title: "Training Hypernet" },
+  { id: 4, img: <Training_pertamina_img />, title: "Training Pertamina" },
 ];
 
-export default function Our_services() {
+const PIData = [
+  { id: 1, img: <Implement1_img /> },
+  { id: 2, img: <Implement2_img /> },
+  { id: 3, img: <Implement3_img /> },
+  { id: 4, img: <Implement4_img /> },
+];
+
+const TrainingClasses = [
+  { name: "Cisco", Icon: Cisco_ico, link: "../training-class/cisco-class" },
+  { name: "Mikrotik", Icon: Mikrotik_ico, link: "../training-class/mikrotik-class" },
+  { name: "Fortinet", Icon: Fortinet_ico, link: "../training-class/cisco-class" },
+  { name: "Juniper", Icon: Juniper_ico, link: "../training-class/juniper-class" },
+];
+
+export default function OurServices() {
   return (
-    <>
-      <div className="container mx-auto px-6 py-6 ">
-        {/* PROJECTS */}
-        <div className="w-full h-full bg-white shadow-lg p-3 rounded-lg divide-y">
-          {/* divide */}
-          <div className="">
-            <div className="flex justify-items-center justify-center justify-self-center mb-5">
-              <div className="flex justify-items-center justify-center justify-self-center">
-                <h1 className="text-2xl sm:text-xl xs:text-xl font-medium italic text-bluegreen">
-                  Training
-                </h1>
-              </div>
+    <div className="container mx-auto px-6 py-6">
+      {/* Training Section */}
+      <div className="bg-white shadow-lg p-6 rounded-lg mb-6">
+        <h1 className="text-2xl font-medium italic text-center text-bluegreen mb-5">
+          Training
+        </h1>
+        <div className="flex flex-wrap gap-5 justify-center">
+          {TData.map((item) => (
+            <div key={item.id} className="bg-white shadow-lg p-4 rounded-lg w-60">
+              <div className="flex justify-center">{item.img}</div>
+              <h2 className="text-center text-lg font-medium text-slate-700 mt-3">
+                {item.title}
+              </h2>
             </div>
-            <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col lg:flex-wrap md:flex-wrap justify-items-center justify-center justify-self-start mb-5 h-auto lg:gap-x-5 lg:gap-y-5 md:gap-x-5 md:gap-y-5 sm:gap-y-5 xs:gap-y-5 py-3">
-              {TData.map((TData) => (
-                <div
-                  key={TData.id}
-                  className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 rounded-lg"
-                >
-                  <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                    {TData.img}
-                  </div>
-                  <div className="bg-white w-full h-full flex justify-center p-2 text-lg font-medium text-slate-700">
-                    {TData.title}
-                  </div>
-                </div>
-              ))}
-            </div>
+          ))}
+        </div>
+        <div className="flex justify-center mt-5">
+          <Link href="/training">
+            <See_all_button />
+          </Link>
+        </div>
+      </div>
 
-            <div className="flex justify-items-center justify-center justify-self-center mb-10">
-              <div className="flex justify-items-center justify-center justify-self-center">
-                <Link href={"/training"}>
-                  <See_all_button />
+      {/* Kelas Training Section */}
+      <div className="bg-white shadow-lg p-6 rounded-lg mb-6">
+        <h1 className="text-2xl font-bold mb-6 text-center text-bluegreen">
+          Training Class
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {TrainingClasses.map((kelas, index) => (
+            <div
+              key={index}
+              className="bg-gray-100 shadow-md rounded-lg overflow-hidden"
+            >
+              <div className="h-40 flex border justify-center items-center bg-white">
+                <kelas.Icon />
+              </div>
+              <div className="p-4 text-center">
+                <h2 className="text-lg font-semibold mb-2">{kelas.name}</h2>
+                <Link href={kelas.link}>
+                  <button className="bg-transparent inline-flex items-center dark:transparent dark:hover:transparent dark:focus:transparent hover:text-bluegreen text-slate-300 border-blue-700 border-2 hover:bg-slate-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 dark:border-bluegreen dark:text-bluegreen dark:hover:text-white dark:hover:bg-bluegreen dark:focus:ring-slate-300 shadow-lg">
+                    All Class
+                  </button>
                 </Link>
               </div>
             </div>
-          </div>
-          {/* divide */}
+          ))}
+        </div>
+        <div className="flex justify-center mt-5">
+                <Link href="/training-class">
+                  <See_all_button />
+                </Link>
+              </div>
+      </div>
 
-          <div className="">
-            <div className="flex justify-items-center justify-center justify-self-center mt-5">
-              <div className="flex justify-items-center justify-center justify-self-center">
-                <h1 className="text-2xl sm:text-xl xs:text-xl text-center font-medium italic text-bluegreen">
-                  Project Implementation
-                </h1>
-              </div>
+      {/* Project Implementation Section */}
+      <div className="bg-white shadow-lg p-6 rounded-lg mb-6">
+        <h1 className="text-2xl font-medium italic text-center text-bluegreen mb-5">
+          Project Implementation
+        </h1>
+        <div className="flex flex-wrap gap-5 justify-center">
+          {PIData.map((item) => (
+            <div key={item.id} className="bg-white shadow-lg p-4 rounded-lg w-60">
+              <div className="flex justify-center">{item.img}</div>
             </div>
-
-            <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col lg:flex-wrap md:flex-wrap justify-items-center justify-center justify-self-start mb-5 h-auto lg:gap-x-5 lg:gap-y-5 md:gap-x-5 md:gap-y-5 sm:gap-y-5 xs:gap-y-5 py-3">
-              {PIData.map((PIData) => (
-                <div
-                  key={PIData.id}
-                  className="lg:basis-1/5 md:basis-full sm:w-full xs:w-full bg-white flex flex-col shadow-lg p-2 m-2 rounded-lg"
-                >
-                  <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                    {PIData.img}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="">
-            <div className="flex justify-items-center justify-center justify-self-center mt-5">
-              <div className="flex justify-items-center justify-center justify-self-center">
-                <h1 className="text-2xl sm:text-xl xs:text-xl text-center font-medium italic text-bluegreen">
-                  E-Book
-                </h1>
-              </div>
-            </div>
-            <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col lg:flex-wrap md:flex-wrap justify-items-center justify-center justify-self-start mb-5 h-auto lg:gap-x-5 lg:gap-y-5 md:gap-x-5 md:gap-y-5 sm:gap-y-5 xs:gap-y-5 py-3">
-              {/* <div className="lg:basis-full md:basis-full sm:w-full xs:w-full bg-white flex lg:flex-row md:flex-row sm:flex-col xs:flex-col p-5 rounded-lg gap-x-5 gap-y-5">
-                {EBData.slice(0, 3).map((EBData) => (
-                  <div
-                    key={EBData.id}
-                    className="flex w-full h-auto justify-center rounded-lg py-5 shadow-md "
-                  >
-                    {EBData.frontImg}
-                  </div>
-                ))}
-              </div> */}
-              <div className="flex lg:basis-full md:basis-full sm:w-full xs:w-full bg-white lg:flex-row md:flex-row sm:flex-col xs:flex-col lg:flex-wrap md:flex-wrap justify-items-center justify-center justify-self-start mb-5 h-auto lg:gap-x-5 lg:gap-y-5 md:gap-x-5 md:gap-y-5 sm:gap-y-5 xs:gap-y-5 py-3">
-                {EBData.slice(0, 3).map((EBData) => (
-                  <div
-                    key={EBData.id}
-                    className="lg:w-1/4 md:w-1/3 sm:w-full xs:w-full flex lg:flex-row md:flex-row sm:flex-col xs:flex-col justify-center shadow-lg p-5 rounded-lg  gap-x-8 gap-y-4"
-                  >
-                    <div className="w-full h-auto justify-center rounded-md">
-                      <div className="w-full h-auto p-5 justify-center">
-                        {EBData.img}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="flex justify-items-center justify-center justify-self-center">
-              <Link href={"/ebook"}>
-                <See_all_button />
-              </Link>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-    </>
+
+      {/* E-Book Section */}
+      <div className="bg-white shadow-lg p-6 rounded-lg">
+        <h1 className="text-2xl font-medium italic text-center text-bluegreen mb-5">
+          E-Book
+        </h1>
+        <div className="flex flex-wrap gap-5 justify-center">
+          {EBData.slice(0, 3).map((item) => (
+            <div key={item.id} className="bg-white shadow-lg p-4 rounded-lg w-60">
+              <div className="flex justify-center">{item.img}</div>
+            </div>
+          ))}
+        </div>
+        <div className="flex justify-center mt-5">
+          <Link href="/ebook">
+            <See_all_button />
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 }

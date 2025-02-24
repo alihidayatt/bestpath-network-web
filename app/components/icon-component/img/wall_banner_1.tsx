@@ -32,9 +32,9 @@ export default function Wall_banner_1_img() {
           BEST-PATH NETWORK
         </p>
         <h4 className="lg:text-xl md:text-xl sm:text-lg text-white lg:text-left md:text-left sm:text-left">
-          Established in 2016 and we are focus on Data Center, Network Security,
-          Training and Consultant.
+        Since 2016, providing Expert IT Services in Consulting, Training, and Implementation 
         </h4>
+        <h4 className="lg:text-xl md:text-xl sm:text-lg text-white lg:text-left md:text-left sm:text-left">for Network Solutions and Data Centers.</h4>
       </div>
 
       <div className="w-[60%] h-auto"></div>
