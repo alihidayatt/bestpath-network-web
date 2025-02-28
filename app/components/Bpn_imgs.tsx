@@ -7,9 +7,9 @@ import aruba_acsa from "./icon-component/icon/aruba_acsa_ico.png";
 import aruba_acsp from "./icon-component/icon/aruba_acsp_ico.png";
 import ruijie_rcnars from "./icon-component/icon/ruiji_rcnars_ico.png";
 import ruijie_rcnawlan from "./icon-component/icon/ruiji_rcnawlan_ico.jpg";
-import Ruckus from "./icon-component/icon/Ruckus_ico.png";
+import Ruckus from "./icon-component/icon/ruckus_ico.png";
 import Ruckus_ricxi from "./icon-component/icon/ruckus_ricxi_ico.png";
-import Ruckus_rasza from "./icon-component/icon/ruckus_rasza_ico.png"
+import Ruckus_rasza from "./icon-component/icon/ruckus_rasza_ico.png";
 import Ruckus_rcni from "./icon-component/icon/ruckus_rcni_ico.png";
 import Ruckus_rcwa from "./icon-component/icon/ruckus_rcwa_ico.png";
 import comptia_security from "./icon-component/icon/comptia_security_ico.png";
@@ -17,11 +17,11 @@ import comptia_Cysa from "./icon-component/icon/comptia_cysa_ico.png";
 import juniper_jnciasec from "./icon-component/icon/juniper_jnciasec_ico.png";
 import paloalto_pcnsa from "./icon-component/icon/paloalto_pcnsa_ico.png";
 import fortinet_nse7 from "./icon-component/icon/fortinet_nse7_ico.png";
-import fortinet_nse4  from "./icon-component/icon/fortinet_nse4_ico.png";
+import fortinet_nse4 from "./icon-component/icon/fortinet_nse4_ico.png";
 import fortinet_fca from "./icon-component/icon/fortinet_fca_ico.png";
 import fortinet_fcf from "./icon-component/icon/fortinet_fcf_ico.png";
-import comptia_network from "./icon-component/icon/comptia_network_ico.png"
-import comptia from "./icon-component/icon/comptia_ico.png"
+import comptia_network from "./icon-component/icon/comptia_network_ico.png";
+import comptia from "./icon-component/icon/comptia_ico.png";
 import huawei_hciadatacom from "./icon-component/icon/huawei_hciadatacom_ico.png";
 import juniper_jncissp from "./icon-component/icon/juniper_jncissp_ico.png";
 import juniper_jnciajunos from "./icon-component/icon/juniper_jnciajunos_ico.png";
@@ -32,7 +32,7 @@ import mikrotik_mtcume from "./icon-component/icon/mikrotik_mtcume_ico.png";
 import mikrotik_mtctce from "./icon-component/icon/mikrotik_mtctce_ico.png";
 import mikrotik_mtcre from "./icon-component/icon/mikrotik_mtcre_ico.png";
 import juniper_jncisent from "./icon-component/icon/juniper_jncisent_ico.png";
-import mikrotik_mtcwe from "./icon-component/icon/mikrotik_mtcwe_ico.png";		
+import mikrotik_mtcwe from "./icon-component/icon/mikrotik_mtcwe_ico.png";
 import apsf from "./icon-component/icon/apsf_ico.png";
 import asdp from "./icon-component/icon/asdp_ico.png";
 import bangli from "./icon-component/icon/bangli_ico.png";
@@ -154,10 +154,14 @@ export function Apsf_ico() {
   return <Image src={apsf} width={200} height={200} alt="apsf image" />;
 }
 export function H3c_h3cne_rs_ico() {
-  return <Image src={h3c_h3cne_rs} width={150} height={150} alt="h3cne image" />;
+  return (
+    <Image src={h3c_h3cne_rs} width={150} height={150} alt="h3cne image" />
+  );
 }
 export function H3c_h3cse_rs_ico() {
-  return <Image src={h3c_h3cse_rs} width={125} height={125} alt="h3cse image" />;
+  return (
+    <Image src={h3c_h3cse_rs} width={125} height={125} alt="h3cse image" />
+  );
 }
 export function Aruba_ico() {
   return <Image src={aruba} width={200} height={200} alt="acsa image" />;
@@ -169,19 +173,32 @@ export function Aruba_acsp_ico() {
   return <Image src={aruba_acsp} width={150} height={150} alt="acsp image" />;
 }
 export function Ruijie_rcnars_ico() {
-  return <Image src={ruijie_rcnars} width={200} height={200} alt="rcnars image" />;
+  return (
+    <Image src={ruijie_rcnars} width={200} height={200} alt="rcnars image" />
+  );
 }
 export function Ruijie_rcnawlan_ico() {
-  return <Image src={ruijie_rcnawlan} width={200} height={200} alt="rcnawlan image" />;
+  return (
+    <Image
+      src={ruijie_rcnawlan}
+      width={200}
+      height={200}
+      alt="rcnawlan image"
+    />
+  );
 }
 export function Ruckus_ico() {
   return <Image src={Ruckus} width={200} height={200} alt="ricxi image" />;
 }
 export function Ruckus_ricxi_ico() {
-  return <Image src={Ruckus_ricxi} width={200} height={200} alt="ricxi image" />;
+  return (
+    <Image src={Ruckus_ricxi} width={200} height={200} alt="ricxi image" />
+  );
 }
 export function Ruckus_rasza_ico() {
-  return <Image src={Ruckus_rasza} width={200} height={200} alt="rasza image" />;
+  return (
+    <Image src={Ruckus_rasza} width={200} height={200} alt="rasza image" />
+  );
 }
 export function Ruckus_rcni_ico() {
   return <Image src={Ruckus_rcni} width={200} height={200} alt="rcni image" />;
@@ -191,22 +208,37 @@ export function Ruckus_rcwa_ico() {
 }
 
 export function comptia_security_ico() {
-  return <Image src={comptia_security} width={200} height={200} alt="security image" />;
+  return (
+    <Image
+      src={comptia_security}
+      width={200}
+      height={200}
+      alt="security image"
+    />
+  );
 }
 export function comptia_cysa() {
   return <Image src={comptia_Cysa} width={200} height={200} alt="cysa image" />;
 }
 export function juniper_jnciasec_ico() {
-  return <Image src={juniper_jnciasec} width={200} height={200} alt="apsf image" />;
+  return (
+    <Image src={juniper_jnciasec} width={200} height={200} alt="apsf image" />
+  );
 }
 export function paloalto_pcnsa_ico() {
-  return <Image src={paloalto_pcnsa} width={200} height={200} alt="apsf image" />;
+  return (
+    <Image src={paloalto_pcnsa} width={200} height={200} alt="apsf image" />
+  );
 }
 export function Fortinet_nse7_ico() {
-  return <Image src={fortinet_nse7} width={200} height={200} alt="apsf image" />;
+  return (
+    <Image src={fortinet_nse7} width={200} height={200} alt="apsf image" />
+  );
 }
 export function Fortinet_nse4_ico() {
-  return <Image src={fortinet_nse4} width={200} height={200} alt="apsf image" />;
+  return (
+    <Image src={fortinet_nse4} width={200} height={200} alt="apsf image" />
+  );
 }
 export function Fortinet_fca_ico() {
   return <Image src={fortinet_fca} width={200} height={200} alt="apsf image" />;
@@ -215,40 +247,62 @@ export function Fortinet_fcf_ico() {
   return <Image src={fortinet_fcf} width={200} height={200} alt="apsf image" />;
 }
 export function Comptia_network_ico() {
-  return <Image src={comptia_network} width={200} height={200} alt="apsf image" />;
+  return (
+    <Image src={comptia_network} width={200} height={200} alt="apsf image" />
+  );
 }
 export function Comptia_ico() {
   return <Image src={comptia} width={200} height={200} alt="apsf image" />;
 }
 export function Huawei_hciadatacom_ico() {
-  return <Image src={huawei_hciadatacom} width={200} height={200} alt="apsf image" />;
+  return (
+    <Image src={huawei_hciadatacom} width={200} height={200} alt="apsf image" />
+  );
 }
 export function Juniper_jncissp_ico() {
-  return <Image src={juniper_jncissp} width={150} height={150} alt="apsf image" />;
+  return (
+    <Image src={juniper_jncissp} width={150} height={150} alt="apsf image" />
+  );
 }
 export function Juniper_jnciajunos_ico() {
-  return <Image src={juniper_jnciajunos} width={150} height={150} alt="apsf image" />;
+  return (
+    <Image src={juniper_jnciajunos} width={150} height={150} alt="apsf image" />
+  );
 }
 export function Mikrotik_mtcine_ico() {
-  return <Image src={mikrotik_mtcine} width={200} height={200} alt="apsf image" />;
+  return (
+    <Image src={mikrotik_mtcine} width={200} height={200} alt="apsf image" />
+  );
 }
 export function Mikrotik_mtcipv6_ico() {
-  return <Image src={mikrotik_mtcipv6} width={200} height={200} alt="apsf image" />;
+  return (
+    <Image src={mikrotik_mtcipv6} width={200} height={200} alt="apsf image" />
+  );
 }
 export function Juniper_jncisent_ico() {
-  return <Image src={juniper_jncisent} width={150} height={150} alt="apsf image" />;
+  return (
+    <Image src={juniper_jncisent} width={150} height={150} alt="apsf image" />
+  );
 }
 export function Mikrotik_mtcume_ico() {
-  return <Image src={mikrotik_mtcume} width={200} height={200} alt="apsf image" />;
+  return (
+    <Image src={mikrotik_mtcume} width={200} height={200} alt="apsf image" />
+  );
 }
 export function Mikrotik_mtcre_ico() {
-  return <Image src={mikrotik_mtcre} width={200} height={200} alt="apsf image" />;
+  return (
+    <Image src={mikrotik_mtcre} width={200} height={200} alt="apsf image" />
+  );
 }
 export function Mikrotik_mtctce_ico() {
-  return <Image src={mikrotik_mtctce} width={200} height={200} alt="apsf image" />;
+  return (
+    <Image src={mikrotik_mtctce} width={200} height={200} alt="apsf image" />
+  );
 }
 export function Mikrotik_mtcwe_ico() {
-  return <Image src={mikrotik_mtcwe} width={200} height={200} alt="apsf image" />;
+  return (
+    <Image src={mikrotik_mtcwe} width={200} height={200} alt="apsf image" />
+  );
 }
 export function Asdp_ico() {
   return <Image src={asdp} width={200} height={200} alt="asdp image" />;
@@ -281,7 +335,12 @@ export function Cisco_ccna_ico() {
 
 export function Cisco_ccna_ico_big() {
   return (
-    <Image src={ciscoCcnaIco} width={400} height={400} alt="ciscoCcnaIco image" />
+    <Image
+      src={ciscoCcnaIco}
+      width={400}
+      height={400}
+      alt="ciscoCcnaIco image"
+    />
   );
 }
 
@@ -296,144 +355,114 @@ export function Cisco_ccnp_ico() {
   );
 }
 export function Cisco_ico() {
-  return (
-  <Image 
-    src={ciscoIco} 
-    width={200} 
-    height={200} 
-    alt="ciscoIco image"
-     />);
+  return <Image src={ciscoIco} width={200} height={200} alt="ciscoIco image" />;
 }
 
 export function Cisco_ccnp_encor_ico() {
   return (
-  <Image 
-    src={ciscoCcnpEncor} 
-    width={200} 
-    height={200} 
-    alt="ciscoccnpencoreIco image"
-     />);
-  }
+    <Image
+      src={ciscoCcnpEncor}
+      width={200}
+      height={200}
+      alt="ciscoccnpencoreIco image"
+    />
+  );
+}
 
-  export function Cisco_ccnp_enarsi_ico() {
-    return (
-    <Image 
-      src={ciscoCcnpEnarsi} 
-      width={200} 
-      height={200} 
+export function Cisco_ccnp_enarsi_ico() {
+  return (
+    <Image
+      src={ciscoCcnpEnarsi}
+      width={200}
+      height={200}
       alt="ciscoccnpenarsiIco image"
-       />);
-    }
+    />
+  );
+}
 
-    export function Cisco_ccnp_enwlsi_ico() {
-      return (
-      <Image 
-        src={ciscoCcnpEnwlsi} 
-        width={175} 
-        height={175} 
-        alt="ciscoccnpenwlsiIco image"
-         />);
-      }
-  
-      export function Cisco_ccnp_spcor_ico() {
-        return (
-        <Image 
-        src={ciscoCcnpSpvi} 
-        width={200} 
-        height={200} 
-          alt="ciscoccnpspcorIco image"
-           />);
-        }
+export function Cisco_ccnp_enwlsi_ico() {
+  return (
+    <Image
+      src={ciscoCcnpEnwlsi}
+      width={175}
+      height={175}
+      alt="ciscoccnpenwlsiIco image"
+    />
+  );
+}
 
-        export function Cisco_ccnp_spvi_ico() {
-          return (
-          <Image 
-            src={ciscoCcnpSpvi} 
-            width={200} 
-            height={200} 
-            alt="ciscoccnpspviIco image"
-             />);
-          }
+export function Cisco_ccnp_spcor_ico() {
+  return (
+    <Image
+      src={ciscoCcnpSpvi}
+      width={200}
+      height={200}
+      alt="ciscoccnpspcorIco image"
+    />
+  );
+}
 
-          export function Cisco_ccie_sp_ico() {
-            return (
-            <Image 
-              src={ciscoCcieSp} 
-              width={200} 
-              height={200} 
-              alt="ciscoccieSp image"
-               />);
-            }
+export function Cisco_ccnp_spvi_ico() {
+  return (
+    <Image
+      src={ciscoCcnpSpvi}
+      width={200}
+      height={200}
+      alt="ciscoccnpspviIco image"
+    />
+  );
+}
 
-            export function Cisco_ospf_ico() {
-              return (
-              <Image 
-                src={ciscoOspf} 
-                width={200} 
-                height={200} 
-                alt="ciscoospf image"
-                 />);
-              }
+export function Cisco_ccie_sp_ico() {
+  return (
+    <Image src={ciscoCcieSp} width={200} height={200} alt="ciscoccieSp image" />
+  );
+}
 
-              export function Cisco_isis_ico() {
-                return (
-                <Image 
-                  src={ciscoIsis} 
-                  width={200} 
-                  height={200} 
-                  alt="ciscoisis image"
-                   />);
-                }
+export function Cisco_ospf_ico() {
+  return (
+    <Image src={ciscoOspf} width={200} height={200} alt="ciscoospf image" />
+  );
+}
 
-                export function Cisco_bgp_ico() {
-                  return (
-                  <Image 
-                    src={ciscoBgp} 
-                    width={200} 
-                    height={200} 
-                    alt="ciscobgp image"
-                     />);
-                  }
+export function Cisco_isis_ico() {
+  return (
+    <Image src={ciscoIsis} width={200} height={200} alt="ciscoisis image" />
+  );
+}
 
-                  export function Cisco_mpls_ico() {
-                    return (
-                    <Image 
-                      src={ciscoMpls} 
-                      width={200} 
-                      height={200} 
-                      alt="ciscompls image"
-                       />);
-                    }
-  
-                    export function Cisco_srmpls_ico() {
-                      return (
-                      <Image 
-                        src={ciscoSrmpls} 
-                        width={200} 
-                        height={200} 
-                        alt="ciscosrmpls image"
-                         />);
-                      }
+export function Cisco_bgp_ico() {
+  return <Image src={ciscoBgp} width={200} height={200} alt="ciscobgp image" />;
+}
 
-                      export function Cisco_srv6_ico() {
-                        return (
-                        <Image 
-                          src={ciscoSrv6} 
-                          width={200} 
-                          height={200} 
-                          alt="ciscosrv6 image"
-                           />);
-                        }
+export function Cisco_mpls_ico() {
+  return (
+    <Image src={ciscoMpls} width={200} height={200} alt="ciscompls image" />
+  );
+}
+
+export function Cisco_srmpls_ico() {
+  return (
+    <Image src={ciscoSrmpls} width={200} height={200} alt="ciscosrmpls image" />
+  );
+}
+
+export function Cisco_srv6_ico() {
+  return (
+    <Image src={ciscoSrv6} width={200} height={200} alt="ciscosrv6 image" />
+  );
+}
 
 export function Cisco_vxlan_ico() {
   return (
-  <Image 
-    src={ciscoVxlan} 
-    width={300} 
-    height={300} 
-    alt="ciscovxlanIco image"
-     />);
-  }
+    <Image
+      src={ciscoVxlan}
+      width={300}
+      height={300}
+      alt="ciscovxlanIco image"
+    />
+  );
+}
 
 export function DamarCircleImg() {
   return (
@@ -985,89 +1014,43 @@ export function Ebook_h_stacking_cisco_img() {
 
 export function Zoom_front_img() {
   return (
-    <Image
-      src={zoom_img}
-      width={300}
-      height={300}
-      alt="zoom_front__img"
-    />
+    <Image src={zoom_img} width={300} height={300} alt="zoom_front__img" />
   );
 }
 
 export function Zoom_img() {
-  return (
-    <Image
-      src={zoom_img}
-      width={800}
-      height={800}
-      alt="zoom_img"
-    />
-  );
+  return <Image src={zoom_img} width={800} height={800} alt="zoom_img" />;
 }
 
 export function Cucm_front_img() {
   return (
-    <Image
-      src={cucm_img}
-      width={300}
-      height={300}
-      alt="cucm_front__img"
-    />
+    <Image src={cucm_img} width={300} height={300} alt="cucm_front__img" />
   );
 }
 
 export function Cucm_img() {
-  return (
-    <Image
-      src={cucm_img}
-      width={800}
-      height={800}
-      alt="cucm_img"
-    />
-  );
+  return <Image src={cucm_img} width={800} height={800} alt="cucm_img" />;
 }
 
 export function Mpls_img() {
-  return (
-    <Image
-      src={mpls_img}
-      width={800}
-      height={800}
-      alt="mpls_img"
-    />
-  );
+  return <Image src={mpls_img} width={800} height={800} alt="mpls_img" />;
 }
 
 export function Mpls_front_img() {
   return (
-    <Image
-      src={mpls_img}
-      width={300}
-      height={300}
-      alt="mpls_front__img"
-    />
+    <Image src={mpls_img} width={300} height={300} alt="mpls_front__img" />
   );
 }
 
 export function Mtcna_img() {
   return (
-    <Image
-      src={mtcna_img}
-      width={180}
-      height={180}
-      alt="mtcna_img image"
-    />
+    <Image src={mtcna_img} width={180} height={180} alt="mtcna_img image" />
   );
 }
 
 export function Mtcre_img() {
   return (
-    <Image
-      src={mtcre_img}
-      width={150}
-      height={150}
-      alt="mtcre_img image"
-    />
+    <Image src={mtcre_img} width={150} height={150} alt="mtcre_img image" />
   );
 }
 
@@ -1083,12 +1066,5 @@ export function Hcia_datacom_img() {
 }
 
 export function Rcna_img() {
-  return (
-    <Image
-      src={rcna_img}
-      width={150}
-      height={150}
-      alt="Rcna_img image"
-    />
-  );
+  return <Image src={rcna_img} width={150} height={150} alt="Rcna_img image" />;
 }

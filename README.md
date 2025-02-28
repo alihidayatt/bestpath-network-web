@@ -6,5 +6,6 @@ How to install:
 
 - Clone this repo: git clone https://github.com/usokun/bestpath-network-web.git
 - Install dependencies: npm install
-- Build and run: npm run dev
+- Run dev mode: npm run dev
+- Run build to check if there's any error: npm run build
 - Access this running app: http://localhost:3000
