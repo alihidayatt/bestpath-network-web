@@ -1,9 +1,9 @@
 import React from "react";
-import { mikrotik_data } from "../kelas_data_mikrotik";
+import { Mikrotik_data } from "../kelas_data_mikrotik";
 
 export default function Trainingmikrotik({ params }: { params: { kelas_mikrotik_Id: string } }) {
   const idkelas = params.kelas_mikrotik_Id;
-  const kelas = mikrotik_data.find((k) => k.id.toString() === idkelas);
+  const kelas = Mikrotik_data.find((k) => k.id.toString() === idkelas);
 
   if (!kelas) {
     return (
@@ -84,8 +84,13 @@ export default function Trainingmikrotik({ params }: { params: { kelas_mikrotik_
   <h2 className="text-lg font-semibold text-bluegreen mb-2">Duration</h2>
   <div className="text-base mb-4">{kelas.duration || "Informasi tidak tersedia."} (09.00-17.00 WIB)</div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Investment</h2>
-  <div className="text-base mb-4">Rp.{kelas.investment || "Informasi tidak tersedia."}</div>
+  <h2 className="text-lg font-semibold text-bluegreen mb-2">Investment (Minimum 2 Pax)</h2>
+          <div className="text-base mb-4 text-green-800">Rp.{kelas.investment || "Informasi tidak tersedia."}</div>
+
+          <h2 className="text-lg font-semibold text-bluegreen mb-2">Investment (Kelas Private)</h2>
+          <div className="text-base mb-4 text-green-800">Rp.{kelas.investment_p || "Informasi tidak tersedia."}</div>
+          <div className="text-base mb-4">Bagi yang berminat bisa kontak kami (pada bagian 'Contact Us') untuk reservasi jadwal</div>
+          <div className="text-base mb-4">Catatan: Tidak Termasuk Faktur Pajak</div>
 </div>
       </div>
     </div>

@@ -20,7 +20,7 @@ export default function Footer() {
                 <Email_ico />
               </span>
               <span className="lg:text-lg md:text-lg sm:text-base xs:text-base">
-                <p>info@bestpath-network.com</p>
+                <p>sales@bestpath-network.com</p>
               </span>
             </div>
             <div className="flex lg:justify-items-left lg:justify-left lg:justify-self-left md:justify-items-left md:justify-left md:justify-self-left  sm:justify-items-center sm:justify-center sm:justify-self-center xs:justify-items-center xs:justify-center xs:justify-self-center  text-white font-normal text-base py-1 mt-2 p-1">
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-white font-normal text-sm m-3">
-          <p>Copyright © 2016 - 2024 Bestpath Network. All Rights Reserved</p>
+          <p>Copyright © 2016 - 2025 Bestpath Network. All Rights Reserved</p>
         </div>
       </div>
     </>

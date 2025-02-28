@@ -4,20 +4,26 @@ import Link from "next/link";
 import {
   Cisco_ico,
   Mikrotik_ico,
-  Fortinet_ico,
+  H3c_ico,
   Juniper_ico,
   Huawei_ico,
   Ruijie_ico,
+  Ruckus_ico,
+  Aruba_ico,
+  Comptia_ico,
 } from "../components/Bpn_imgs";
 
 export default function TrainingPage() {
   const classes = [
     { name: "Cisco", Icon: Cisco_ico, link: "../training-class/cisco-class"},
     { name: "Mikrotik", Icon: Mikrotik_ico, link: "../training-class/mikrotik-class" },
-    { name: "Fortinet", Icon: Fortinet_ico, link: "../training-class/juniper-class" },
     { name: "Juniper", Icon: Juniper_ico, link: "../training-class/juniper-class" },
     { name: "Huawei", Icon: Huawei_ico, link: "../training-class/huawei-class" },
+    { name: "H3C", Icon: H3c_ico, link: "../training-class/h3c-class" },
+    { name: "Aruba", Icon: Aruba_ico, link: "../training-class/aruba-class" },
     { name: "Ruijie", Icon: Ruijie_ico, link: "../training-class/ruijie-class" },
+    { name: "Ruckus", Icon: Ruckus_ico, link: "../training-class/ruckus-class" },
+    { name: "Comptia", Icon: Comptia_ico, link: "../training-class/comptia-class" },
   ];
 
   return (

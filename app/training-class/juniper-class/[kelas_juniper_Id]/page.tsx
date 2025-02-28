@@ -50,17 +50,17 @@ export default function Trainingjuniper({ params }: { params: { kelas_juniper_Id
   <h2 className="text-lg font-semibold text-bluegreen mb-2">Overview</h2>
   <div className="text-base mb-4">{kelas.overview}</div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Prasyarat</h2>
-  <div className="text-base mb-4">{kelas.prasyarat || "Tidak ada prasyarat."}</div>
+  <h2 className="text-lg font-semibold text-bluegreen mb-2">Prerequisite</h2>
+  <div className="text-base mb-4">{kelas.prerequisite || "Tidak ada prerequisite."}</div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Tingkat</h2>
-  <div className="text-base mb-4">{renderLevel(kelas.tingkat || "")}</div>
+  <h2 className="text-lg font-semibold text-bluegreen mb-2">Level</h2>
+  <div className="text-base mb-4">{renderLevel(kelas.level || "")}</div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Tujuan</h2>
-  <div className="text-base mb-4">{kelas.tujuan || "Tidak ada tujuan yang terdaftar."}</div>
+  <h2 className="text-lg font-semibold text-bluegreen mb-2">Goals</h2>
+  <div className="text-base mb-4">{kelas.goals || "Tidak ada goals yang terdaftar."}</div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Ditujukan Untuk</h2>
-  <div className="text-base mb-4">{kelas.ditujukan || "Informasi tidak tersedia."}</div>
+  <h2 className="text-lg font-semibold text-bluegreen mb-2">Intended For</h2>
+  <div className="text-base mb-4">{kelas.intended || "Informasi tidak tersedia."}</div>
 
   <h2 className="text-lg font-semibold text-bluegreen mb-2">Syllabus</h2>
           <div>
@@ -81,11 +81,16 @@ export default function Trainingjuniper({ params }: { params: { kelas_juniper_Id
             })}
           </div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Durasi Training</h2>
-  <div className="text-base mb-4">{kelas.durasi || "Informasi tidak tersedia."} (09.00-17.00 WIB)</div>
+  <h2 className="text-lg font-semibold text-bluegreen mb-2">Duration</h2>
+  <div className="text-base mb-4">{kelas.duration || "Informasi tidak tersedia."} (09.00-17.00 WIB)</div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Biaya Pembelajaran</h2>
-  <div className="text-base mb-4">Rp.{kelas.biaya || "Informasi tidak tersedia."}</div>
+  <h2 className="text-lg font-semibold text-bluegreen mb-2">Investment (Minimum 2 Pax)</h2>
+          <div className="text-base mb-4 text-green-800">Rp.{kelas.investment || "Informasi tidak tersedia."}</div>
+
+          <h2 className="text-lg font-semibold text-bluegreen mb-2">Investment (Kelas Private)</h2>
+          <div className="text-base mb-4 text-green-800">Rp.{kelas.investment_p || "Informasi tidak tersedia."}</div>
+          <div className="text-base mb-4">Bagi yang berminat bisa kontak kami (pada bagian 'Contact Us') untuk reservasi jadwal</div>
+          <div className="text-base mb-4">Catatan: Tidak Termasuk Faktur Pajak</div>
 </div>
       </div>
     </div>
