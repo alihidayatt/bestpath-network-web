@@ -8,10 +8,10 @@ import aruba_acsp from "./icon-component/icon/aruba_acsp_ico.png";
 import ruijie_rcnars from "./icon-component/icon/ruiji_rcnars_ico.png";
 import ruijie_rcnawlan from "./icon-component/icon/ruiji_rcnawlan_ico.jpg";
 import Ruckus from "./icon-component/icon/Ruckus_ico.png";
-import Ruckus_ricxi from "./icon-component/icon/Ruckus_ricxi_ico.png";
-import Ruckus_rasza from "./icon-component/icon/Ruckus_rasza_ico.png"
-import Ruckus_rcni from "./icon-component/icon/Ruckus_rcni_ico.png";
-import Ruckus_rcwa from "./icon-component/icon/Ruckus_rcwa_ico.png";
+import Ruckus_ricxi from "./icon-component/icon/ruckus_ricxi_ico.png";
+import Ruckus_rasza from "./icon-component/icon/ruckus_rasza_ico.png"
+import Ruckus_rcni from "./icon-component/icon/ruckus_rcni_ico.png";
+import Ruckus_rcwa from "./icon-component/icon/ruckus_rcwa_ico.png";
 import comptia_security from "./icon-component/icon/comptia_security_ico.png";
 import comptia_Cysa from "./icon-component/icon/comptia_cysa_ico.png";
 import juniper_jnciasec from "./icon-component/icon/juniper_jnciasec_ico.png";
