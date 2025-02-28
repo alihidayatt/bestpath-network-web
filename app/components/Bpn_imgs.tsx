@@ -2,14 +2,16 @@ import React from "react";
 import Image from "next/image";
 import h3c_h3cne_rs from "./icon-component/icon/h3c_h3cne_rs_ico.png";
 import h3c_h3cse_rs from "./icon-component/icon/h3c_h3cse_rs_ico.png";
+import aruba from "./icon-component/icon/aruba_ico.png";
 import aruba_acsa from "./icon-component/icon/aruba_acsa_ico.png";
 import aruba_acsp from "./icon-component/icon/aruba_acsp_ico.png";
-import ruiji_rcnars from "./icon-component/icon/ruiji_rcnars_ico.png";
-import ruiji_rcnawlan from "./icon-component/icon/ruiji_rcnawlan_ico.jpg";
-import ruckus_ricxi from "./icon-component/icon/ruckus_ricxi_ico.png";
-import ruckus_rasza from "./icon-component/icon/ruckus_rasza_ico.png"
-import ruckus_rcni from "./icon-component/icon/ruckus_rcni_ico.png";
-import ruckus_rcwa from "./icon-component/icon/ruckus_rcwa_ico.png";
+import ruijie_rcnars from "./icon-component/icon/ruiji_rcnars_ico.png";
+import ruijie_rcnawlan from "./icon-component/icon/ruiji_rcnawlan_ico.jpg";
+import Ruckus from "./icon-component/icon/Ruckus_ico.png";
+import Ruckus_ricxi from "./icon-component/icon/Ruckus_ricxi_ico.png";
+import Ruckus_rasza from "./icon-component/icon/Ruckus_rasza_ico.png"
+import Ruckus_rcni from "./icon-component/icon/Ruckus_rcni_ico.png";
+import Ruckus_rcwa from "./icon-component/icon/Ruckus_rcwa_ico.png";
 import comptia_security from "./icon-component/icon/comptia_security_ico.png";
 import comptia_Cysa from "./icon-component/icon/comptia_cysa_ico.png";
 import juniper_jnciasec from "./icon-component/icon/juniper_jnciasec_ico.png";
@@ -18,7 +20,8 @@ import fortinet_nse7 from "./icon-component/icon/fortinet_nse7_ico.png";
 import fortinet_nse4  from "./icon-component/icon/fortinet_nse4_ico.png";
 import fortinet_fca from "./icon-component/icon/fortinet_fca_ico.png";
 import fortinet_fcf from "./icon-component/icon/fortinet_fcf_ico.png";
-import comptia_network from "./icon-component/icon/comptia_network_ico.png";
+import comptia_network from "./icon-component/icon/comptia_network_ico.png"
+import comptia from "./icon-component/icon/comptia_ico.png"
 import huawei_hciadatacom from "./icon-component/icon/huawei_hciadatacom_ico.png";
 import juniper_jncissp from "./icon-component/icon/juniper_jncissp_ico.png";
 import juniper_jnciajunos from "./icon-component/icon/juniper_jnciajunos_ico.png";
@@ -150,36 +153,43 @@ export default function Bpn_imgs() {
 export function Apsf_ico() {
   return <Image src={apsf} width={200} height={200} alt="apsf image" />;
 }
-export function h3c_h3cne_rs_ico() {
-  return <Image src={h3c_h3cne_rs} width={200} height={200} alt="h3cne image" />;
+export function H3c_h3cne_rs_ico() {
+  return <Image src={h3c_h3cne_rs} width={150} height={150} alt="h3cne image" />;
 }
-export function h3c_h3cse_rs_ico() {
-  return <Image src={h3c_h3cse_rs} width={200} height={200} alt="h3cse image" />;
+export function H3c_h3cse_rs_ico() {
+  return <Image src={h3c_h3cse_rs} width={125} height={125} alt="h3cse image" />;
 }
-export function aruba_acsa_ico() {
-  return <Image src={aruba_acsa} width={200} height={200} alt="acsa image" />;
+export function Aruba_ico() {
+  return <Image src={aruba} width={200} height={200} alt="acsa image" />;
 }
-export function aruba_acsp_ico() {
-  return <Image src={aruba_acsp} width={200} height={200} alt="acsp image" />;
+export function Aruba_acsa_ico() {
+  return <Image src={aruba_acsa} width={150} height={150} alt="acsa image" />;
 }
-export function ruiji_rcnars_ico() {
-  return <Image src={ruiji_rcnars} width={200} height={200} alt="rcnars image" />;
+export function Aruba_acsp_ico() {
+  return <Image src={aruba_acsp} width={150} height={150} alt="acsp image" />;
 }
-export function ruiji_rcnawlan_ico() {
-  return <Image src={ruiji_rcnawlan} width={200} height={200} alt="rcnawlan image" />;
+export function Ruijie_rcnars_ico() {
+  return <Image src={ruijie_rcnars} width={200} height={200} alt="rcnars image" />;
 }
-export function ruckus_ricxi_ico() {
-  return <Image src={ruckus_ricxi} width={200} height={200} alt="ricxi image" />;
+export function Ruijie_rcnawlan_ico() {
+  return <Image src={ruijie_rcnawlan} width={200} height={200} alt="rcnawlan image" />;
 }
-export function ruckus_rasza_ico() {
-  return <Image src={ruckus_rasza} width={200} height={200} alt="rasza image" />;
+export function Ruckus_ico() {
+  return <Image src={Ruckus} width={200} height={200} alt="ricxi image" />;
 }
-export function ruckus_rcni_ico() {
-  return <Image src={ruckus_rcni} width={200} height={200} alt="rcni image" />;
+export function Ruckus_ricxi_ico() {
+  return <Image src={Ruckus_ricxi} width={200} height={200} alt="ricxi image" />;
 }
-export function ruckus_rcwa_ico() {
-  return <Image src={ruckus_rcwa} width={200} height={200} alt="rcwa image" />;
+export function Ruckus_rasza_ico() {
+  return <Image src={Ruckus_rasza} width={200} height={200} alt="rasza image" />;
 }
+export function Ruckus_rcni_ico() {
+  return <Image src={Ruckus_rcni} width={200} height={200} alt="rcni image" />;
+}
+export function Ruckus_rcwa_ico() {
+  return <Image src={Ruckus_rcwa} width={150} height={150} alt="rcwa image" />;
+}
+
 export function comptia_security_ico() {
   return <Image src={comptia_security} width={200} height={200} alt="security image" />;
 }
@@ -207,14 +217,17 @@ export function Fortinet_fcf_ico() {
 export function Comptia_network_ico() {
   return <Image src={comptia_network} width={200} height={200} alt="apsf image" />;
 }
+export function Comptia_ico() {
+  return <Image src={comptia} width={200} height={200} alt="apsf image" />;
+}
 export function Huawei_hciadatacom_ico() {
   return <Image src={huawei_hciadatacom} width={200} height={200} alt="apsf image" />;
 }
 export function Juniper_jncissp_ico() {
-  return <Image src={juniper_jncissp} width={200} height={200} alt="apsf image" />;
+  return <Image src={juniper_jncissp} width={150} height={150} alt="apsf image" />;
 }
 export function Juniper_jnciajunos_ico() {
-  return <Image src={juniper_jnciajunos} width={200} height={200} alt="apsf image" />;
+  return <Image src={juniper_jnciajunos} width={150} height={150} alt="apsf image" />;
 }
 export function Mikrotik_mtcine_ico() {
   return <Image src={mikrotik_mtcine} width={200} height={200} alt="apsf image" />;
@@ -223,7 +236,7 @@ export function Mikrotik_mtcipv6_ico() {
   return <Image src={mikrotik_mtcipv6} width={200} height={200} alt="apsf image" />;
 }
 export function Juniper_jncisent_ico() {
-  return <Image src={juniper_jncisent} width={200} height={200} alt="apsf image" />;
+  return <Image src={juniper_jncisent} width={150} height={150} alt="apsf image" />;
 }
 export function Mikrotik_mtcume_ico() {
   return <Image src={mikrotik_mtcume} width={200} height={200} alt="apsf image" />;

@@ -1,16 +1,16 @@
 import React from "react";
 import Link from "next/link";
-import { Mikrotik_data } from "./kelas_data_mikrotik";
+import { Ruckus_data } from "./kelas_data_ruckus";
 
-export default function Trainingmikrotik({ params }: { params: { kelas_mikrotik_Id: string } }) {
-  const thisLink = "./mikrotik-class/";
+export default function Trainingruckus({ params }: { params: { kelas_ruckus_Id: string } }) {
+  const thisLink = "./ruckus-class/";
 
   return (
     <div className="container mx-auto px-6 py-6">
       <div className="w-full h-full bg-white shadow-lg p-3 rounded-lg relative overflow-hidden">
-        <h1 className="text-2xl font-bold mb-6 text-center">All Mikrotik Class</h1>
+        <h1 className="text-2xl font-bold mb-6 text-center">All Ruckus Class</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
-          {Mikrotik_data.map((kelas, index) => (
+          {Ruckus_data.map((kelas, index) => (
             <div
               key={index}
               className={`bg-gray-100 shadow-md rounded-lg overflow-hidden relative group ${

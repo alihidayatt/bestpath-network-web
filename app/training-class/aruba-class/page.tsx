@@ -1,16 +1,16 @@
 import React from "react";
 import Link from "next/link";
-import { Mikrotik_data } from "./kelas_data_mikrotik";
+import { aruba_data } from "./kelas_data_aruba";
 
-export default function Trainingmikrotik({ params }: { params: { kelas_mikrotik_Id: string } }) {
-  const thisLink = "./mikrotik-class/";
+export default function Trainingaruba({ params }: { params: { kelas_aruba_Id: string } }) {
+    const thisLink = "./aruba-class/";
 
   return (
     <div className="container mx-auto px-6 py-6">
       <div className="w-full h-full bg-white shadow-lg p-3 rounded-lg relative overflow-hidden">
-        <h1 className="text-2xl font-bold mb-6 text-center">All Mikrotik Class</h1>
+        <h1 className="text-2xl font-bold mb-6 text-center">All Aruba Class</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
-          {Mikrotik_data.map((kelas, index) => (
+          {aruba_data.map((kelas, index) => (
             <div
               key={index}
               className={`bg-gray-100 shadow-md rounded-lg overflow-hidden relative group ${

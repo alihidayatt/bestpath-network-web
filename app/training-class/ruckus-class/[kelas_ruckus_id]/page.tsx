@@ -1,9 +1,10 @@
 import React from "react";
-import { Mikrotik_data } from "../kelas_data_mikrotik";
+import { Ruckus_data } from "../kelas_data_ruckus";
 
-export default function Trainingmikrotik({ params }: { params: { kelas_mikrotik_Id: string } }) {
-  const idkelas = params.kelas_mikrotik_Id;
-  const kelas = Mikrotik_data.find((k) => k.id.toString() === idkelas);
+export default function Trainingruckus({ params }: { params: { kelas_ruckus_id: string } }) {
+    const idkelas = params.kelas_ruckus_id;
+  
+  const kelas = Ruckus_data.find((k) => k.id.toString() === idkelas);
 
   if (!kelas) {
     return (

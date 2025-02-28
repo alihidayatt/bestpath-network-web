@@ -158,36 +158,36 @@ const syllabus_mtcine: string[] = [
 
 const syllabus_mtcna: string[] = [
   "Day 1 – Introduction to MikroTik and Basic Configuration",  
-  "Overview of MikroTik products and RouterOS",  
-  "Initial setup and accessing the MikroTik device",  
-  "Basic networking concepts: IP addresses, subnets, and gateways",  
-  "Firewall basics",  
-  
-  "Day 2 – Advanced Firewall and QoS",  
-  "RouterOS connection tracking",  
-  "Basic address list + LAB",  
-  "Source NAT",  
-  "Destination NAT",  
-  "Simple Queue + LAB",  
-  "Bandwidth test + LAB",  
-  "Interface traffic monitor",  
-  "PCQ Queueing",  
-  
-  "Day 3 – Network Management, Wireless, and Tunnels",  
-  "ARP modes",  
-  "RouterOS ARP table",  
-  "DHCP server and client + LAB",  
-  "Wireless configuration",  
-  "Setup simple wireless link + LAB",  
-  "MAC address filtering + LAB",  
-  "MikroTik wireless protocols + LAB",  
-  "Routing basics",  
-  "Routing overview",  
-  "Static routing",  
-  "Tunnels",  
-  "Tunnel overview (PPPoE, PPTP, L2TP, EoIP)",  
-  
+"Overview of MikroTik products and RouterOS",  
+"Initial setup and accessing the MikroTik device",  
+"Basic networking concepts: IP addresses, subnets, and gateways",  
+"Firewall basics",  
+
+"Day 2 – Advanced Firewall and QoS",  
+"RouterOS connection tracking",  
+"Basic address list + LAB",  
+"Source NAT",  
+"Destination NAT",  
+"Simple Queue + LAB",  
+"Bandwidth test + LAB",  
+"Interface traffic monitor",  
+"PCQ Queueing",  
+
+"Day 3 – Network Management, Wireless, and Tunnels",  
+"ARP modes",  
+"RouterOS ARP table",  
+"DHCP server and client + LAB",  
+"Wireless configuration",  
+"Setup simple wireless link + LAB",  
+"MAC address filtering + LAB",  
+"MikroTik wireless protocols + LAB",  
+"Routing basics",  
+"Routing overview",  
+"Static routing",  
+"Tunnels",  
+"Tunnel overview (PPPoE, PPTP, L2TP, EoIP)",  
+
 ];
 
-  export { syllabus_mtcre,syllabus_mtcwe,syllabus_mtctce,syllabus_mtcume,syllabus_mtcine, syllabus_mtcipv6, syllabus_mtcna };
+  export { syllabus_mtcre,syllabus_mtcwe,syllabus_mtctce,syllabus_mtcume,syllabus_mtcine, syllabus_mtcipv6,  syllabus_mtcna,};
   
