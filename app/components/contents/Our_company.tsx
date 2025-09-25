@@ -3,9 +3,9 @@ import Link from "next/link";
 import See_all_button from "../button/See_all_button";
 import {
   DanuCircleImg,
-  ErickCircleImg,
+  AldiCircleImg,
   DamarCircleImg,
-  TriCircleImg,
+  AnggaCircleImg,
 } from "../Bpn_imgs";
 
 export default function Our_company() {
@@ -70,21 +70,21 @@ const teamMembers = [
     ],
   },
   {
-    name: "Erick Yudho K",
-    image: <ErickCircleImg />, 
-    description: "Head Operasional Data Center CDCS, CDFOM",
-    roles: [],
-  },
-  {
     name: "Damar Galih Kalicki",
     image: <DamarCircleImg />, 
     description: "CCNA, CCENT, CCNP - EI, MTCNA, MTCRE, NSE 1, NSE 2",
-    roles: ["Trainer", "Network Engineer"],
+    roles: ["Trainer", "Network Engineer", "Network Planning & Design"],
   },
   {
-    name: "Tri Cahyo Pranomo",
-    image: <TriCircleImg />, 
-    description: "QC & Cable Design Engineer, Presales",
-    roles: [],
+    name: "Aldi Arya Putra Pebriana",
+    image: <AldiCircleImg />, 
+     description: "CCNA, CCNP - EI, MTCNA, MTCRE, RCNA RS, RSE - Reyee",
+    roles: ["Network Engineer", "Trainer", "Project Manager"],
+  },
+  {
+    name: "Angga Daffa Prasetya",
+    image: <AnggaCircleImg />, 
+    description: "CCNA, CCOA, CCNP - EI, NSE7-SDWAN, FCA, FCF",
+    roles: ["Trainer", "IT Security Engineer"],
   },
 ];

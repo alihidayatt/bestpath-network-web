@@ -58,7 +58,7 @@ export default function OurProducts() {
           E-Book
         </h1>
         <div className="flex flex-wrap gap-5 justify-center">
-          {EBData.slice(0, 3).map((item) => (
+          {EBData.slice(0, 5).map((item) => (
             <div key={item.id} className="bg-white shadow-lg p-4 rounded-lg w-60">
               <div className="flex justify-center">{item.img}</div>
             </div>

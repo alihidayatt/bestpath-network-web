@@ -69,8 +69,8 @@ import dc_sipil_img from "./icon-component/img/dc_sipil.jpg";
 import dc_sipil2_img from "./icon-component/img/dc_sipil2.jpg";
 import djp from "./icon-component/icon/djp_ico.png";
 import epi from "./icon-component/icon/epi_ico.png";
-import erickCircleImg from "./icon-component/img/erick_cirle_img.png";
-import erick from "./icon-component/img/erick_img.png";
+import aldiCircleImg from "./icon-component/img/aldi_circle_img.png";
+import aldi from "./icon-component/img/aldi_img.jpg";
 import fortinet from "./icon-component/icon/fortinet_ico.png";
 import fresscom from "./icon-component/icon/fresscom_ico.png";
 import h3cIco from "./icon-component/icon/h3c_ico.png";
@@ -92,8 +92,6 @@ import logo_forweb from "./icon-component/icon/web_logo.svg";
 import mikrotikIco from "./icon-component/icon/mikrotik_ico.png";
 import mikrotikMtcnaIco from "./icon-component/icon/mikrotik_mtcna_ico.png";
 import mikrotikMtcreIco from "./icon-component/icon/mikrotik_mtcre_ico.png";
-import mosesCircleImg from "./icon-component/img/moses_circle_img.png";
-import moses from "./icon-component/img/moses_img.png";
 import news_1_img from "./icon-component/img/news_1_img.png";
 import news_2_img from "./icon-component/img/news_2_img.png";
 import news_3_img from "./icon-component/img/news_3_img.png";
@@ -133,11 +131,15 @@ import training_politala_img from "./icon-component/img/training_politala.jpg";
 import training_ptcc_img from "./icon-component/img/training_ptcc.jpg";
 import training_singapore_mpls_img from "./icon-component/img/training_singapore_mpls.jpg";
 import training_trainocate_img from "./icon-component/img/training_trainocate.jpg";
-import triCircleImg from "./icon-component/img/tri_circle_img.png";
-import tri from "./icon-component/img/tri_img.png";
+import anggaCircleImg from "./icon-component/img/angga_circle_img.png";
+import angga from "./icon-component/img/angga_img.jpg";
 import wika from "./icon-component/icon/wika_ico.png";
 import workshop_img from "./icon-component/img/workshop.jpg";
 import ebook_bgec_img from "./icon-component/img/ebook_bgec.jpg";
+import ebook_6cara_img from "./icon-component/img/ebook_6cara.jpg";
+import ebook_10strategi_img from "./icon-component/img/ebook_10strategi.jpg";
+import ebook_7asyik_img from "./icon-component/img/ebook_7asyik.jpg";
+import ebook_lulustkj_img from "./icon-component/img/ebook_lulustkj.jpg";
 import h_stacking_cisco_img from "./icon-component/img/handbook stacking cisco switch 3750_img.png";
 import zoom_img from "./icon-component/img/zoom_img.png";
 import cucm_img from "./icon-component/img/cucm_img.png";
@@ -523,18 +525,18 @@ export function Djp_ico() {
 export function Epi_ico() {
   return <Image src={epi} width={250} height={250} alt="epi image" />;
 }
-export function ErickCircleImg() {
+export function AldiCircleImg() {
   return (
     <Image
-      src={erickCircleImg}
+      src={aldiCircleImg}
       width={512}
       height={512}
-      alt="erick circle image"
+      alt="aldi circle image"
     />
   );
 }
-export function Erick_img() {
-  return <Image src={erick} width={400} height={400} alt="erick image" />;
+export function aldi_img() {
+  return <Image src={aldi} width={400} height={400} alt="aldi image" />;
 }
 export function Fortinet_ico() {
   return <Image src={fortinet} width={200} height={200} alt="fortinet image" />;
@@ -658,19 +660,6 @@ export function Mikrotik_mtcna_ico() {
   );
 }
 
-export function MosesCircleImg() {
-  return (
-    <Image
-      src={mosesCircleImg}
-      width={512}
-      height={512}
-      alt="moses circle image"
-    />
-  );
-}
-export function Moses_img() {
-  return <Image src={moses} width={400} height={400} alt="moses image" />;
-}
 export function News_1_img() {
   return (
     <Image src={news_1_img} width={300} height={400} alt="news_1_img image" />
@@ -943,13 +932,13 @@ export function Training_trainocate_img() {
     />
   );
 }
-export function TriCircleImg() {
+export function AnggaCircleImg() {
   return (
-    <Image src={triCircleImg} width={512} height={512} alt="tri circle image" />
+    <Image src={anggaCircleImg} width={512} height={512} alt="angga circle image" />
   );
 }
-export function Tri_img() {
-  return <Image src={tri} width={400} height={400} alt="tri image" />;
+export function angga_img() {
+  return <Image src={angga} width={400} height={400} alt="angga image" />;
 }
 export function Wika_ico() {
   return <Image src={wika} width={200} height={200} alt="wika image" />;
@@ -975,9 +964,77 @@ export function Phone_ico() {
   );
 }
 
+export function Ebook_lulustkj_img() {
+  return (
+    <Image src={ebook_lulustkj_img} width={500} height={500} alt="Ebook_lulustkj_img" />
+  );
+}
+
+export function Ebook_lulustkj_front_img() {
+  return (
+    <Image
+      src={ebook_lulustkj_img}
+      width={150}
+      height={150}
+      alt=" Ebook_front_lulustkj"
+    />
+  );
+}
+
+export function Ebook_7asyik_img() {
+  return (
+    <Image src={ebook_7asyik_img} width={500} height={500} alt="Ebook_7asyik_img" />
+  );
+}
+
+export function Ebook_7asyik_front_img() {
+  return (
+    <Image
+      src={ebook_7asyik_img}
+      width={150}
+      height={150}
+      alt=" Ebook_front_7asyik"
+    />
+  );
+}
+
+export function Ebook_10strategi_img() {
+  return (
+    <Image src={ebook_10strategi_img} width={500} height={500} alt="Ebook_10strategi_img" />
+  );
+}
+
+export function Ebook_10strategi_front_img() {
+  return (
+    <Image
+      src={ebook_10strategi_img}
+      width={150}
+      height={150}
+      alt=" Ebook_front_10strategi"
+    />
+  );
+}
+
+export function Ebook_6cara_img() {
+  return (
+    <Image src={ebook_6cara_img} width={500} height={500} alt="Ebook_6cara_img" />
+  );
+}
+
+export function Ebook_6cara_front_img() {
+  return (
+    <Image
+      src={ebook_6cara_img}
+      width={150}
+      height={150}
+      alt=" Ebook_front_6cara"
+    />
+  );
+}
+
 export function Ebook_bgec_img() {
   return (
-    <Image src={ebook_bgec_img} width={800} height={800} alt="Ebook_bgec_img" />
+    <Image src={ebook_bgec_img} width={500} height={500} alt="Ebook_bgec_img" />
   );
 }
 
@@ -985,18 +1042,19 @@ export function Ebook_bgec_front_img() {
   return (
     <Image
       src={ebook_bgec_img}
-      width={300}
-      height={300}
+      width={150}
+      height={150}
       alt=" Ebook_front_bgec"
     />
   );
 }
+
 export function Ebook_h_stacking_cisco_front_img() {
   return (
     <Image
       src={h_stacking_cisco_img}
-      width={300}
-      height={300}
+      width={150}
+      height={150}
       alt="h_stacking_cisco_img"
     />
   );
@@ -1005,8 +1063,7 @@ export function Ebook_h_stacking_cisco_img() {
   return (
     <Image
       src={h_stacking_cisco_img}
-      width={800}
-      height={800}
+      width={500} height={500}
       alt="h_stacking_cisco_img"
     />
   );
@@ -1014,31 +1071,34 @@ export function Ebook_h_stacking_cisco_img() {
 
 export function Zoom_front_img() {
   return (
-    <Image src={zoom_img} width={300} height={300} alt="zoom_front__img" />
+    <Image src={zoom_img} width={150}
+      height={150} alt="zoom_front__img" />
   );
 }
 
 export function Zoom_img() {
-  return <Image src={zoom_img} width={800} height={800} alt="zoom_img" />;
+  return <Image src={zoom_img} width={500} height={500} alt="zoom_img" />;
 }
 
 export function Cucm_front_img() {
   return (
-    <Image src={cucm_img} width={300} height={300} alt="cucm_front__img" />
+    <Image src={cucm_img} width={150}
+      height={150} alt="cucm_front__img" />
   );
 }
 
 export function Cucm_img() {
-  return <Image src={cucm_img} width={800} height={800} alt="cucm_img" />;
+  return <Image src={cucm_img} width={500} height={500} alt="cucm_img" />;
 }
 
 export function Mpls_img() {
-  return <Image src={mpls_img} width={800} height={800} alt="mpls_img" />;
+  return <Image src={mpls_img} width={500} height={500} alt="mpls_img" />;
 }
 
 export function Mpls_front_img() {
   return (
-    <Image src={mpls_img} width={300} height={300} alt="mpls_front__img" />
+    <Image src={mpls_img} width={150}
+      height={150} alt="mpls_front__img" />
   );
 }
 
