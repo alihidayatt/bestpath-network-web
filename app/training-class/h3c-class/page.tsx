@@ -1,8 +1,16 @@
+// File: app/training-class/h3c-class/page.tsx
 import React from "react";
 import Link from "next/link";
 import { h3c_data } from "./kelas_data_h3c";
 
-export default function TrainingH3c({ params }: { params: { kelas_h3c_Id: string } }) {
+// Next.js 15: params sekarang bisa Promise
+interface ParamsProps {
+  params: Promise<{ kelas_h3c_Id: string }>;
+}
+
+export default async function TrainingH3c({ params }: ParamsProps) {
+  // Wajib await params
+  const { kelas_h3c_Id } = await params;
   const thisLink = "./h3c-class/";
 
   return (
@@ -20,13 +28,14 @@ export default function TrainingH3c({ params }: { params: { kelas_h3c_Id: string
             >
               {/* Gambar dan Coming Soon Overlay */}
               <div className="h-40 flex border justify-center items-center bg-white relative">
-                {kelas.img} {/* Use JSX element directly */}
+                {kelas.img}
                 {kelas.comingSoon && (
                   <div className="absolute inset-0 bg-gray-900 bg-opacity-70 z-20 flex items-center justify-center text-white font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     Coming Soon
                   </div>
                 )}
               </div>
+
               {/* Info Kelas dan Button */}
               <div className="p-4 text-center">
                 <h2 className="text-lg font-semibold mb-2">{kelas.title}</h2>

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { ruijie_data } from "./kelas_data_ruijie";
 
-export default function Trainingruijie({ params }: { params: { kelas_ruijie_Id: string } }) {
+export default function Trainingruijie() {
   const thisLink = "./ruijie-class/";
 
   return (

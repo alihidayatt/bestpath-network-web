@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { cisco_data } from "./kelas_data_cisco";
 
-export default function TrainingCisco({ params }: { params: { kelas_cisco_Id: string } }) {
+export default function TrainingCisco() {
   const thisLink = "./cisco-class/";
 
   return (
@@ -20,13 +20,14 @@ export default function TrainingCisco({ params }: { params: { kelas_cisco_Id: st
             >
               {/* Gambar dan Coming Soon Overlay */}
               <div className="h-40 flex border justify-center items-center bg-white relative">
-                {kelas.img} {/* Use JSX element directly */}
+                {kelas.img}
                 {kelas.comingSoon && (
                   <div className="absolute inset-0 bg-gray-900 bg-opacity-70 z-20 flex items-center justify-center text-white font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     Coming Soon
                   </div>
                 )}
               </div>
+
               {/* Info Kelas dan Button */}
               <div className="p-4 text-center">
                 <h2 className="text-lg font-semibold mb-2">{kelas.title}</h2>

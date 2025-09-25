@@ -1,9 +1,15 @@
 import React from "react";
 
-export default function Member({ params }: { params: { memberId: string } }) {
+export default async function Member({
+  params,
+}: {
+  params: Promise<{ memberId: string }>;
+}) {
+  const { memberId } = await params;
+
   return (
     <div>
-      <h2>Member details {params.memberId} </h2>
+      <h2>Member details {memberId}</h2>
     </div>
   );
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import { Ruckus_data } from "../kelas_data_ruckus";
 
-export default function Trainingruckus({ params }: { params: { kelas_ruckus_id: string } }) {
-    const idkelas = params.kelas_ruckus_id;
-  
+export default async function Trainingruckus({ params }: { params: Promise<{ kelas_ruckus_id: string }> }) {
+  const resolvedParams = await params; // Resolve the Promise
+  const idkelas = resolvedParams.kelas_ruckus_id;
   const kelas = Ruckus_data.find((k) => k.id.toString() === idkelas);
 
   if (!kelas) {
@@ -48,22 +48,22 @@ export default function Trainingruckus({ params }: { params: { kelas_ruckus_id: 
       <div className="w-full h-full shadow-lg p-3">
         <h1 className="text-3xl font-bold text-bluegreen p-2">Kelas Training {kelas.title}</h1>
         <div className="lg:basis-2/3 sm:w-full border bg-white p-4 rounded-lg flex-grow">
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Overview</h2>
-  <div className="text-base mb-4">{kelas.overview}</div>
+          <h2 className="text-lg font-semibold text-bluegreen mb-2">Overview</h2>
+          <div className="text-base mb-4">{kelas.overview}</div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Prerequisite</h2>
-  <div className="text-base mb-4">{kelas.prerequisite || "Tidak ada prerequisite."}</div>
+          <h2 className="text-lg font-semibold text-bluegreen mb-2">Prerequisite</h2>
+          <div className="text-base mb-4">{kelas.prerequisite || "Tidak ada prerequisite."}</div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Level</h2>
-  <div className="text-base mb-4">{renderLevel(kelas.level || "")}</div>
+          <h2 className="text-lg font-semibold text-bluegreen mb-2">Level</h2>
+          <div className="text-base mb-4">{renderLevel(kelas.level || "")}</div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Goals</h2>
-  <div className="text-base mb-4">{kelas.goals || "Tidak ada goals yang terdaftar."}</div>
+          <h2 className="text-lg font-semibold text-bluegreen mb-2">Goals</h2>
+          <div className="text-base mb-4">{kelas.goals || "Tidak ada goals yang terdaftar."}</div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Intended For</h2>
-  <div className="text-base mb-4">{kelas.intended || "Informasi tidak tersedia."}</div>
+          <h2 className="text-lg font-semibold text-bluegreen mb-2">Intended For</h2>
+          <div className="text-base mb-4">{kelas.intended || "Informasi tidak tersedia."}</div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Syllabus</h2>
+          <h2 className="text-lg font-semibold text-bluegreen mb-2">Syllabus</h2>
           <div>
             {kelas.syllabus.map((item, index) => {
               // Cek apakah teks mengandung "Day" di awal
@@ -82,17 +82,17 @@ export default function Trainingruckus({ params }: { params: { kelas_ruckus_id: 
             })}
           </div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Duration</h2>
-  <div className="text-base mb-4">{kelas.duration || "Informasi tidak tersedia."} (09.00-17.00 WIB)</div>
+          <h2 className="text-lg font-semibold text-bluegreen mb-2">Duration</h2>
+          <div className="text-base mb-4">{kelas.duration || "Informasi tidak tersedia."} (09.00-17.00 WIB)</div>
 
-  <h2 className="text-lg font-semibold text-bluegreen mb-2">Investment (Minimum 2 Pax)</h2>
+          <h2 className="text-lg font-semibold text-bluegreen mb-2">Investment (Minimum 2 Pax)</h2>
           <div className="text-base mb-4 text-green-800">Rp.{kelas.investment || "Informasi tidak tersedia."}</div>
 
           <h2 className="text-lg font-semibold text-bluegreen mb-2">Investment (Kelas Private)</h2>
           <div className="text-base mb-4 text-green-800">Rp.{kelas.investment_p || "Informasi tidak tersedia."}</div>
           <div className="text-base mb-4">Bagi yang berminat bisa kontak kami (pada bagian 'Contact Us') untuk reservasi jadwal</div>
           <div className="text-base mb-4">Catatan: Tidak Termasuk Faktur Pajak</div>
-</div>
+        </div>
       </div>
     </div>
   );

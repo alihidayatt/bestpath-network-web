@@ -1,20 +1,17 @@
 import React from "react";
 
-export default function MemberDetailId({
+export default async function MemberDetailId({
   params,
 }: {
-  params: {
-    memberId: string;
-    memdetailId: string;
-  };
+  params: Promise<{ memberId: string; memdetailId: string }>;
 }) {
+  const { memberId, memdetailId } = await params;
+
   return (
-    <>
-      <div>
-        <h2>
-          Member {params.memberId} detail of {params.memdetailId}
-        </h2>
-      </div>
-    </>
+    <div>
+      <h2>
+        Member {memberId} detail of {memdetailId}
+      </h2>
+    </div>
   );
 }

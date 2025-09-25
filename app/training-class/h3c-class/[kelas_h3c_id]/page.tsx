@@ -1,9 +1,15 @@
+// File: app/training-class/h3c-class/[kelas_h3c_id]/page.tsx
 import React from "react";
 import { h3c_data } from "../kelas_data_h3c";
 
-export default function Trainingh3c({ params }: { params: { kelas_h3c_Id: string } }) {
-  const idkelas = params.kelas_h3c_Id;
-  const kelas = h3c_data.find((k) => k.id.toString() === idkelas);
+// Next.js 15: params harus Promise
+interface ParamsProps {
+  params: Promise<{ kelas_h3c_Id: string }>;
+}
+
+export default async function TrainingH3c({ params }: ParamsProps) {
+  const { kelas_h3c_Id } = await params; // wajib await
+  const kelas = h3c_data.find((k) => k.id.toString() === kelas_h3c_Id);
 
   if (!kelas) {
     return (
@@ -14,17 +20,14 @@ export default function Trainingh3c({ params }: { params: { kelas_h3c_Id: string
     );
   }
 
-  // Fungsi untuk menghasilkan teks dengan level yang dicoret
   const renderLevel = (selectedLevel: string) => {
     const levels = ["Beginner", "Intermediate", "Advanced"];
     return (
       <span>
         {levels
-          .map((level, index) =>
+          .map((level) =>
             level === selectedLevel ? (
-              <span key={level} className="">
-                {level}
-              </span>
+              <span key={level}>{level}</span>
             ) : (
               <span key={level} className="line-through text-gray-400">
                 {level}
@@ -64,21 +67,15 @@ export default function Trainingh3c({ params }: { params: { kelas_h3c_Id: string
 
           <h2 className="text-lg font-semibold text-bluegreen mb-2">Syllabus</h2>
           <div>
-            {kelas.syllabus.map((item, index) => {
-              // Cek apakah teks mengandung "Day" di awal
-              if (/^Day \d+/.test(item)) {
-                return (
-                  <div key={index} className="font-semibold mb-2">
-                    {item}
-                  </div>
-                );
-              }
-              return (
+            {kelas.syllabus.map((item, index) =>
+              /^Day \d+/.test(item) ? (
+                <div key={index} className="font-semibold mb-2">{item}</div>
+              ) : (
                 <ul className="list-disc pl-8" key={index}>
                   <li className="mb-2">{item}</li>
                 </ul>
-              );
-            })}
+              )
+            )}
           </div>
 
           <h2 className="text-lg font-semibold text-bluegreen mb-2">Duration</h2>

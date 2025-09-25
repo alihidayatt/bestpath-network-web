@@ -1,6 +1,7 @@
-"use client"; // <--- tambahkan ini di paling atas
+"use client";
 
 import React, { useEffect } from "react";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 import Ebook_download_button from "@/app/components/button/Ebook_download";
 import Ebook_beli_button from "@/app/components/button/Ebook_beli";
@@ -9,10 +10,12 @@ import { ebook_data } from "../ebook_data";
 
 const EBData = ebook_data;
 
-export default function EbookId({ params }: { params: { ebookId: string } }) {
-  var idBook = params.ebookId;
+export default function EbookId() {
+  // ambil ebookId dari URL menggunakan hook
+  const params = useParams();
+  const idBook = params.ebookId as string;
 
-  // scroll ke tengah halaman setelah render
+  // scroll ke tengah halaman setelah render (opsional)
   useEffect(() => {
     const middle = document.body.scrollHeight / 8;
     window.scrollTo({
@@ -27,17 +30,17 @@ export default function EbookId({ params }: { params: { ebookId: string } }) {
         (EBData) => (
           <div key={EBData.id} className="w-full h-full shadow-lg p-3">
             {EBData.bayar ? (
-                    <div className="flex text-xl font-bold text-bluegreen justify-start p-2">
-                      <h1>
-                        {EBData.title}{" "}
-                        <span className="text-green-600">({EBData.harga})</span>
-                      </h1>
-                    </div>
-                  ) : (
-                    <div className="flex text-xl font-bold text-bluegreen justify-start p-2">
-                      <h1>{EBData.title}</h1>
-                     </div>
-                  )}
+              <div className="flex text-xl font-bold text-bluegreen justify-start p-2">
+                <h1>
+                  {EBData.title}{" "}
+                  <span className="text-green-600">({EBData.harga})</span>
+                </h1>
+              </div>
+            ) : (
+              <div className="flex text-xl font-bold text-bluegreen justify-start p-2">
+                <h1>{EBData.title}</h1>
+              </div>
+            )}
 
             <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto w-full lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3">
               <div className="lg:basis-1/2 md:basis-full sm:w-full xs:w-full bg-white  flex flex-col shadow-lg p-2 rounded-lg">

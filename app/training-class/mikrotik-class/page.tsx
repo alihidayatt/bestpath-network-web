@@ -2,7 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { Mikrotik_data } from "./kelas_data_mikrotik";
 
-export default function Trainingmikrotik({ params }: { params: { kelas_mikrotik_Id: string } }) {
+export default async function Trainingmikrotik({ params }: { params: Promise<{ kelas_mikrotik_Id?: string }> }) {
+  const resolvedParams = await params; // Resolve the Promise
   const thisLink = "./mikrotik-class/";
 
   return (

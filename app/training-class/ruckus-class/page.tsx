@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Ruckus_data } from "./kelas_data_ruckus";
 
-export default function Trainingruckus({ params }: { params: { kelas_ruckus_Id: string } }) {
+export default function Trainingruckus() {
   const thisLink = "./ruckus-class/";
 
   return (

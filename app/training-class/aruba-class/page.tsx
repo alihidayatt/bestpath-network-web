@@ -1,9 +1,10 @@
+// app/training-class/aruba-class/page.tsx
 import React from "react";
 import Link from "next/link";
 import { aruba_data } from "./kelas_data_aruba";
 
-export default function Trainingaruba({ params }: { params: { kelas_aruba_Id: string } }) {
-    const thisLink = "./aruba-class/";
+export default function Trainingaruba() {
+  const thisLink = "/training-class/aruba-class/"; // path absolute sesuai folder kamu
 
   return (
     <div className="container mx-auto px-6 py-6">
@@ -16,17 +17,17 @@ export default function Trainingaruba({ params }: { params: { kelas_aruba_Id: st
               className={`bg-gray-100 shadow-md rounded-lg overflow-hidden relative group ${
                 kelas.comingSoon ? "opacity-50 cursor-not-allowed" : ""
               }`}
-              style={{ position: "relative" }}
             >
               {/* Gambar dan Coming Soon Overlay */}
               <div className="h-40 flex border justify-center items-center bg-white relative">
-                {kelas.img} {/* Use JSX element directly */}
+                {kelas.img}
                 {kelas.comingSoon && (
                   <div className="absolute inset-0 bg-gray-900 bg-opacity-70 z-20 flex items-center justify-center text-white font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     Coming Soon
                   </div>
                 )}
               </div>
+
               {/* Info Kelas dan Button */}
               <div className="p-4 text-center">
                 <h2 className="text-lg font-semibold mb-2">{kelas.title}</h2>
