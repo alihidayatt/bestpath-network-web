@@ -133,7 +133,7 @@ const ebook_data: EbookData[] = [
     author: "Foryanto J. Wiguna",
     description:
       "Belajar IT nggak harus bikin pusing! Mini Ebook ini ngasih 7 cara seru dan friendly buat kamu yang baru mulai nyemplung ke dunia teknologi. Cocok banget buat pemula yang bingung mulai dari mana. Dari belajar lewat YouTube, main proyek kecil-kecilan, sampai ikut komunitas online, semuanya dibahas dengan gaya santai dan praktis. Nggak cuma bikin paham, tapi juga bikin nagih buat terus belajar. Mini Ebook ini jadi gerbang awal yang pas buat kamu yang pengin jadi jagoan di dunia IT tanpa harus ribet dan overthinking.",
-    link1: "https://drive.google.com/file/d/1PPn3n4tAD0t2YPP498i455TLp1MsQdAH/view",
+    link1: "https://sociabuzz.com/bestpathnetwork/p/7-cara-asyik-belajar-it-buat-pemula",
     link2: "https://forms.gle/f74BJDeNpEvpZWqJ7",
     bayar: false,
     harga: "Gratis!",
