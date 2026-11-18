@@ -5,32 +5,34 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "lint": "next lint"
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
-    "@headlessui/react": "^2.2.8",
+    "@headlessui/react": "^2.2.10",
     "@heroicons/react": "^2.2.0",
-    "@react-google-maps/api": "^2.20.7",
-    "axios": "^1.12.2",
-    "daisyui": "^5.1.18",
-    "next": "^15.5.4",
-    "node-fetch": "^3.3.2",
-    "react": "^19",
-    "react-dom": "^19",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "react-icons": "^5.5.0",
-    "sharp": "^0.34.4",
-    "use-places-autocomplete": "^4.0.1",
-    "wp-scripts": "^0.0.1-security"
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5"
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.4.6",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=24 <25",
+    "npm": ">=10"
   },
   "description": "Bestpath-Network website application",
   "main": "postcss.config.js",

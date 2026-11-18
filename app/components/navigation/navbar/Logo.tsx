@@ -1,31 +1,10 @@
-"use client";
-import { useEffect, useState } from "react";
 import Link from "next/link";
-import Logo_forweb from "../../icon-component/logo_bpn";
-// import Button from "./Button";
+import Image from "next/image";
 
-const Logo = () => {
-  //update the size of the logo when the size of the screen changes
-  const [width, setWidth] = useState(0);
-
-  const updateWidth = () => {
-    const newWidth = window.innerWidth;
-    setWidth(newWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", updateWidth);
-    updateWidth();
-  }, []);
-
+export default function Logo() {
   return (
-    <Link href="/">
-      <Logo_forweb
-        widthLogo={width < 1024 ? "130" : "160"}
-        heightLogo={width < 1024 ? "35" : "64"}
-      />
+    <Link href="/" className="site-logo" aria-label="Bestpath Network home">
+      <Image src="/logo-forweb.svg" width={2134} height={2134} alt="Bestpath Network" />
     </Link>
   );
-};
-
-export default Logo;
+}

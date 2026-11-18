@@ -133,31 +133,21 @@ const TData: TrainingData[] = [
 
 export default function Training() {
   return (
-    <>
-      <div className="container mx-auto px-6 py-6 ">
-        <div className="w-full h-full shadow-lg p-3">
-          <div className="flex text-xl font-semibold text-bluegreen justify-start p-2">
-            <h1>TRAINING</h1>
-          </div>
-          {/* card start */}
-          <div className="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col flex-wrap justify-items-center justify-start justify-self-start h-auto w-full lg:gap-x-3 lg:gap-y-3 md:gap-x-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 py-3 px-3">
-            {TData.map((TData) => (
-              <div
-                key={TData.id}
-                className="lg:basis-1/6 md:basis-full sm:w-full xs:w-full bg-white flex flex-row flex-wrap shadow-lg p-2 rounded-lg"
-              >
-                <div className="flex w-full h-auto justify-center rounded-lg py-2">
-                  {TData.img}
-                </div>
-                <div className="bg-white w-full h-auto flex justify-center p-2 lg:text-base md:text-base sm:text-sm xs:text-sm text-center font-semibold text-bluegreen">
-                  {TData.title}
-                </div>
-              </div>
-            ))}
-          </div>
-          {/* card end */}
-        </div>
+    <div className="wrap">
+      <header className="page-intro" data-enter>
+        <p className="eyebrow">Training in practice</p>
+        <h1>Training and workshops</h1>
+        <p className="lead">A record of our training sessions and workshops, with 20 events from the existing gallery.</p>
+        <a className="btn btn--primary" href="/training-class">Find training classes</a>
+      </header>
+      <div className="photo-grid">
+        {TData.map((event) => (
+          <article key={event.id} aria-labelledby={`training-${event.id}`}>
+            <h2 id={`training-${event.id}`}>{event.title}</h2>
+            {event.img}
+          </article>
+        ))}
       </div>
-    </>
+    </div>
   );
 }
