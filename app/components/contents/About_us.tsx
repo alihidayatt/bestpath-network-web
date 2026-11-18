@@ -32,14 +32,14 @@ export default function About_us() {
                     {" "}
                     PLANNING, IMPLEMENTATION and MAINTENANCE
                   </span>
-                  . What's unique about us is being{" "}
+                  . What&apos;s unique about us is being{" "}
                   <span className="text-bluegreen font-semibold">
                     ABLE TO WORK WITH A TIGHT SCHEDULE
                   </span>
                   .
                 </p>
                 <p className="lg:text-right md:text-right sm:text-center xs:text-center mt-4 lg:text-2xl md:text-2xl sm:text-xl xs:text-xl font-light text-bluegreen ">
-                  "WORKING WITH PASSION"
+                  &quot;WORKING WITH PASSION&quot;
                 </p>
               </blockquote>
             </div>
