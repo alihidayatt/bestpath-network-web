@@ -31,7 +31,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="stylesheet" href="/assets/layout/layout.css" />
         <link rel="stylesheet" href="/assets/moments/picture-develops/moment.css" />
       </head>
-      <body>
+      {/* Browser extensions such as ColorZilla can inject body attributes before hydration. */}
+      <body suppressHydrationWarning>
         {/* Service / other; brand palette, Schibsted 400, photo hero, nav-mega, footer-dark,
             close-type, surface-pairs, arrow buttons; existing logo replaces dots; picture-develops film. */}
         <Navbar />
