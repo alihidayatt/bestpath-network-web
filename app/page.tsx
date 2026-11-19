@@ -57,10 +57,14 @@ export default function Home() {
             </div>
             <div
               className="network-fabric"
-              role="img"
-              aria-label="Abstract connected network: interwoven paths link infrastructure and engineer learning, with two connected hubs and a constellation of network nodes."
+              data-m-loop
             >
-              <svg viewBox="0 0 560 560" fill="none" aria-hidden="true">
+              <svg
+                viewBox="0 0 560 560"
+                fill="none"
+                role="img"
+                aria-label="Abstract connected network: interwoven paths link infrastructure and engineer learning, with two connected hubs and a constellation of network nodes."
+              >
                 <defs>
                   <radialGradient id="fabric-glow">
                     <stop stopColor="#52d9d0" stopOpacity=".18" />

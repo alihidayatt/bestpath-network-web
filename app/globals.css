@@ -431,11 +431,30 @@ html[data-buttons] .btn--email::after {
   font-weight: 400;
 }
 .network-fabric {
+  position: relative;
   min-width: 0;
   width: 100%;
   max-width: 660px;
   align-self: start;
   justify-self: center;
+}
+.network-fabric > button.loop-pause {
+  background: #12333e;
+  color: #b4fff1;
+  border-color: #578591;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease;
+}
+.network-fabric:hover > button.loop-pause,
+.network-fabric:focus-within > button.loop-pause {
+  opacity: 1;
+  pointer-events: auto;
+}
+@media (max-width: 639px) {
+  .network-fabric > button.loop-pause {
+    display: none;
+  }
 }
 .network-fabric > svg {
   display: block;
@@ -497,6 +516,50 @@ html[data-buttons] .btn--email::after {
 }
 .network-fabric__packets {
   fill: #d2fff5;
+}
+.network-fabric__packets > circle {
+  cx: 0;
+  cy: 0;
+  offset-distance: 40%;
+  animation: fabric-packet var(--m-cycle, 3.2s) linear infinite;
+}
+.network-fabric__packets > circle:nth-child(1) {
+  offset-path: path("M96 174H154Q174 174 174 194V200Q174 232 206 232H292Q324 232 324 264V306Q324 338 354 338H426Q458 338 458 370V398");
+}
+.network-fabric__packets > circle:nth-child(2) {
+  offset-path: path("M200 112V156Q200 176 220 176H334Q354 176 354 196V338Q354 394 298 394H258Q226 394 226 426V490");
+  animation-delay: -1.1s;
+}
+.network-fabric__packets > circle:nth-child(3) {
+  offset-path: path("M64 280H158Q206 280 206 232M354 338V282Q354 260 376 260H450Q484 260 484 294V344");
+  animation-delay: -2.2s;
+}
+.network-fabric__hub > circle:first-child {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: fabric-hub var(--m-cycle, 3.2s) ease-in-out infinite;
+}
+.network-fabric__hub--learning > circle:first-child {
+  animation-delay: -1.6s;
+}
+@keyframes fabric-packet {
+  0% { offset-distance: 0%; opacity: 0; }
+  8%, 85% { opacity: 1; }
+  95%, 100% { offset-distance: 100%; opacity: 0; }
+}
+@keyframes fabric-hub {
+  0%, 100% { transform: scale(1); opacity: 0.65; }
+  50% { transform: scale(1.14); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .network-fabric__packets > circle,
+  .network-fabric__hub > circle:first-child {
+    animation: none;
+  }
+}
+html[data-motion="off"] .network-fabric__packets > circle,
+html[data-motion="off"] .network-fabric__hub > circle:first-child {
+  animation: none;
 }
 .network-fabric__labels {
   fill: #b4cbd1;
