@@ -1,0 +1,93 @@
+.loading {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: calc(var(--nav, 80px) + 32px) 24px 48px;
+  background: #081f2a;
+  color: #f1f7f7;
+}
+
+.content {
+  width: min(100%, 360px);
+  display: grid;
+  justify-items: center;
+}
+
+.drawing {
+  position: relative;
+  width: min(100%, 240px);
+  aspect-ratio: 375 / 471;
+}
+
+.canvas,
+.hidden {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.fallback {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #94eae3;
+  transform: translate(-50%, -50%);
+}
+
+.status,
+.pause:not(:focus-visible) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.pause {
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid #578591;
+  border-radius: var(--r, 6px);
+  background: transparent;
+  color: #b4cbd1;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 150ms ease, color 150ms ease, transform 150ms ease;
+}
+
+.pause:hover {
+  background: #12333e;
+  color: #f1f7f7;
+  transform: translateY(-1px);
+}
+
+.pause:active {
+  transform: translateY(1px);
+}
+
+.pause:focus-visible {
+  outline: 2px solid #7ce7e0;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pause {
+    display: none;
+  }
+}
+
+:global(html[data-motion="off"]) .pause {
+  display: none;
+}
